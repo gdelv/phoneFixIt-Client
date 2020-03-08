@@ -1,0 +1,19 @@
+.logo-container {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.left-section {
+    border: 1px solid red;
+    margin:  auto 0;
+    /* flex-grow: 1; */
+}
+
+.right-section {
+    border: 1px solid green;
+    margin:  auto 0;
+    /* flex-grow: 1; */
+}

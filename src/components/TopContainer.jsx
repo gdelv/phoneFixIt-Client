@@ -1,7 +1,11 @@
 import React from 'react'
+import { Logo } from './Logo'
 
 export const TopContainer = (props) => {
     return (
-        <h1>I am top Container Nav</h1>
+        <>
+            <Logo/>
+            
+        </>
     )
 }
