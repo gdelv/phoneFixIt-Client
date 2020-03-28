@@ -5,7 +5,9 @@
     align-items: center;
     padding: 15px;
 }
-
+.linksContainer p {
+    font-family: 'Kalam', cursive;
+}
 .linksContainer div {
     display: flex;
     flex-direction: column;

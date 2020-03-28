@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 37vh;
+    height: 43vh;
 }
 
 .text-container {
@@ -21,7 +21,7 @@
 
 .innerTextContainer div {
     width: 50%;
-    padding: 5px;
+    padding: 3px;
     text-align: center;
 }
 
@@ -35,6 +35,7 @@
     background-color: lightgreen;
     padding: 7px;
     border-radius: 15px;
+    font-family: 'Kalam', cursive;
 }
 // .text-container div {
 //     display: flex;
@@ -46,4 +47,6 @@
 .text-container h3, .text-container p {
     color: #def;
     font-size: 1rem;
+    font-family: 'Kalam', cursive;
+
 }
