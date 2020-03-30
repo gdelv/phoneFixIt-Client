@@ -1,13 +1,12 @@
 import React from 'react'
-import { TopContainer } from './TopContainer'
-import { BottomContainer } from './BottomContainer'
+
 
 const Navbar = () => {
     return (
-        <>
-            <TopContainer/>
-            <BottomContainer/>
-        </>
+        <nav >
+            <h1 className="title">This is the Nav</h1>
+        </nav>
+        
     )
 }
 export default Navbar

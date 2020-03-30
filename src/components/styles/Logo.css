@@ -1,4 +1,5 @@
-.logo-container {
+/* 
+    .logo-container {
     height: 10vh;
     width: 100%;
     display: flex;
@@ -19,15 +20,15 @@
 .right-section {
     border: 1px solid green;
     margin:  auto 0;
-    /* flex-grow: 1; */
-}
+    flex-grow: 1; 
+
 .logo-brand {
     border: 1px solid red;
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* align-items: flex-start; */
+    align-items: flex-start;
 }
 .title {
     font-size: 25px;
@@ -40,7 +41,6 @@
     font-size: 18px;
     margin: 0 auto;
 }
-/* HAMBURGER BUTTON STYLE */
 #wrapper {
 	background:black;
     display:inline-block;
@@ -85,7 +85,6 @@
 	top:48%;
 }
 
-/* Modal CSS*/
 .modal {
     height: 90vh;
     width: 300px;
@@ -112,4 +111,4 @@
 
 .modal a:hover {
     color: darkgray
-}
+} */
