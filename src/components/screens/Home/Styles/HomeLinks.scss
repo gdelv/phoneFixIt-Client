@@ -1,0 +1,26 @@
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.linksContainer p {
+    font-family: 'Kalam', cursive;
+}
+.linksContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksContainer img {
+    width: 140px;
+    border-radius: 40px;
+}
+
+.bottomParentContainer {
+    display: flex;
+    flex-direction: column;
+}
