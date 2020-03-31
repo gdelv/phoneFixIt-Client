@@ -1,4 +1,8 @@
-.has-bg-img { background: url('https://i.imgur.com/so9hBbk.jpg')center center; background-size:cover; }
+.has-bg-img { 
+    background: url('https://i.imgur.com/so9hBbk.jpg') center/cover;
+    opacity: .9;
+    text-align: start;
+}
 
 // .homeWrapper {
 //     background: url('https://i.imgur.com/so9hBbk.jpg');
