@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+// Centers the navbar disable to have the position be start
+.navbar-menu {
+  flex-grow: 0 !important;
+}
+// Import only what you need from Bulma
+@import "../../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../../node_modules/bulma/sass/base/_all.sass";
+@import "../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../../node_modules/bulma/sass/layout/hero.sass";
