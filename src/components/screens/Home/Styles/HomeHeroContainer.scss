@@ -1,54 +1,10 @@
-.has-bg-img { background: url('https://i.imgur.com/so9hBbk.jpg')center center; background-size:cover; }
+@charset "utf-8";
 
-// .homeWrapper {
-//     background: url('https://i.imgur.com/so9hBbk.jpg');
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     width: 100%;
-//     height: 43vh;
-// }
+$white: hsl(0, 0%, 100%);
+$primary: $white;
+.has-bg-img {
+  background: url("https://i.imgur.com/so9hBbk.jpg") center center;
+  background-size: cover;
+}
 
-// .text-container {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-end;
-// }
-
-// .innerTextContainer {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-end;
-// }
-
-// .innerTextContainer div {
-//     width: 50%;
-//     padding: 3px;
-//     text-align: center;
-// }
-
-// .startContainer {
-//     display: flex;
-//     justify-content: center;
-// }
-
-// .startContainer a {
-//     color: white;
-//     background-color: lightgreen;
-//     padding: 7px;
-//     border-radius: 15px;
-//     font-family: 'Kalam', cursive;
-// }
-// // .text-container div {
-// //     display: flex;
-// //     justify-content: center;
-// //     width: 50%;
-// //     flex-wrap: wrap;
-// // }
-
-// .text-container h3, .text-container p {
-//     color: #def;
-//     font-size: 1rem;
-//     font-family: 'Kalam', cursive;
-
-// }
+// @import "../node_modules/bulma/sass/elements/title.sass";
