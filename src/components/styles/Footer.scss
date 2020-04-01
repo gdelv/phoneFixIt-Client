@@ -3,27 +3,17 @@
 
 $size-7: 20px;
 $size-7-mobile: 20px;
+$footer-padding: 1.5rem .75rem !default;
 
 .footer {
     justify-content: space-evenly;
 }
 
-
-
-// @import "../../../node_modules/bulma/sass/utilities/initial-variables.sass";
-
-
-
-
-// @media screen and (max-width: 768px) {
-//     .title {
-//         font-size: .75rem !important;
-//     }
-
-//     .subtitle {
-//         font-size: .6rem !important;
-//     }
-// }
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: $footer-padding;
+    }
+}
 
 
 
