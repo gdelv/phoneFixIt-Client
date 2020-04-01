@@ -1,18 +1,9 @@
-<<<<<<< HEAD
 .has-bg-img { 
     background: url('https://i.imgur.com/so9hBbk.jpg') center/cover;
-    opacity: .9;
-    text-align: start;
 }
-=======
-@charset "utf-8";
->>>>>>> d28f42c58145520f5da4a226c543606f50fe84d3
 
 $white: hsl(0, 0%, 100%);
 $primary: $white;
-.has-bg-img {
-  background: url("https://i.imgur.com/so9hBbk.jpg") center center;
-  background-size: cover;
-}
+
 
 // @import "../node_modules/bulma/sass/elements/title.sass";

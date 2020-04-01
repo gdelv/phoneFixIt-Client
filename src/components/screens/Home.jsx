@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeHeroContainer from './Home/HomeHeroContainer'
+import HomeHeroContainer from './Home/HomeHeroContainer' //complete
 import HomeLinks from './Home/HomeLinks'
 import HomeBottomContainers from './Home/HomeBottomContainers'
 
