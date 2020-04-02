@@ -39,22 +39,22 @@ const Navbar = () => {
               {/* <a class="navbar-link">Services</a> */}
               Services
               <div class="navbar-dropdown">
-                <Link to="services/phonerepair" class="navbar-item">
+                <Link to="/services/phonerepair" class="navbar-item">
                   Phone Repair
                 </Link>
-                <Link to="services/iphonerepair" class="navbar-item">
+                <Link to="/services/tabletrepair" class="navbar-item">
                   Tablet Repair
                 </Link>
-                <Link to="services/iphonerepair" class="navbar-item">
+                <Link to="/services/computerrepair" class="navbar-item">
                   Computer & Laptop Repair
                 </Link>
-                <Link to="services/iphonerepair" class="navbar-item">
+                <Link to="/services/iphonerepair" class="navbar-item">
                   Apple iPhone Repair
                 </Link>
-                <Link to="services/iphonerepair" class="navbar-item">
+                <Link to="/services/samsungrepair" class="navbar-item">
                   Samsung Repair
                 </Link>
-                <Link to="services/iphonerepair" class="navbar-item">
+                <Link to="/services/ipadrepair" class="navbar-item">
                   Apple iPad Repair
                 </Link>
               </div>
