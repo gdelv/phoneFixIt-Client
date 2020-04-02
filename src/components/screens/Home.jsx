@@ -3,6 +3,7 @@ import HomeHeroContainer from './Home/HomeHeroContainer' //complete
 import HomeRepairServices from './Home/HomeRepairServices'
 import HomeBanner from './Home/HomeBanner'
 import HomeFeatures from './Home/HomeFeatures'
+import HomeSubscribe from './Home/HomeSubscribe'
 
 export const Home = (props) => {
     return (
@@ -14,6 +15,7 @@ export const Home = (props) => {
             <HomeRepairServices/>
             <HomeBanner/>
             <HomeFeatures/>
+            <HomeSubscribe/>
         </div>
 
     )
