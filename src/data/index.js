@@ -15,3 +15,24 @@ export const linksInfo = [
     }
 
 ]
+
+export const featuresHome = [
+    {
+        title: "Live phone support",
+        subtitle: "What we do for our customers",
+        description: "Need technical advice or assistance but can't make it to our location? give us a call, and speak with one of our expert technicians. We're happy to provide free support whenever needed. We’ve been at it long enough to know how important it is to provide top notch work and real customer service.",
+        img:"https://images.unsplash.com/photo-1580795479225-c50ab8c3348d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+        title: "In-depth market knowledge",
+        subtitle: "You're our priority",
+        description: "Having been in the mobile device industry for 15+ years our technicians are well versed in all aspects of the market and can assist in all phone, tablet and computer inqueries.",
+        img:"https://images.unsplash.com/photo-1512439408685-2e399291a4e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1885&q=80"
+    },
+    {
+        title: "Enviromentally friendly",
+        subtitle: "For your convenience",
+        description: "We strive to use the most environmentally friendly methods as possible including recycling used and old products. proper disposal, and refurbishing of phones and tablets.",
+        img:"https://images.unsplash.com/photo-1576613109753-27804de2cba8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+    }
+]
