@@ -30,12 +30,16 @@ class DropDown extends React.Component {
 
             <article class="message is-large is-white" onClick={this.onClick}>
                 <div class="messageContainer is-flex">
-                        <figure class="image is-24x24">
+                    <div class="is-flex">
+                        <div class="is-flex">
+                        <figure class="image is-48x48">
                             <img src={this.state.clicked ? Minus : Plus}></img>
                         </figure>
-                        <h2 class="is-size-2 is-size-7-mobile">{this.props.question}</h2>
-                    <div class={this.state.clicked ? "message-body" : "is-hidden"}>
-                        {this.props.answer}
+                        </div>
+                        <h2 class="is-size-2 is-size-6-mobile">{this.props.question}</h2>
+                    </div>
+                    <div class={this.state.clicked ? "message-body is-size-7-mobile" : "is-hidden"}>
+                        <p>{this.props.answer}</p>
                     </div>
                 </div>
             </article>
