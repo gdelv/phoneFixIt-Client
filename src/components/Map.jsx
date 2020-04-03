@@ -2,7 +2,7 @@ import React from 'react'
 import { GoogleMap, withScriptjs, withGoogleMap} from "react-google-maps";
 
 function Map(props) {
-    console.log("these are the props",props);
+    // console.log("these are the props",props);
     
         return (
                 <GoogleMap 
@@ -15,7 +15,7 @@ function Map(props) {
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 // map wont take my process.env variable to hide API key
 export default function MapContainer(props) {
-    console.log("other props",props);
+    // console.log("other props",props);
     
     return (
         <div>
