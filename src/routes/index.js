@@ -6,8 +6,8 @@ import { About }   from '../components/screens/About';
 export const Routes = (props) => {
     return (
         <Switch>
-            <Route exact to='/about'component={About} />
-            <Route exact to='/'component={Home} />
+            <Route exact path='/'component={Home} />
+            <Route exact path='/about'component={About} />
             {/* <Route path to='/services'component={} /> */}
             {/* <Route path to='/mail-in'component={} /> */}
             {/* <Route path to='/book-online'component={} /> */}
