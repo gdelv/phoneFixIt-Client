@@ -36,3 +36,27 @@ export const featuresHome = [
         img:"https://images.unsplash.com/photo-1576613109753-27804de2cba8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
     }
 ]
+
+
+export const questionsAnswers = [
+    {
+        question: "Which payment methods do you accept?",
+        answer: "Store locations accept all major credit and debit cards as well as cash, Online and mail in services accept only Paypal"
+    },
+    {
+        question: "How long will it take you to repair my items",
+        answer: "Most repairs can be done same day, however some devices will require parts, which need to be ordered from our warehouse in this circumstance repairs for some devices can take as long as 3-4 business days to complete. Return shipping of mail in devices will be sent same day of repair completion. Please call for more information"
+    },
+    {
+        question: "Do you use original manufacturer replacement parts?",
+        answer: "Original or OEM parts as they're reffered to, can be used if a customer prefers (prices may vary), Our parts are high quality third party materials which are identical to the originals in both appearance functionality"
+    },
+    {
+        question: "Do you offer a warranty on repairs?",
+        answer: "Yes all repairs come with a 60 day limited warranty on parts and labor, as long as physical damage or liquid damage is not found on the device"
+    },
+    {
+        question: "What happens if I can't make my appointment",
+        answer: "Give us a call at (516)-513-0800 for our Hicksville location, or (516)-801-6320 for our Glen Cove location and let us know"
+    }
+]

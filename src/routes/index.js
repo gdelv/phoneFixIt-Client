@@ -1,16 +1,18 @@
 import React from 'react'
 import { Route, Switch } from "react-router-dom";
 import { Home } from '../components/screens/Home';
+import { FAQ } from '../components/screens/FAQ/FAQ'
 
 export const Routes = (props) => {
     return (
         <Switch>
-            <Route path to='/'component={Home} />
+            {/* <Route path to='/'component={Home} /> */}
             {/* <Route path to='/services'component={} /> */}
             {/* <Route path to='/mail-in'component={} /> */}
             {/* <Route path to='/book-online'component={} /> */}
             {/* <Route path to='/about'component={} /> */}
             {/* <Route path to='/shop'component={} /> */}
+            <Route path to='/FAQ' component={FAQ}/>
         </Switch>
     )
 }
