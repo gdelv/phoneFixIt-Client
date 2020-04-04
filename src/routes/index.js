@@ -6,13 +6,13 @@ import { FAQ } from '../components/screens/FAQ/FAQ'
 export const Routes = (props) => {
     return (
         <Switch>
-            {/* <Route path to='/'component={Home} /> */}
+            <Route exact path='/'component={Home} />
             {/* <Route path to='/services'component={} /> */}
             {/* <Route path to='/mail-in'component={} /> */}
             {/* <Route path to='/book-online'component={} /> */}
             {/* <Route path to='/about'component={} /> */}
             {/* <Route path to='/shop'component={} /> */}
-            <Route path to='/FAQ' component={FAQ}/>
+            <Route exact path='/FAQ' component={FAQ}/>
         </Switch>
     )
 }
