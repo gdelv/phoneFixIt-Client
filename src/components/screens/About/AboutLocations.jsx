@@ -6,7 +6,7 @@ export default class AboutLocations extends Component {
     render() {
         return (
             <div>
-                <p class="title is-2 has-text-centered is-spaced is-capitalized">Our locations</p>
+                <p class="title is-2 has-text-centered is-spaced is-capitalized">Our Locations</p>
                 <div class="columns has-text-centered">
                     <div class="column">
                         <p className="subtitle is-4 has-text-weight-bold">Hicksville NY</p>
