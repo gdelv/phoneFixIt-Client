@@ -16,3 +16,7 @@ export const Routes = (props) => {
         </Switch>
     )
 }
+
+
+
+// component for FAQ added to the routes the route for FAQ does not work unless using exact path 
