@@ -19,9 +19,11 @@ export default function MapContainer(props) {
     
     return (
         <div>
-   {/* { console.log(process.env.REACT_APP_GOOGLE_KEY)} */}
+   { console.log("this is the key",process.env.REACT_APP_GOOGLE_KEY)}
             <WrappedMap
-                googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyD63dGGtUjYEShHODqZyH8PPvJppU_TN-4&v=3.exp&libraries=geometry,drawing,places`}
+                googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${
+                    process.env.REACT_APP_GOOGLE_KEY
+                }&v=3.exp&libraries=geometry,drawing,places`}
                 loadingElement={<div style={{ height: "300px"}} />}
                 containerElement={<div style={{ height: "300px"}} />}
                 mapElement={<div style={{ height: "300px"}} />}
