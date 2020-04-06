@@ -12,11 +12,22 @@ export default class AboutHours extends Component {
     }
     changeColor = () => {
         var currentDate = new Date()
+        var currentDay = currentDate.getUTCDay()
         var currentHour = currentDate.getHours()
-        if(currentHour >= 10 && currentHour <= 18) {
-            this.setState({ textColor: "success" })
-        } else this.setState({ textColor: "danger" })
-        console.log(this.state.textColor)
+        console.log("current day",currentDay);
+        if(currentDay === 1 || 2 || 3 || 4 || 5 ) {
+            if(currentHour >= 10 && currentHour <= 20) {
+                this.setState({ textColor: "success" })
+            } else this.setState({ textColor: "danger" })
+        } else if (currentDay === 6) {
+            if(currentHour >= 9 && currentHour <= 19) {
+                this.setState({ textColor: "success" })
+            } else this.setState({ textColor: "danger" })
+        } else if(currentDay === 7) {
+            if(currentHour >= 11 && currentHour <= 16) {
+                this.setState({ textColor: "success" })
+            } else this.setState({ textColor: "danger" })
+        }
     }
     render() {
         return (

@@ -63,8 +63,8 @@ const Navbar = () => {
           <Link to="/mail-in-repair" class="navbar-item">
             Mail-in Repair
           </Link>
-          <Link to="/we-come-to-you" class="navbar-item">
-            We Come to you
+          <Link to="/FAQ" class="navbar-item">
+            FAQ
           </Link>
           <Link to="/about" class="navbar-item">
             About Us
