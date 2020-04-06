@@ -3,7 +3,7 @@ import "./Styles/HomeBanner.scss";
 
 const HomeBottomContainers = props => {
 return (
-        <section className="hero is-link is-medium">
+        <section className="hero is-info is-medium">
             <div className="hero-body">
                 <div className="container">
                     <p className="title is-spaced is-uppercase has-text-black is-1">We do it right</p>
