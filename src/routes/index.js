@@ -1,7 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+
 import { Home } from "../components/screens/Home";
 import { MailInRepair } from "../components/screens/MailInRepair";
+import { FAQ } from '../components/screens/FAQ/FAQ'
 
 export const Routes = props => {
   return (
@@ -12,6 +14,8 @@ export const Routes = props => {
       {/* <Route path to='/book-online'component={} /> */}
       {/* <Route path to='/about'component={} /> */}
       {/* <Route path to='/shop'component={} /> */}
+        <Route exact path='/FAQ' component={FAQ}/>
+
     </Switch>
   );
 };
