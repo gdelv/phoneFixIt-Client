@@ -1,5 +1,6 @@
 import React from "react";
 import "./Styles/HomeHeroContainer.scss";
+import HomeServiceDropdown from "./HomeServiceDropdown";
 
 const HomeHeroContainer = props => {
     return (
@@ -8,7 +9,8 @@ const HomeHeroContainer = props => {
         <div className="container has-text-centered">
             <h1 className="title is-1 is-primary has-text-white">{props.title}</h1>
             <h2 className="subtitle is-3 has-text-link">{props.description}</h2>
-            <button className="button is-link">Start Here</button>
+            <HomeServiceDropdown/>
+            {/* <button className="button is-link">Start Here</button> */}
         </div>
         </div>
     </section>
