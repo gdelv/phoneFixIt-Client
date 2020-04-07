@@ -6,7 +6,7 @@ import FAQtitle from './FAQtitle'
 
 export const FAQ = (props) => {
     return (
-        <section class="hero section is-small">
+        <section style={{ paddingBottom: 150 }}class="hero section is-small">
             <FAQtitle
                 title="Frequently asked Questions"
             />
