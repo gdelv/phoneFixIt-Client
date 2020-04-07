@@ -80,7 +80,7 @@ export const MailInRepair = props => {
                 target="_blank"
                 data-content="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=38aec7e7c8bb&amp;mfid=1495587166733_38aec7e7c8bb#/checkout/openButton"
                 data-type="external"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <span style={{ color: "#000000" }}>
                   <span style={{ fontWeight: "bold" }}>

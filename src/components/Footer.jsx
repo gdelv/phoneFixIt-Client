@@ -6,6 +6,7 @@ export const Footer = () => {
     return (
         <footer class="footer is-flex">
             <div class="columns">
+
                 <div class="column is-one-quarter">
                     <img
                         src="https://bulma.io/images/bulma-logo.png"
@@ -27,17 +28,19 @@ export const Footer = () => {
                     <h6 class="subtitle is-6 is-size-6-mobile is-spaced">Glen Cove, NY (516)-801-6320</h6>
                 </div>
                 {/* <div class="column">
+
                 <h4 class="title is-4 is-size-7-mobile">Social</h4>
                 <a class='subtitle' href="https://www.facebook.com/phonefixitNY">
-                    <img src={Facebook}/>
+                    <img src={Facebook} alt='facebook logo'/>
                 </a>
                 <a href="https://www.instagram.com/phonefixit/">
-                    <img src={Instagram}/>
+                    <img src={Instagram} alt='instagram logo'/>
                 </a>
                 <a href="https://www.youtube.com">
-                    <img src={Youtube}/>
-                </a> */}
-                {/* </div> */}
+
+                    <img src={Youtube}  alt="youtube logo"/>
+                </a>
+            </div>
             </div>
         </footer>
     )

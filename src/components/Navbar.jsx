@@ -7,20 +7,21 @@ import Youtube from './images/youtube.png'
 
 const Navbar = () => {
   return (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
         {/* Insert phoneFixIt logo here */}
-        <a class="navbar-item" href="https://bulma.io">
+        <a className="navbar-item" href="/">
           <img
             src="https://bulma.io/images/bulma-logo.png"
             width="112"
             height="28"
+            alt='logo'
           />
         </a>
 
         <a
           role="button"
-          class="navbar-burger burger"
+          className="navbar-burger burger"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarNavigation"
@@ -31,48 +32,48 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div id="navbarNavigation" class="navbar-menu">
-        <div class="navbar-start">
-          {/* <a class="navbar-item">Home</a> */}
-          <Link to="/" class="navbar-item">
+      <div id="navbarNavigation" className="navbar-menu">
+        <div className="navbar-start">
+          {/* <a className="navbar-item">Home</a> */}
+          <Link to="/" className="navbar-item">
             Home
           </Link>
-          <Link to="/services" class="navbar-item">
-            <div class="navbar-item has-dropdown is-hoverable">
-              {/* <a class="navbar-link">Services</a> */}
+          <Link to="/services" className="navbar-item">
+            <div className="navbar-item has-dropdown is-hoverable">
+              {/* <a className="navbar-link">Services</a> */}
               Services
-              <div class="navbar-dropdown">
-                <Link to="/services/phonerepair" class="navbar-item">
+              <div className="navbar-dropdown">
+                <Link to="/services/phonerepair" className="navbar-item">
                   Phone Repair
                 </Link>
-                <Link to="/services/tabletrepair" class="navbar-item">
+                <Link to="/services/tabletrepair" className="navbar-item">
                   Tablet Repair
                 </Link>
-                <Link to="/services/computerrepair" class="navbar-item">
+                <Link to="/services/computerrepair" className="navbar-item">
                   Computer & Laptop Repair
                 </Link>
-                <Link to="/services/iphonerepair" class="navbar-item">
+                <Link to="/services/iphonerepair" className="navbar-item">
                   Apple iPhone Repair
                 </Link>
-                <Link to="/services/samsungrepair" class="navbar-item">
+                <Link to="/services/samsungrepair" className="navbar-item">
                   Samsung Repair
                 </Link>
-                <Link to="/services/ipadrepair" class="navbar-item">
+                <Link to="/services/ipadrepair" className="navbar-item">
                   Apple iPad Repair
                 </Link>
               </div>
             </div>
           </Link>
-          <Link to="/mail-in-repair" class="navbar-item">
+          <Link to="/mail-in-repair" className="navbar-item">
             Mail-in Repair
           </Link>
-          <Link to="/FAQ" class="navbar-item">
+          <Link to="/FAQ" className="navbar-item">
             FAQ
           </Link>
-          <Link to="/about" class="navbar-item">
+          <Link to="/about" className="navbar-item">
             About Us
           </Link>
-          <Link to="/shop" class="navbar-item">
+          <Link to="/shop" className="navbar-item">
             Shop
           </Link>
             <div class="navbar-item has-dropdown is-hoverable">
