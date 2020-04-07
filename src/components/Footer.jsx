@@ -13,6 +13,7 @@ export const Footer = () => {
                     src="https://bulma.io/images/bulma-logo.png"
                     width="112"
                     height="28"
+                    alt='bulma logo'
                 />
                 <h6 class="subtitle is-6 is-size-7-mobile">© 2019 Phonefixit.com, Inc. All Rights Reserved</h6>
             </div>
@@ -29,13 +30,13 @@ export const Footer = () => {
             <div class="column">
                 <h4 class="title is-4 is-size-7-mobile">Social</h4>
                 <a class='subtitle' href="https://www.facebook.com/phonefixitNY">
-                    <img src={Facebook}/>
+                    <img src={Facebook} alt='facebook logo'/>
                 </a>
                 <a href="https://www.instagram.com/phonefixit/">
-                    <img src={Instagram}/>
+                    <img src={Instagram} alt='instagram logo'/>
                 </a>
                 <a href="https://www.youtube.com">
-                    <img src={Youtube}/>
+                    <img src={Youtube}  alt="youtube logo"/>
                 </a>
             </div>
             </div>
