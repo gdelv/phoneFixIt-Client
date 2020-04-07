@@ -75,26 +75,24 @@ const Navbar = () => {
           <Link to="/shop" class="navbar-item">
             Shop
           </Link>
-          <Link to="/social" class="navbar-item">
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">Social</a>
               <div class="navbar-dropdown">
-              <a class="navbar-item" href="https://www.facebook.com/phonefixitNY">
+              <a class="navbar-item" href="https://www.facebook.com/phonefixitNY" target="_blank" rel="noopener noreferrer">
                     <img class="socialMedia" src={Facebook}/>
                     <p>Facebook</p>
                 </a>
-                <a class="navbar-item" href="https://www.instagram.com/phonefixit/">
+                <a class="navbar-item" href="https://www.instagram.com/phonefixit/" target="_blank" rel="noopener noreferrer" >
                   <img class="socialMedia" src={Instagram}/>
                   <p>Instagram</p>
                     
                 </a>
-                <a class="navbar-item" href="https://www.youtube.com">
+                <a class="navbar-item" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                   <img class="socialMedia" src={Youtube}/>
                   <p>Youtube</p>   
                 </a>
               </div>
             </div>
-            </Link>
         </div>
       </div>
     </nav>
