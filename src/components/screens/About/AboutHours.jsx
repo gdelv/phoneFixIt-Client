@@ -4,7 +4,8 @@ export default class AboutHours extends Component {
     constructor() {
         super()
         this.state = {
-            textColor: "danger"
+            textColor: "success",
+            storeStatus: "open"
         }
     }
     componentDidMount() {
@@ -17,16 +18,34 @@ export default class AboutHours extends Component {
         console.log("current day",currentDay);
         if(currentDay === 1 || 2 || 3 || 4 || 5 ) {
             if(currentHour >= 10 && currentHour <= 20) {
-                this.setState({ textColor: "success" })
-            } else this.setState({ textColor: "danger" })
+                this.setState({ 
+                    textColor: "success",
+                    storeStatus: "open"
+                })
+            } else this.setState({ 
+                textColor: "danger",
+                storeStatus: "closed"
+            })
         } else if (currentDay === 6) {
             if(currentHour >= 9 && currentHour <= 19) {
-                this.setState({ textColor: "success" })
-            } else this.setState({ textColor: "danger" })
+                this.setState({ 
+                    textColor: "success",
+                    storeStatus: "open"
+                })
+            } else this.setState({ 
+                textColor: "danger",
+                storeStatus: "closed"
+            })
         } else if(currentDay === 7) {
             if(currentHour >= 11 && currentHour <= 16) {
-                this.setState({ textColor: "success" })
-            } else this.setState({ textColor: "danger" })
+                this.setState({ 
+                    textColor: "success",
+                    storeStatus: "open"
+                })
+            } else this.setState({ 
+                textColor: "danger",
+                storeStatus: "closed"
+            })
         }
     }
     render() {
@@ -34,7 +53,7 @@ export default class AboutHours extends Component {
             <div>
                 <div class="columns has-text-centered">
                     <div class="column">
-                        <p className={`title is-2 has-text-centered is-spaced is-capitalized has-text-${this.state.textColor}`}>opening hours</p>
+        <p className={`title is-2 has-text-centered is-spaced is-capitalized has-text-${this.state.textColor}`}>Store is {this.state.storeStatus}</p>
                         <p className="subtitle is-6">Monday: 10AM - 8PM</p>
                         <p className="subtitle is-6">Tuesday: 10AM - 8PM</p>
                         <p className="subtitle is-6">Wednesday: 10AM - 8PM</p>
