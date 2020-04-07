@@ -1,0 +1,364 @@
+// First option you have everything as a sing;e object to call from. It gets messy but its quick if you know what youre searching for.
+{
+  "services": {
+    "phone": {
+      "iPhone": {
+        "XS Max": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "XS": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "XR": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        }
+      },
+      "Samsung": {
+        "Galaxy S9 Plus": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "Galaxy S9": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "Galaxy Note 8": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "Galaxy S8 Plus": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        }
+      }
+    },
+    "Tablet": {
+      "Apple iPad": {
+        "6th Generation": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "Pro 11": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "12.9": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        }
+      },
+      "Samsung": {
+        "Tab 3": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "Tab 2": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        }
+      }
+    },
+    "Computer": {
+      "N/a": null
+    }
+  }
+}
+
+
+// Second options we can have multiple arrays/objects to hold our information.
+
+{
+    "services" : ["Phone", "Tablet", "Computer"]
+}
+
+{
+    "Phone": ["iPhone", "Samsung", "Etc"]
+}
+
+{
+    "iPhone": {
+        "XS Max": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "XS": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        },
+        "XR": {
+          "Basic Screen Repair": "$224.99",
+          "Premium Screen Repair": "$299.99",
+          "Back Glass Replacement": "$124.99",
+          "Battery replacement": "$79.99",
+          "Proximity sensor": "$124.99",
+          "Ear Speaker": "$124.99",
+          "Loud speaker": "$89.99",
+          "Front facing camera": "$124.99",
+          "Back facing camera": "$124.99",
+          "Power button": "$89.99",
+          "Volume button": "$89.99",
+          "Charging port": "$89.99",
+          "Software reset": "$34.99",
+          "Sim tray replacement": "$9.99",
+          "Any other issues": "Call Us"
+        }
+      }
+},
+
+{
+    "Samsung": {
+    "Galaxy S9 Plus": {
+      "Basic Screen Repair": "$224.99",
+      "Premium Screen Repair": "$299.99",
+      "Back Glass Replacement": "$124.99",
+      "Battery replacement": "$79.99",
+      "Proximity sensor": "$124.99",
+      "Ear Speaker": "$124.99",
+      "Loud speaker": "$89.99",
+      "Front facing camera": "$124.99",
+      "Back facing camera": "$124.99",
+      "Power button": "$89.99",
+      "Volume button": "$89.99",
+      "Charging port": "$89.99",
+      "Software reset": "$34.99",
+      "Sim tray replacement": "$9.99",
+      "Any other issues": "Call Us"
+    },
+    "Galaxy S9": {
+      "Basic Screen Repair": "$224.99",
+      "Premium Screen Repair": "$299.99",
+      "Back Glass Replacement": "$124.99",
+      "Battery replacement": "$79.99",
+      "Proximity sensor": "$124.99",
+      "Ear Speaker": "$124.99",
+      "Loud speaker": "$89.99",
+      "Front facing camera": "$124.99",
+      "Back facing camera": "$124.99",
+      "Power button": "$89.99",
+      "Volume button": "$89.99",
+      "Charging port": "$89.99",
+      "Software reset": "$34.99",
+      "Sim tray replacement": "$9.99",
+      "Any other issues": "Call Us"
+    },
+    "Galaxy Note 8": {
+      "Basic Screen Repair": "$224.99",
+      "Premium Screen Repair": "$299.99",
+      "Back Glass Replacement": "$124.99",
+      "Battery replacement": "$79.99",
+      "Proximity sensor": "$124.99",
+      "Ear Speaker": "$124.99",
+      "Loud speaker": "$89.99",
+      "Front facing camera": "$124.99",
+      "Back facing camera": "$124.99",
+      "Power button": "$89.99",
+      "Volume button": "$89.99",
+      "Charging port": "$89.99",
+      "Software reset": "$34.99",
+      "Sim tray replacement": "$9.99",
+      "Any other issues": "Call Us"
+    },
+    "Galaxy S8 Plus": {
+      "Basic Screen Repair": "$224.99",
+      "Premium Screen Repair": "$299.99",
+      "Back Glass Replacement": "$124.99",
+      "Battery replacement": "$79.99",
+      "Proximity sensor": "$124.99",
+      "Ear Speaker": "$124.99",
+      "Loud speaker": "$89.99",
+      "Front facing camera": "$124.99",
+      "Back facing camera": "$124.99",
+      "Power button": "$89.99",
+      "Volume button": "$89.99",
+      "Charging port": "$89.99",
+      "Software reset": "$34.99",
+      "Sim tray replacement": "$9.99",
+      "Any other issues": "Call Us"
+    }
+  }
+}
