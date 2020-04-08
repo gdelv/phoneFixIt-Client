@@ -122,6 +122,13 @@ class Navbar extends React.Component {
   }
 
 
+  toggleHambuger = () => {
+    this.setState({
+      open: !this.state.open
+    })
+  }
+
+
 
 
 
