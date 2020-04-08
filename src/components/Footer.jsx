@@ -27,20 +27,7 @@ export const Footer = () => {
                     <h6 class="subtitle is-6 is-size-6-mobile is-spaced">Hicksville, NY (516)-513-0800</h6>
                     <h6 class="subtitle is-6 is-size-6-mobile is-spaced">Glen Cove, NY (516)-801-6320</h6>
                 </div>
-                {/* <div class="column">
-
-                <h4 class="title is-4 is-size-7-mobile">Social</h4>
-                <a class='subtitle' href="https://www.facebook.com/phonefixitNY">
-                    <img src={Facebook} alt='facebook logo'/>
-                </a>
-                <a href="https://www.instagram.com/phonefixit/">
-                    <img src={Instagram} alt='instagram logo'/>
-                </a>
-                <a href="https://www.youtube.com">
-
-                    <img src={Youtube}  alt="youtube logo"/>
-                </a>
-            </div>
+                
             </div>
         </footer>
     )
