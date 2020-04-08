@@ -36,4 +36,3 @@ export const Routes = props => {
     </Switch>
   );
 };
-

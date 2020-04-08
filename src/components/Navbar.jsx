@@ -1,6 +1,9 @@
 import React from "react";
 import "./styles/Navbar.scss";
 import { Link } from "react-router-dom";
+import Facebook from './images/facebook.png'
+import Instagram from './images/instagram.png'
+import Youtube from './images/youtube.png'
 
 const Navbar = () => {
   return (
@@ -76,6 +79,24 @@ const Navbar = () => {
           <Link to="/cart" className="navbar-item">
             My Cart
           </Link>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">Social</a>
+              <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.facebook.com/phonefixitNY" target="_blank" rel="noopener noreferrer">
+                    <img class="socialMedia" src={Facebook}/>
+                    <p>Facebook</p>
+                </a>
+                <a class="navbar-item" href="https://www.instagram.com/phonefixit/" target="_blank" rel="noopener noreferrer" >
+                  <img class="socialMedia" src={Instagram}/>
+                  <p>Instagram</p>
+                    
+                </a>
+                <a class="navbar-item" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                  <img class="socialMedia" src={Youtube}/>
+                  <p>Youtube</p>   
+                </a>
+              </div>
+            </div>
         </div>
       </div>
     </nav>

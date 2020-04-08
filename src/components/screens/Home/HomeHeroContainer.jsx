@@ -4,7 +4,7 @@ import HomeServiceDropdown from "./HomeServiceDropdown";
 
 const HomeHeroContainer = props => {
     return (
-    <section className="hero is-large has-bg-img home-hero-image">
+    <section className="hero is-small is-info home-hero-image">
         <div className="hero-body">
         <div className="container has-text-centered">
             <h1 className="title is-1 is-primary has-text-white">{props.title}</h1>
