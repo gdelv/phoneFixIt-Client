@@ -13,3 +13,7 @@
  .side-drawer.open {
     transform: translateX(0);
  }
+
+ .is-column {
+     flex-direction: column;
+ }
