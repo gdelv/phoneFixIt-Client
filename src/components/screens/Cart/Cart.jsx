@@ -18,8 +18,8 @@ export default class Cart extends Component {
                             <table className='table' style={{margin: "0 auto"}}>
                                 <CartColumns/>
                                 <CartList value={value}/>
-                                <CartTotals value={value}/>
                             </table>
+                                <CartTotals value={value}/>
                             </>
                         )
                     } else {
