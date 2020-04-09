@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { ProductConsumer } from '../context'
+import { ProductConsumer } from '../../../context'
 export default class Product extends Component {
     render() {
-        const { id, title, img, price, inCart } = this.props.product;
+        const { id, title, img, price, inCart, condition, capacity  } = this.props.product;
         return (
             <ProductConsumer>
                 {(value) => (
-            <div className="column is-one-quarter"  style={{border: "1px solid red"}}>
+            <div className="column is-one-quarter product">
             <div className="card">
                 <div className="card-image" onClick={()=> value.handleDetail(id)}>
                     <figure className="image is-5by3">
@@ -19,7 +19,7 @@ export default class Product extends Component {
                 <div className="card-content">
                     <div className="media">
                         <div className="media-content">
-                            <p className="title is-3">{title}</p>
+                            <p className="title is-5">{title} {condition} {capacity}</p>
                             <p className="subtitle is-5">${price}</p>
                         </div>
                     </div>

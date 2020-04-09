@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ProductConsumer } from "../../context";
+import { ProductConsumer } from "../../../context";
 import { Link } from "react-router-dom";
 
 export default class Modal extends Component {
