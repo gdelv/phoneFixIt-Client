@@ -7,7 +7,7 @@ import { About }   from '../components/screens/About';
 import Details from '../components/screens/Details'
 import Default from "../components/screens/Default";
 import ProductList from "../components/screens/ProductList";
-import Cart from '../components/screens/Cart'
+import Cart from '../components/screens/Cart/Cart'
 import Modal from '../components/screens/Modal'
 
 export const Routes = props => {
