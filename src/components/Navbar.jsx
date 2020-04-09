@@ -73,8 +73,11 @@ const Navbar = () => {
           <Link to="/about" className="navbar-item">
             About Us
           </Link>
-          <Link to="/shop" className="navbar-item">
-            Shop
+          <Link to="/store" className="navbar-item">
+            Store
+          </Link>
+          <Link to="/cart" className="navbar-item">
+            My Cart
           </Link>
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">Social</a>
