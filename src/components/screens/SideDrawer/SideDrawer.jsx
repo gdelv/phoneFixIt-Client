@@ -53,43 +53,43 @@ class SideDrawer extends React.Component {
             <div className={drawerClasses}>
                 <div class='columns'>
                     <div class='sideDrawerColumn column'>
-                        <Link exact to='/'>
+                        <Link exact to='/' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <HomeIcon />
                             <p>Home</p>
                         </div>
                         </Link>
-                        <Link exact to='/services'>
+                        <Link exact to='/services' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <RoomServiceIcon/>
                             <p>Services</p>
                         </div>
                         </Link>
-                        <Link exact to='/mail-in-repair'>
+                        <Link exact to='/mail-in-repair' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <BuildIcon/>
                             <p>Mail-In Repair</p>
                         </div>
                         </Link>
-                        <Link exact to='/FAQ'>
+                        <Link exact to='/FAQ' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <QuestionAnswerIcon/>
                             <p>FAQ</p>
                         </div>
                         </Link>
-                        <Link exact to='/about'>
+                        <Link exact to='/about' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <InfoIcon/>
                             <p>About Us</p>
                         </div>
                         </Link>
-                        <Link exact to='/store'>
+                        <Link exact to='/store' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <StoreIcon/>
                             <p>Store</p>
                         </div>
                         </Link>
-                        <Link exact to='/cart'>
+                        <Link exact to='/cart' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <ShoppingCartIcon/>
                             <p>My Cart</p>

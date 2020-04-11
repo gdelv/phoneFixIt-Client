@@ -9,7 +9,7 @@ import Default from "../components/screens/Default";
 import ProductList from "../components/screens/Store/ProductList";
 import Cart from '../components/screens/Cart/Cart'
 import Modal from '../components/screens/Cart/Modal'
-import  weCome from '../components/screens/weComeToYou/weCome';
+import weCome from '../components/screens/WeComeToYou/weCome'
 
 export const Routes = props => {
   return (
