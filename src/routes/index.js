@@ -6,7 +6,7 @@ import { Home } from "../components/screens/Home";
 import { MailInRepair } from "../components/screens/MailInRepair";
 import { FAQ } from '../components/screens/FAQ/FAQ'
 import { About }   from '../components/screens/About';
-import { scheduler } from '../components/screens/WeComeToYou/'
+import  weCome from '../components/screens/weComeToYou/weCome';
 
 export const Routes = props => {
   return (
@@ -18,7 +18,7 @@ export const Routes = props => {
         <Route exact path='/about'component={About} />
       {/* <Route path to='/shop'component={} /> */}
         <Route exact path='/FAQ' component={FAQ}/>
-
+        <Route exact path='/1234' component={weCome}/>
     </Switch>
   );
 };

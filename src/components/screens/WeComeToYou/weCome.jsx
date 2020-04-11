@@ -1,11 +1,11 @@
 import React from 'react'
-import Scheduler from './scheduler'
+import Demo from './scheduler'
 
 
 
 
 
-class weComeToYou extends React.Component {
+class weCome extends React.Component {
     constructor(props) { 
         super(props)
 
@@ -21,8 +21,11 @@ class weComeToYou extends React.Component {
     render () {
         return (
             <div>
-                <Scheduler/>
+                <Demo/>
             </div>
         )
     }
 }
+
+
+export default weCome

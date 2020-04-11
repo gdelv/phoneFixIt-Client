@@ -9,6 +9,7 @@
     box-shadow: 1px 0px 7px rgba(0,0,0,0.5); 
     transform: translateX(100%);
     transition: transform 0.3s ease-out;
+    box-shadow: -10px 0px 20px -5px grey;
  }
 
  .side-drawer.open {
@@ -16,6 +17,10 @@
  }
  .is-column {
      flex-direction: column;
+ }
+
+ .sideDrawerColumn svg {
+     margin: 0 10px;
  }
 
  .has-margin {
@@ -26,9 +31,4 @@
          background-color: #e6e6e6;
      }   
  }
-
- .has-space-between {
-     justify-content: space-evenly;
- }
-
  

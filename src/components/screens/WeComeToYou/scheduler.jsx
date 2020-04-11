@@ -3,13 +3,13 @@ import Paper from '@material-ui/core/Paper';
 import { ViewState } from '@devexpress/dx-react-scheduler';
 import {
   Scheduler,
-  MonthView,
+  DayView,
   Appointments,
 } from '@devexpress/dx-react-scheduler-material-ui';
 
-import { appointments } from '../../../demo-data/month-appointments';
+import { appointments } from './appointmentData'
 
-export default class Scheduler extends React.PureComponent {
+class Demo extends React.PureComponent {
   constructor(props) {
     super(props);
 
@@ -30,10 +30,16 @@ export default class Scheduler extends React.PureComponent {
           <ViewState
             currentDate={currentDate}
           />
-          <MonthView />
-          <Appointments />
+          <DayView
+            startDayHour={10}
+            endDayHour={20}
+          />
+          <Appointments
+            data={data} />
         </Scheduler>
       </Paper>
     );
   }
 }
+
+export default Demo

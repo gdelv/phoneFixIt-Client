@@ -11,6 +11,14 @@ import Home from '../../images/home.png'
 import aboutUs from '../../images/aboutUs.png'
 import Services from '../../images/services.png'
 import Repair from '../../images/hammer.png'
+import HomeIcon from '@material-ui/icons/Home'
+import RoomServiceIcon from '@material-ui/icons/RoomService'
+import BuildIcon from '@material-ui/icons/Build'
+import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer'
+import InfoIcon from '@material-ui/icons/Info'
+import StoreIcon from '@material-ui/icons/Store'
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
+import PersonIcon from '@material-ui/icons/Person'
 
 
 
@@ -50,62 +58,56 @@ class SideDrawer extends React.Component {
         }
         return (
             <div className={drawerClasses}>
-                <div>
-                    <div class="container is-flex is-column">
-                        <Link to="/">
-                            <div class='has-margin'>
-                                <div class='is-flex has-space-between'>
-                                    <img src={Home} />
-                                    <a class='is-size-7'>Home</a>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/services">
-                            <div class='has-margin'>
-                                <div class='is-flex has-space-between'>
-                                    <img src={Services} />
-                                    <a class='is-size-7'>Services</a>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/mail-in-repair">
-                            <div class='has-margin'>
-                                <div class='is-flex has-space-between'>
-                                    <img src={Repair} />
-                                    <a class='is-size-7'>Mail In-Repair</a>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/FAQ">
-                            <div class='has-margin'>
-                                <div class='is-flex has-space-between'>
-                                    <img src={FAQ} />
-                                    <a class='is-size-7'>FAQ</a>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/about">
-                            <div class='has-margin'>
-                                <div class='is-flex has-space-between'>
-                                    <img src={aboutUs} />
-                                    <a class='is-size-7'>About Us</a>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/shop">
-                            <div class='has-margin'>
-                                <div class='is-flex has-space-between'>
-                                    <img src={Shop} />
-                                    <a class='is-size-7'>Shop</a>
-                                </div>
-                            </div>
-                        </Link>
-                        <div class='has-margin' onClick={this.toggleSocial}>
-                            <div class='is-flex has-space-between'>
-                                <img src={Social} />
-                                <a class="has-margin is-size-7">Social</a>
-                            </div>
+                <div class='columns'>
+                    <div class='sideDrawerColumn column'>
+                        <Link exact to='/'>
+                        <div class='is-flex has-margin'>
+                            <HomeIcon />
+                            <p>Home</p>
                         </div>
+                        </Link>
+                        <Link exact to='/services'>
+                        <div class='is-flex has-margin'>
+                            <RoomServiceIcon/>
+                            <p>Services</p>
+                        </div>
+                        </Link>
+                        <Link exact to='/mail-in-repair'>
+                        <div class='is-flex has-margin'>
+                            <BuildIcon/>
+                            <p>Mail-In Repair</p>
+                        </div>
+                        </Link>
+                        <Link exact to='/FAQ'>
+                        <div class='is-flex has-margin'>
+                            <QuestionAnswerIcon/>
+                            <p>FAQ</p>
+                        </div>
+                        </Link>
+                        <Link exact to='/about'>
+                        <div class='is-flex has-margin'>
+                            <InfoIcon/>
+                            <p>About Us</p>
+                        </div>
+                        </Link>
+                        <Link exact to='/store'>
+                        <div class='is-flex has-margin'>
+                            <StoreIcon/>
+                            <p>Store</p>
+                        </div>
+                        </Link>
+                        <Link exact to='/cart'>
+                        <div class='is-flex has-margin'>
+                            <ShoppingCartIcon/>
+                            <p>My Cart</p>
+                        </div>
+                        </Link>
+                        <a>
+                        <div class='is-flex has-margin' onClick={this.toggleSocial}>
+                            <PersonIcon/>
+                            <p>Social</p>
+                        </div>
+                        </a>
                         {this.renderSocial()}
                     </div>
                 </div>
