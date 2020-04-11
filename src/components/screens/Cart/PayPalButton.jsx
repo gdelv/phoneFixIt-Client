@@ -41,7 +41,7 @@ export default class MyApp extends React.Component {
  
         // NB. You can also have many Paypal express checkout buttons on page, just pass in the correct amount and they will work!
         return (
-            <div style={{position: 'sticky', width: '20%', left: "40%", marginBottom: '1em'}}>
+            <div style={{position: 'sticky', marginBottom: '1em'}}>
                 <PaypalExpressBtn 
                     env={env} 
                     client={client} 
