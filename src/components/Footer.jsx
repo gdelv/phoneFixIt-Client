@@ -6,6 +6,7 @@ export const Footer = () => {
     return (
         <footer class="footer is-flex">
             <div class="columns">
+
                 <div class="column is-one-quarter">
                     <img
                         src="https://bulma.io/images/bulma-logo.png"

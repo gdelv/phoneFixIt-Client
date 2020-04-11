@@ -100,21 +100,24 @@ class Navbar extends React.Component {
                 </Link>
                   <Link to="/services/ipadrepair" class="navbar-item">
                     Apple iPad Repair
-                </Link>
+                  </Link>
                 </div>
               </div>
             </Link>
             <Link to="/mail-in-repair" class="navbar-item">
               Mail-in Repair
           </Link>
-            <Link to="/FAQ" class="navbar-item">
-              FAQ
+          <Link to="/FAQ" className="navbar-item">
+            FAQ
           </Link>
-            <Link to="/about" class="navbar-item">
-              About Us
+          <Link to="/about" className="navbar-item">
+            About Us
           </Link>
-            <Link to="/shop" class="navbar-item">
-              Shop
+          <Link to="/store" className="navbar-item">
+            Store
+          </Link>
+          <Link to="/cart" className="navbar-item">
+            My Cart
           </Link>
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">Social</a>
