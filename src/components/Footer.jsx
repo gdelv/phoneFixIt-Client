@@ -27,7 +27,6 @@ export const Footer = () => {
                     <h6 class="subtitle is-6 is-size-6-mobile is-spaced">Hicksville, NY (516)-513-0800</h6>
                     <h6 class="subtitle is-6 is-size-6-mobile is-spaced">Glen Cove, NY (516)-801-6320</h6>
                 </div>
-                
             </div>
         </footer>
     )
