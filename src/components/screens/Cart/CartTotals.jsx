@@ -6,18 +6,20 @@ export default function CartTotals({value, history}) {
     const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
     return (
         <>
-            <div className="container" style={{textAlign: "center"}}>
-                <Link to='/store'>
-                    <button className="button is-danger" onClick={() => clearCart()}>Clear Cart</button>
-                </Link>
-                <h2 className="subtitle">Subtotal: <strong>$ {cartSubTotal}</strong></h2>
-                <h2 className="subtitle">Tax: <strong>$ {cartTax}</strong></h2>
-                <h2 className="subtitle">Total: <strong>$ {cartTotal}</strong></h2>
-                <PayPalButton 
-                    total={cartTotal} 
-                    clearCart={clearCart} 
-                    history={history} 
-                />
+            <div className="container cart-total-container">
+                <div className="clear-button">
+                    <Link to='/store'>
+                        <button className="button is-danger is-medium" onClick={() => clearCart()}>Clear Cart</button>
+                    </Link>
+                </div>
+                    <h2 className="subtitle is-3">Subtotal: <strong>$ {cartSubTotal}</strong></h2>
+                    <h2 className="subtitle is-3">Tax: <strong>$ {cartTax}</strong></h2>
+                    <h2 className="subtitle is-3">Total: <strong>$ {cartTotal}</strong></h2>
+                    <PayPalButton 
+                        total={cartTotal} 
+                        clearCart={clearCart} 
+                        history={history} 
+                    />
             </div>
         </>
     )
