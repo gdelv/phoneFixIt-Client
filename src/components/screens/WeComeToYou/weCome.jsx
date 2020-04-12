@@ -1,5 +1,6 @@
 import React from 'react'
 import Demo from './scheduler'
+import './Styles/weCome.scss'
 
 
 
@@ -20,7 +21,7 @@ class weCome extends React.Component {
 
     render () {
         return (
-            <div>
+            <div class='appointmentsContainer'>
                 <Demo/>
             </div>
         )

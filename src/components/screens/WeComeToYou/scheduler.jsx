@@ -5,6 +5,14 @@ import {
   Scheduler,
   DayView,
   Appointments,
+  AppointmentTooltip,
+  AppointmentForm,
+  WeekView,
+  MonthView,
+  Toolbar,
+  ViewSwitcher,
+  DateNavigator,
+  TodayButton,
 } from '@devexpress/dx-react-scheduler-material-ui';
 
 import { appointments } from './appointmentData'
@@ -17,6 +25,21 @@ class Demo extends React.PureComponent {
       data: appointments,
       currentDate: '2018-07-17',
     };
+    this.currentDateChange = (currentDate) => { this.setState({ currentDate }); };
+  }
+
+  getCurrentDate = () => {
+    let currentDate = new Date()
+    this.setState({
+      currentDate: currentDate
+    })
+  }
+
+
+
+
+  componentDidMount = () => {
+    this.getCurrentDate()
   }
 
   render() {
@@ -29,13 +52,32 @@ class Demo extends React.PureComponent {
         >
           <ViewState
             currentDate={currentDate}
+            defaultCurrentViewName="Week"
+            onCurrentDateChange={this.currentDateChange}
           />
           <DayView
             startDayHour={10}
             endDayHour={20}
           />
+          <WeekView
+            startDayHour={10}
+            endDayHour={20}
+          />
+          <MonthView/>
+          <Toolbar/>
+          <ViewSwitcher/>
+          <DateNavigator/>
+          <TodayButton/>
           <Appointments
-            data={data} />
+            // data={data} 
+            />
+          <AppointmentTooltip
+          showCloseButton
+          showOpenButton
+          />
+          <AppointmentForm
+            readOnly
+          />
         </Scheduler>
       </Paper>
     );
