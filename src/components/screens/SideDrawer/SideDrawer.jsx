@@ -12,6 +12,7 @@ import InfoIcon from '@material-ui/icons/Info'
 import StoreIcon from '@material-ui/icons/Store'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import PersonIcon from '@material-ui/icons/Person'
+import EventIcon from '@material-ui/icons/Event'
 
 
 
@@ -76,6 +77,12 @@ class SideDrawer extends React.Component {
                             <QuestionAnswerIcon/>
                             <p>FAQ</p>
                         </div>
+                        </Link>
+                        <Link exact to='/book-online'>
+                            <div class='is-flex has-margin'>
+                                <EventIcon/>
+                                <p>Book Online</p>
+                            </div>
                         </Link>
                         <Link exact to='/about'>
                         <div class='is-flex has-margin'>
