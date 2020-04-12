@@ -52,9 +52,18 @@ td {
     padding-bottom: 1em;
 }
 
+.empty-cart-title {
+    font-family: 'Permanent Marker', cursive;
+    padding: 3em;
+}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 768px) {
     .cart-column th {
         font-size: .9rem;
+    }
+
+    .empty-cart-title {
+        padding: 1.5em;
     }
 }
