@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { ProductConsumer } from "../../../context";
 import { Link } from "react-router-dom";
 import DetailBanner from './DetailBanner';
+import DetailBreadCrumb from './DetailBreadCrumb';
+import './styles/Details.scss'
 
 export default class Details extends Component {
     render() {
@@ -23,6 +25,7 @@ export default class Details extends Component {
                             } = value.detailProduct;
                         return (
                             <div className="container">
+                                <DetailBreadCrumb title={company + ' ' + title + ' ' + color}/>
                                 <h1 className="title">Model: {company} {title} {condition} {capacity}</h1>
                                 <h2 className="subtitle">${price}</h2>
                                 <h3 className="subtitle">{color}</h3>
