@@ -23,16 +23,41 @@ export default class Details extends Component {
                                 color,
                                 carrier
                             } = value.detailProduct;
+                            let detailTitle = company + ' ' + title + ' ' + condition + ' ' + capacity;
+                            let detailSubtitle = color + ' ' + carrier;
                         return (
                             <div className="container">
-                                <DetailBreadCrumb title={company + ' ' + title + ' ' + color}/>
-                                <h1 className="title">Model: {company} {title} {condition} {capacity}</h1>
-                                <h2 className="subtitle">${price}</h2>
-                                <h3 className="subtitle">{color}</h3>
-                                <h3 className="subtitle">{carrier}</h3>
-                                <img src={img} alt='details'/>
-                                <p>{info}</p>
-                                <div className="btn-container">
+                                <DetailBreadCrumb title={detailTitle}/>
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-5">
+                                        <div class="tile">
+                                            <div class="tile is-parent">
+                                            <article class="tile is-child notification is-info">
+                                                <figure class="image is-4by3">
+                                                    <img src={img}/>
+                                                </figure>
+                                            </article>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-parent">
+                                            <article class="tile is-child notification is-danger">
+                                                <p class="subtitle">{detailTitle}</p>
+                                                <p className="subtitle">Available in the following colors:</p>
+                                                {/* make color an array in the data file and map li for available colors */}
+                                                <ul>
+                                                    <li>{color}</li>
+                                                </ul>
+                                                <p className="subtitle">The device is also available with more memory in our shop</p>
+                                            </article>
+                                        </div>
+                                        </div>
+                                        <div class="tile is-parent">
+                                        <article class="tile is-child notification is-success">
+                                            <div class="content">
+                                            <p class="title is-3">{detailTitle}</p>
+                                            <p class="subtitle is-4">$ {price}</p>
+                                            <div class="content">
+                                            <div className="btn-container">
                                     <Link to="/store">
                                         <button className="button">Back to Store</button>
                                     </Link>
@@ -47,6 +72,11 @@ export default class Details extends Component {
                                             {inCart ? "In Cart" : "Add to Cart"}
                                         </button>
                                 </div>
+                                            </div>
+                                            </div>
+                                        </article>
+                                        </div>
+                                    </div>                                
                             </div>
                         )
                     }}
