@@ -5,24 +5,24 @@ export const appointments = [
       endDate: new Date(2020, 3, 12, 15, 0),
     }, {
       title: 'Book Flights to San Fran for Sales Trip',
-      startDate: new Date(2018, 6, 23, 12, 0),
-      endDate: new Date(2018, 6, 23, 13, 0),
+      startDate: new Date(2020, 3, 12, 10, 0),
+      endDate: new Date(2020, 3, 12, 11, 0),
     }, {
       title: 'Install New Router in Dev Room',
-      startDate: new Date(2018, 6, 23, 14, 30),
-      endDate: new Date(2018, 6, 23, 15, 30),
+      startDate: new Date(2020, 3, 13, 15, 30),
+      endDate: new Date(2020, 3, 13, 16, 30),
     }, {
       title: 'Approve Personal Computer Upgrade Plan',
-      startDate: new Date(2018, 6, 24, 10, 0),
-      endDate: new Date(2018, 6, 24, 11, 0),
+      startDate: new Date(2020, 3, 15, 11, 0),
+      endDate: new Date(2020, 3, 15, 16, 0),
     }, {
       title: 'Final Budget Review',
-      startDate: new Date(2018, 6, 24, 12, 0),
-      endDate: new Date(2018, 6, 24, 13, 35),
+      startDate: new Date(2020, 3, 16, 7, 0),
+      endDate: new Date(2020, 3, 16, 10, 35),
     }, {
       title: 'New Brochures',
-      startDate: new Date(2018, 6, 24, 14, 30),
-      endDate: new Date(2018, 6, 24, 15, 45),
+      startDate: new Date(2020, 3, 17, 9, 30),
+      endDate: new Date(2020, 3, 17, 11, 45),
     }, {
       title: 'Install New Database',
       startDate: new Date(2018, 6, 25, 9, 45),
