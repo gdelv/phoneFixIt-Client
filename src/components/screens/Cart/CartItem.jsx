@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function CartItem({item, value}) {
-    const { id, title, img, price, total, count, condition, capacity, color, carrier } = item;
+export default function CartItem({item, value, colorSelected, conditionSelected, carrierSelected}) {
+    const { id, title, img, price, total, count, capacity } = item;
     const { increment, decrement, removeItem } =  value;
 
     return (
@@ -12,7 +12,7 @@ export default function CartItem({item, value}) {
                 </figure>
             </td>
             <td className='title-col'>
-                {title} {color} {condition} {capacity} {carrier}
+                {title} {colorSelected} {conditionSelected} {capacity} {carrierSelected}
             </td>
             <td className='price-col'>
                 $ {price}

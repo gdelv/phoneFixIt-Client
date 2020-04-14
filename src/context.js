@@ -9,6 +9,9 @@ class ProductProvider extends Component {
     state = {
         products: [],
         detailProduct: detailProduct,
+        colorSelected: null,
+        conditionSelected : null,
+        carrierSelected: null,
         cart: [],
         modalOpen: false,
         modalProduct: detailProduct,
@@ -148,6 +151,17 @@ class ProductProvider extends Component {
             }
         })
     }
+
+    handleColor = selectedOption => {
+        this.setState({ colorSelected: selectedOption.label });
+        console.log(`Option selected:`, selectedOption.label);
+    };
+    handleCondition = selectedOption => {
+        this.setState({ conditionSelected: selectedOption.label })
+    }
+    handleCarrier = selectedOption => {
+        this.setState({ carrierSelected: selectedOption.label })
+    }
     render() {
         return (
         <ProductContext.Provider 
@@ -160,7 +174,10 @@ class ProductProvider extends Component {
                 increment: this.increment,
                 decrement: this.decrement,
                 removeItem: this.removeItem,
-                clearCart: this.clearCart
+                clearCart: this.clearCart,
+                handleColor: this.handleColor,
+                handleCondition: this.handleCondition,
+                handleCarrier: this.handleCarrier
             }}
         >
             {this.props.children}

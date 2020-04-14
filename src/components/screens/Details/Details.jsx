@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import chroma from 'chroma-js';
+import Select from 'react-select';
 import { ProductConsumer } from "../../../context";
 import { Link } from "react-router-dom";
 import DetailBanner from './DetailBanner';
@@ -6,9 +8,14 @@ import DetailBreadCrumb from './DetailBreadCrumb';
 import './styles/Details.scss'
 import DetailImageTile from './DetailImageTile';
 import DetailInfoTile from './DetailInfoTile';
+// import DetailColorDropdown from './DetailColorDropdown';
 
 export default class Details extends Component {
-    render() {
+    // handleChange = selectedOption => {
+    //     this.setState({ colorSelected: selectedOption.label });
+    //     console.log(`Option selected:`, selectedOption.label);
+    // };
+    render() {        
         return (
             <>
                 <ProductConsumer>
@@ -22,11 +29,11 @@ export default class Details extends Component {
                                 inCart,
                                 condition, 
                                 capacity,
-                                color,
-                                carrier
+                                colorOptions,
+                                conditionOptions,
+                                carrierOptions,
                             } = value.detailProduct;
-                            let detailTitle = company + ' ' + title + ' ' + condition + ' ' + capacity;
-                            let detailSubtitle = color + ' ' + carrier;
+                            let detailTitle = company + ' ' + title + ' ' + condition + ' ' + capacity;   
                         return (
                             <div className="container">
                                 <DetailBreadCrumb title={detailTitle}/>
@@ -35,7 +42,7 @@ export default class Details extends Component {
                                         <div className="tile">
                                             <DetailImageTile img={img} />
                                         </div>
-                                            <DetailInfoTile color={color} detailTitle={detailTitle} />
+                                            <DetailInfoTile colorOptions={colorOptions} detailTitle={detailTitle} info={info}/>
                                     </div>
                                             <div className="tile is-parent">
                                                 <article className="tile is-child notification is-success">
@@ -44,6 +51,28 @@ export default class Details extends Component {
                                                         <p className="subtitle is-4">$ {price}</p>
                                                             <div className="content">
                                                                 {/* ENTER DROPDOWNS HERE */}
+                                                                <Select
+                                                                    label="Single select"
+                                                                    options={colorOptions}
+                                                                    styles={colourStyles}
+                                                                    placeholder={"Please select a color"}
+                                                                    onChange={value.handleColor}
+                                                                />
+                                                                <Select
+                                                                    label="Single select"
+                                                                    options={conditionOptions}
+                                                                    // styles={colourStyles}
+                                                                    placeholder={"Please select a condition"}
+                                                                    onChange={value.handleCondition}
+                                                                />
+                                                                <Select
+                                                                    label="Single select"
+                                                                    options={carrierOptions}
+                                                                    // styles--------={colourStyles}
+                                                                    placeholder={"Please select a carrier"}
+                                                                    onChange={value.handleCarrier}
+                                                                />
+                                                                {/* <DetailColorDropdown colorOptions={colorOptions} colorSelected={colorSelected} colorSelect={() => value.colorSelect()}/> */}
                                                                 <div className="btn-container">
                                                                     <Link to="/store">
                                                                         <button className="button">Back to Store</button>
@@ -77,3 +106,52 @@ export default class Details extends Component {
         )
     }
 }
+
+
+const dot = (color = '#ccc') => ({
+    alignItems: 'center',
+    display: 'flex',
+    ':before': {
+        backgroundColor: color,
+        borderRadius: 10,
+        content: '" "',
+        display: 'block',
+        marginRight: 8,
+        height: 10,
+        width: 10,
+    },
+});
+
+const colourStyles = {
+    control: styles => ({ ...styles, backgroundColor: 'white' }),
+    option: (styles, { data, isDisabled, isFocused, isSelected }) => {
+    const color = chroma(data.color);
+    return {
+        ...styles,
+        backgroundColor: isDisabled
+            ? null
+            : isSelected
+            ? data.color
+            : isFocused
+            ? color.alpha(0.1).css()
+            : null,
+        color: isDisabled
+            ? '#ccc'
+            : isSelected
+            ? chroma.contrast(color, 'white') > 2
+            ? 'white'
+            : 'black'
+        : data.color,
+        cursor: isDisabled ? 'not-allowed' : 'default',
+
+        ':active': {
+            ...styles[':active'],
+            backgroundColor: !isDisabled && (isSelected ? data.color : color.alpha(0.3).css()),
+        },
+        };
+    },
+    input: styles => ({ ...styles, ...dot() }),
+    placeholder: styles => ({ ...styles, ...dot() }),
+    singleValue: (styles, { data }) => ({ ...styles, ...dot(data.color) }),
+};
+
