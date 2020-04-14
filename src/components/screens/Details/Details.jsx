@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import DetailBanner from './DetailBanner';
 import DetailBreadCrumb from './DetailBreadCrumb';
 import './styles/Details.scss'
+import DetailImageTile from './DetailImageTile';
+import DetailInfoTile from './DetailInfoTile';
 
 export default class Details extends Component {
     render() {
@@ -28,54 +30,39 @@ export default class Details extends Component {
                         return (
                             <div className="container">
                                 <DetailBreadCrumb title={detailTitle}/>
-                                <div class="tile is-ancestor">
-                                    <div class="tile is-vertical is-5">
-                                        <div class="tile">
-                                            <div class="tile is-parent">
-                                            <article class="tile is-child notification is-info">
-                                                <figure class="image is-4by3">
-                                                    <img src={img}/>
-                                                </figure>
-                                            </article>
+                                <div className="tile is-ancestor">
+                                    <div className="tile is-vertical is-5">
+                                        <div className="tile">
+                                            <DetailImageTile img={img} />
+                                        </div>
+                                            <DetailInfoTile color={color} detailTitle={detailTitle} />
+                                    </div>
+                                            <div className="tile is-parent">
+                                                <article className="tile is-child notification is-success">
+                                                    <div className="content">
+                                                        <p className="title is-3">{detailTitle}</p>
+                                                        <p className="subtitle is-4">$ {price}</p>
+                                                            <div className="content">
+                                                                {/* ENTER DROPDOWNS HERE */}
+                                                                <div className="btn-container">
+                                                                    <Link to="/store">
+                                                                        <button className="button">Back to Store</button>
+                                                                    </Link>
+                                                                        <button 
+                                                                            className="button" 
+                                                                            disabled={inCart ? true:false}
+                                                                            onClick={() => {
+                                                                                value.addToCart(id);
+                                                                                value.openModal(id);
+                                                                            }}
+                                                                        >
+                                                                            {inCart ? "In Cart" : "Add to Cart"}
+                                                                        </button>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </article>
                                             </div>
-                                        </div>
-                                        <div class="tile is-parent">
-                                            <article class="tile is-child notification is-danger">
-                                                <p class="subtitle">{detailTitle}</p>
-                                                <p className="subtitle">Available in the following colors:</p>
-                                                {/* make color an array in the data file and map li for available colors */}
-                                                <ul>
-                                                    <li>{color}</li>
-                                                </ul>
-                                                <p className="subtitle">The device is also available with more memory in our shop</p>
-                                            </article>
-                                        </div>
-                                        </div>
-                                        <div class="tile is-parent">
-                                        <article class="tile is-child notification is-success">
-                                            <div class="content">
-                                            <p class="title is-3">{detailTitle}</p>
-                                            <p class="subtitle is-4">$ {price}</p>
-                                            <div class="content">
-                                            <div className="btn-container">
-                                    <Link to="/store">
-                                        <button className="button">Back to Store</button>
-                                    </Link>
-                                        <button 
-                                            className="button" 
-                                            disabled={inCart ? true:false}
-                                            onClick={() => {
-                                                value.addToCart(id);
-                                                value.openModal(id);
-                                            }}
-                                        >
-                                            {inCart ? "In Cart" : "Add to Cart"}
-                                        </button>
-                                </div>
-                                            </div>
-                                            </div>
-                                        </article>
-                                        </div>
                                     </div>                                
                             </div>
                         )
