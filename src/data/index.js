@@ -92,9 +92,9 @@ export const storeProducts = [
         inCart: false,
         count: 0,
         total: 0,
-        color: null,
-        carrier: null,
-        condition: null
+        color: "null",
+        carrier: "null",
+        condition: "null"
     },
     {
         id: 2,
@@ -126,9 +126,9 @@ export const storeProducts = [
         inCart: false,
         count: 0,
         total: 0,
-        color: null,
-        carrier: null,
-        condition : null
+        color: "null",
+        carrier: "null",
+        condition : "null"
     }
 ]
 

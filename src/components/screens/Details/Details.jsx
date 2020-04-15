@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import chroma from 'chroma-js';
-import Select from 'react-select';
+// import Select from 'react-select';
 import { ProductConsumer } from "../../../context";
 import { Link } from "react-router-dom";
 import DetailBanner from './DetailBanner';
@@ -8,7 +8,7 @@ import DetailBreadCrumb from './DetailBreadCrumb';
 import './styles/Details.scss'
 import DetailImageTile from './DetailImageTile';
 import DetailInfoTile from './DetailInfoTile';
-// import DetailColorDropdown from './DetailColorDropdown';
+import DetailColorDropdown from './DetailColorDropdown';
 
 export default class Details extends Component {
     // handleChange = selectedOption => {
@@ -21,30 +21,38 @@ export default class Details extends Component {
                 <ProductConsumer>
                     {(value) => {
                         const { id, 
-                                company,
-                                img, 
-                                info, 
-                                price, 
-                                title, 
-                                inCart,
-                                condition,
-                                color,
-                                carrier,
-                                capacity,
-                                colorOptions,
-                                conditionOptions,
-                                carrierOptions,
-                            } = value.detailProduct;
-                            let detailTitle = company + ' ' + title + ' ' + condition + ' ' + capacity;   
+                            company,
+                            img, 
+                            info, 
+                            price, 
+                            title, 
+                            inCart,
+                            // condition,
+                            // color,
+                            // carrier,
+                            capacity,
+                            colorOptions,
+                            // conditionOptions,
+                            // carrierOptions,
+                        } = value.detailProduct;
+                        let detailTitle = company + ' ' + title + ' ' + capacity;   
                         return (
                             <div className="container">
-                                <DetailBreadCrumb title={detailTitle}/>
+                                <DetailBreadCrumb 
+                                    title={detailTitle}
+                                />
                                 <div className="tile is-ancestor">
                                     <div className="tile is-vertical is-5">
                                         <div className="tile">
-                                            <DetailImageTile img={img} />
+                                            <DetailImageTile 
+                                                img={img} 
+                                            />
                                         </div>
-                                            <DetailInfoTile colorOptions={colorOptions} detailTitle={detailTitle} info={info}/>
+                                            <DetailInfoTile 
+                                                colorOptions={colorOptions} 
+                                                detailTitle={detailTitle} 
+                                                info={info}
+                                            />
                                     </div>
                                             <div className="tile is-parent">
                                                 <article className="tile is-child notification is-success">
@@ -53,17 +61,14 @@ export default class Details extends Component {
                                                         <p className="subtitle is-4">$ {price}</p>
                                                             <div className="content">
                                                                 {/* ENTER DROPDOWNS HERE */}
-                                                                <Select
-                                                                    id
-                                                                    inputValue
-                                                                    label="Single select"
+                                                                {/* <Select
                                                                     options={colorOptions}
                                                                     styles={colourStyles}
                                                                     placeholder={"Please select a color"}
-                                                                    onChange={value.handleColor}
-                                                                    // value={color}
-                                                                />
-                                                                <Select
+                                                                    onChange={setColor}
+                                                                    value={color}
+                                                                /> */}
+                                                                {/* <Select
                                                                     label="Single select"
                                                                     options={conditionOptions}
                                                                     // styles={colourStyles}
@@ -76,8 +81,11 @@ export default class Details extends Component {
                                                                     // styles--------={colourStyles}
                                                                     placeholder={"Please select a carrier"}
                                                                     onChange={value.handleCarrier}
+                                                                /> */}
+                                                                <DetailColorDropdown 
+                                                                    colorOptions={colorOptions} 
+                                                                    value={value}
                                                                 />
-                                                                {/* <DetailColorDropdown colorOptions={colorOptions} colorSelected={colorSelected} colorSelect={() => value.colorSelect()}/> */}
                                                                 <div className="btn-container">
                                                                     <Link to="/store">
                                                                         <button className="button">Back to Store</button>
@@ -88,6 +96,7 @@ export default class Details extends Component {
                                                                             onClick={() => {
                                                                                 value.addToCart(id);
                                                                                 value.openModal(id);
+                                                                                value.handleColor(id);
                                                                             }}
                                                                         >
                                                                             {inCart ? "In Cart" : "Add to Cart"}

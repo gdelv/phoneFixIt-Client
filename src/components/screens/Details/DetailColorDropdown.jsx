@@ -11,7 +11,8 @@ export default function DetailColorDropdown(props) {
         styles={colourStyles}
         placeholder={"Please select a color"}
         value={props.colorSelected}
-        // onChange={props.colorSelect()}
+        onChange={props.handleColor}
+        // value={color}
     />
     )
 }

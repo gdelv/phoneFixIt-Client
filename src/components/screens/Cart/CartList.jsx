@@ -1,7 +1,7 @@
 import React from 'react'
 import CartItem from './CartItem'
 export default function CartList({value}) {
-    const {cart, colorSelected, carrierSelected, conditionSelected} = value;
+    const {cart} = value;
     // console.log(value, cart);
 
     return (
@@ -11,9 +11,6 @@ export default function CartList({value}) {
                             key={item.id} 
                             item={item} 
                             value={value} 
-                            colorSelected={colorSelected} 
-                            carrierSelected={carrierSelected} 
-                            conditionSelected={conditionSelected} 
                         />
             })}
         </tbody>

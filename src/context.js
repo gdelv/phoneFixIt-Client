@@ -66,7 +66,8 @@ class ProductProvider extends Component {
         this.setState(() => {
             return { 
                 modalProduct: product, 
-                modalOpen: true }
+                modalOpen: true 
+            }
         })
     }
     closeModal = () => {
@@ -85,9 +86,9 @@ class ProductProvider extends Component {
         console.log("this is the product", product);
         console.log("this is the id", id)
         console.log("this is the the selected option", selectedOption);
-        this.setState(
-            // () => {return {color: selectedOption}}
-        )
+        // this.setState(
+        //     // () => {return {color: selectedOption}}
+        // )
         // product.color = selectedOption;
     };
 
