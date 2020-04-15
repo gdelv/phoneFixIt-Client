@@ -41,9 +41,6 @@ class Demo extends React.PureComponent {
     })
   }
 
-
-
-
   componentDidMount = () => {
     this.getCurrentDate()
   }
@@ -118,7 +115,7 @@ class Demo extends React.PureComponent {
           <DateNavigator/>
           <TodayButton/>
           <Appointments
-            // data={data} 
+            data={data} 
             />
           <AppointmentTooltip
           showCloseButton
