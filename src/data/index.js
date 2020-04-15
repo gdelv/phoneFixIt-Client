@@ -65,7 +65,7 @@ export const storeProducts = [
     {
         id: 1,
         title: "iPhone 7",
-        condition: "Certified Pre Own",
+        // condition: "Certified Pre Own",
         capacity: "16GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
@@ -91,12 +91,15 @@ export const storeProducts = [
         info: "Add customized information about each product in this paragraph.",
         inCart: false,
         count: 0,
-        total: 0
+        total: 0,
+        color: null,
+        carrier: null,
+        condition: null
     },
     {
         id: 2,
         title: "iPhone 5",
-        condition: "Brand New",
+        // condition: "Brand New",
         capacity: "16GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
@@ -122,14 +125,17 @@ export const storeProducts = [
         info: "Add customized information about each product in this paragraph.",
         inCart: false,
         count: 0,
-        total: 0
+        total: 0,
+        color: null,
+        carrier: null,
+        condition : null
     }
 ]
 
 export const detailProduct = {
     id: 1,
     title: "iPhone 7",
-    condition: "Certified Pre Own",
+    // condition: "Certified Pre Own",
     capacity: "16GB",
     colorOptions: [
         { value: 'silver', label: 'Silver', color: '#666666' },
@@ -155,5 +161,8 @@ export const detailProduct = {
     info: "Add customized information about each product in this paragraph.",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
+    color: null,
+    carrier: null,
+    condition : null
 }

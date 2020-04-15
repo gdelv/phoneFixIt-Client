@@ -27,7 +27,9 @@ export default class Details extends Component {
                                 price, 
                                 title, 
                                 inCart,
-                                condition, 
+                                condition,
+                                color,
+                                carrier,
                                 capacity,
                                 colorOptions,
                                 conditionOptions,
@@ -52,11 +54,14 @@ export default class Details extends Component {
                                                             <div className="content">
                                                                 {/* ENTER DROPDOWNS HERE */}
                                                                 <Select
+                                                                    id
+                                                                    inputValue
                                                                     label="Single select"
                                                                     options={colorOptions}
                                                                     styles={colourStyles}
                                                                     placeholder={"Please select a color"}
                                                                     onChange={value.handleColor}
+                                                                    // value={color}
                                                                 />
                                                                 <Select
                                                                     label="Single select"

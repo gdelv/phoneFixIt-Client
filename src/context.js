@@ -74,6 +74,23 @@ class ProductProvider extends Component {
             return { modalOpen: false }
         })
     }
+
+    handleColor = (id, selectedOption) => {
+        // this.setState({ colorSelected: selectedOption.label });
+        // console.log(`Option selected:`, selectedOption.label);
+        let tempProducts = [...this.state.products];
+        const selectedProduct = tempProducts.find(item => item.id === id)
+        const index = tempProducts.indexOf(selectedProduct);
+        const product = tempProducts[index];
+        console.log("this is the product", product);
+        console.log("this is the id", id)
+        console.log("this is the the selected option", selectedOption);
+        this.setState(
+            // () => {return {color: selectedOption}}
+        )
+        // product.color = selectedOption;
+    };
+
     increment = (id) => {
         let tempCart = [...this.state.cart];
         const selectedProduct = tempCart.find(item => item.id === id)
@@ -152,10 +169,7 @@ class ProductProvider extends Component {
         })
     }
 
-    handleColor = selectedOption => {
-        this.setState({ colorSelected: selectedOption.label });
-        console.log(`Option selected:`, selectedOption.label);
-    };
+
     handleCondition = selectedOption => {
         this.setState({ conditionSelected: selectedOption.label })
     }
