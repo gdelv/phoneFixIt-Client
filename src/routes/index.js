@@ -25,7 +25,7 @@ export const Routes = props => {
           <Route exact path="/mail-in-repair" component={MailInRepair} />
 
         {/* We Come To You Page (/book-online) /> */}
-          <Route exact path='/1234' component={weCome}/>
+          <Route exact path='/book-online' component={weCome}/>
 
         {/* About Route (/about) */}
           <Route exact path='/about'component={About} />

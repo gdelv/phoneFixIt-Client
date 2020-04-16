@@ -110,6 +110,9 @@ class Navbar extends React.Component {
           <Link to="/FAQ" className="navbar-item">
             FAQ
           </Link>
+          <Link to='/book-online' className='navbar-item'>
+            Book Online
+          </Link>
           <Link to="/about" className="navbar-item">
             About Us
           </Link>
