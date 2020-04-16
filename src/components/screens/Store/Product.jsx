@@ -24,7 +24,7 @@ export default class Product extends Component {
                         </div>
                     </div>
                     <div className="content">
-                        <Link to='details' onClick={()=> value.handleDetail(id)}>
+                        <Link to='/details' onClick={()=> value.handleDetail(id)}>
                             <button className="button">See more...</button>
                         </Link>
                         {/* commented out button because you shouldn't be able to add to cart without choosing color/carrier/condition */}

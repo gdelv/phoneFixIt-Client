@@ -61,6 +61,21 @@ export const questionsAnswers = [
     }
 ]
 
+export const storeInfo = [
+    {
+        title: "Warranty",
+        content: "60-Day Limited Warranty. If you happen to have any issue with your device, Phonefixit will attempt to repair the device or replace if needed. Please note that any sign of liquid damage or physical damage will void this warranty."
+    },
+    {
+        title: "Grading Scale",
+        content: "Our Devices Are Graded Based on The Following Grading Scale:A Stock  'very small scratches very noticeable, no dents.' B Stock  'some scratches and/or small dents' C Stock  'scratches and dents on most of the Device' Details on our grading scale can be found here."
+    },
+    {
+        title: "Return Policy",
+        content: "We want you to be completely satisfied with Our products. We accept  return requests for 30 days from the day of purchase. To  return an item, simply contact us at 516-801-6320 or email us through the contact us form. We will provide a prepaid  return label through either FedEx or USPS Ground services and we will issue a refund to the original payment source within 5-7 days of receiving the item back. A $15 restocking fee may apply."
+    }
+]
+
 export const storeProducts = [
     {
         id: 1,

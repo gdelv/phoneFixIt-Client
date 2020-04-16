@@ -11,6 +11,7 @@ import DetailInfoTile from './DetailInfoTile';
 import DetailColorDropdown from './DetailColorDropdown';
 import DetailCarrierDropdown from './DetailCarrierDropdown';
 import DetailConditionDropdown from './DetailConditionDropdown';
+import DetailWarrantyInfo from './DetailWarrantyInfo';
 
 export default class Details extends Component {
 
@@ -84,6 +85,7 @@ export default class Details extends Component {
                                                                             {inCart ? "In Cart" : "Add to Cart"}
                                                                         </button>
                                                                 </div>
+                                                                <DetailWarrantyInfo/> 
                                                             </div>
                                                     </div>
                                                 </article>
