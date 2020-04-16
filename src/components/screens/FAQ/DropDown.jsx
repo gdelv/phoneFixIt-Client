@@ -31,7 +31,7 @@ class DropDown extends React.Component {
                     <div class="is-flex">
                         <div class="is-flex">
 
-                        <figure class="image is-48x48">
+                        <figure class="image is-24x24">
                             <img src={this.state.clicked ? Minus : Plus} alt='minus/plus button'></img>
                         </figure>
                         </div>

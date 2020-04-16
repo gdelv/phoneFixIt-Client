@@ -1,7 +1,7 @@
 import React from 'react'
-import AboutLocations from './About/AboutLocations'
-import AboutHours from './About/AboutHours'
-import AboutStatement from './About/AboutStatement'
+import AboutLocations from './AboutLocations'
+import AboutHours from './AboutHours'
+import AboutStatement from './AboutStatement'
 
 export const About = (props) => {
     return (

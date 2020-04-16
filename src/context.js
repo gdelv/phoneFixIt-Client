@@ -9,6 +9,9 @@ class ProductProvider extends Component {
     state = {
         products: [],
         detailProduct: detailProduct,
+        colorSelected: null,
+        conditionSelected : null,
+        carrierSelected: null,
         cart: [],
         modalOpen: false,
         modalProduct: detailProduct,
@@ -41,12 +44,16 @@ class ProductProvider extends Component {
             return {detailProduct: product}
         })
     }
+
     addToCart = (id) => {
         let tempProducts = [...this.state.products];
         const index = tempProducts.indexOf(this.getItem(id));
         const product = tempProducts[index];
         product.inCart = true;
         product.count = 1;
+        product.color = this.state.colorSelected
+        product.carrier = this.state.carrierSelected
+        product.condition = this.state.conditionSelected
         const price = product.price;
         product.total = price;
         this.setState(
@@ -63,7 +70,8 @@ class ProductProvider extends Component {
         this.setState(() => {
             return { 
                 modalProduct: product, 
-                modalOpen: true }
+                modalOpen: true 
+            }
         })
     }
     closeModal = () => {
@@ -148,6 +156,33 @@ class ProductProvider extends Component {
             }
         })
     }
+
+    handleColor = selectedOption => {
+        console.log(`Option selected:`, selectedOption.label);
+        const colorOption = selectedOption.label
+        this.setState( 
+            () => {
+                return { colorSelected: colorOption  }
+
+        })
+    }
+
+    handleCondition = selectedOption => {
+        const conditionOption = selectedOption.label
+        this.setState( 
+            () => {
+                return { conditionSelected: conditionOption  }
+
+        })
+    }
+    handleCarrier = selectedOption => {
+        const carrierOption = selectedOption.label
+        this.setState( 
+            () => {
+                return { carrierSelected: carrierOption  }
+
+        })
+    }
     render() {
         return (
         <ProductContext.Provider 
@@ -160,7 +195,10 @@ class ProductProvider extends Component {
                 increment: this.increment,
                 decrement: this.decrement,
                 removeItem: this.removeItem,
-                clearCart: this.clearCart
+                clearCart: this.clearCart,
+                handleColor: this.handleColor,
+                handleCondition: this.handleCondition,
+                handleCarrier: this.handleCarrier
             }}
         >
             {this.props.children}

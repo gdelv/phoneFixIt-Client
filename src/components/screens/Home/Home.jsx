@@ -1,9 +1,9 @@
 import React from 'react'
-import HomeHeroContainer from './Home/HomeHeroContainer' //complete
-import HomeRepairServices from './Home/HomeRepairServices'
-import HomeBanner from './Home/HomeBanner'
-import HomeFeatures from './Home/HomeFeatures'
-import HomeSubscribe from './Home/HomeSubscribe'
+import HomeHeroContainer from './HomeHeroContainer' //complete
+import HomeRepairServices from './HomeRepairServices'
+import HomeBanner from './HomeBanner'
+import HomeFeatures from './HomeFeatures'
+import HomeSubscribe from './HomeSubscribe'
 
 export const Home = (props) => {
     return (

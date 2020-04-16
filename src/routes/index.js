@@ -1,15 +1,15 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { Home } from "../components/screens/Home";
-import { MailInRepair } from "../components/screens/MailInRepair";
+import { Home } from "../components/screens/Home/Home";
+import { MailInRepair } from "../components/screens/MailInRepair/MailInRepair";
 import { FAQ } from '../components/screens/FAQ/FAQ'
-import { About }   from '../components/screens/About';
-import Details from '../components/screens/Details'
+import { About }   from '../components/screens/About/About';
+import Details from '../components/screens/Details/Details'
 import Default from "../components/screens/Default";
-import ProductList from "../components/screens/ProductList";
+import ProductList from "../components/screens/Store/ProductList";
 import Cart from '../components/screens/Cart/Cart'
-import Modal from '../components/screens/Modal'
-import  weCome from '../components/screens/weComeToYou/weCome';
+import Modal from '../components/screens/Cart/Modal'
+import weCome from '../components/screens/WeComeToYou/weCome'
 
 export const Routes = props => {
   return (

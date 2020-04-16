@@ -1,5 +1,5 @@
 import React from "react";
-import HeroContainer from "../shared/HeroContainer";
+import HeroContainer from "../../shared/HeroContainer";
 
 export const MailInRepair = props => {
   let styles = {
