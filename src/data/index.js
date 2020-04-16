@@ -61,72 +61,121 @@ export const questionsAnswers = [
     }
 ]
 
+export const storeInfo = [
+    {
+        title: "Warranty",
+        content: "60-Day Limited Warranty. If you happen to have any issue with your device, Phonefixit will attempt to repair the device or replace if needed. Please note that any sign of liquid damage or physical damage will void this warranty."
+    },
+    {
+        title: "Grading Scale",
+        content: "Our Devices Are Graded Based on The Following Grading Scale:A Stock  'very small scratches very noticeable, no dents.' B Stock  'some scratches and/or small dents' C Stock  'scratches and dents on most of the Device' Details on our grading scale can be found here."
+    },
+    {
+        title: "Return Policy",
+        content: "We want you to be completely satisfied with Our products. We accept  return requests for 30 days from the day of purchase. To  return an item, simply contact us at 516-801-6320 or email us through the contact us form. We will provide a prepaid  return label through either FedEx or USPS Ground services and we will issue a refund to the original payment source within 5-7 days of receiving the item back. A $15 restocking fee may apply."
+    }
+]
+
 export const storeProducts = [
     {
         id: 1,
         title: "iPhone 7",
+        // condition: "Certified Pre Own",
+        capacity: "16GB",
+        colorOptions: [
+            { value: 'silver', label: 'Silver', color: '#666666' },
+            { value: 'gold', label: 'Gold', color: '#FFD700' },
+            { value: 'black', label: 'Black', color: '#000000' },
+            { value: 'pink', label: 'Pink', color:'#FFC0CB' }
+        ],
+        conditionOptions: [
+            { value: 'A Stock', label: 'A Stock' },
+            { value: 'B Stock', label: 'B Stock' },
+            { value: 'C Stock', label: 'C Stock' },
+        ],
+        carrierOptions: [
+            { value: 'sprint', label: 'Sprint' },
+            { value: 'T-Mobile', label: 'T-Mobile' },
+            { value: 'at&t', label: 'AT&T' },
+            { value: 'verizon', label: 'Verizon' },
+            { value: 'unlocked', label: 'Unlocked' },
+        ],
         img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
         price: 100,
         company: "Apple",
-        info: "Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing, design and blogging tools. Explore the origins, history and meaning of the famous passage, and learn how Lorem Ipsum went from scrambled Latin passage to ubiqitous dummy text.",
+        info: "Add customized information about each product in this paragraph.",
         inCart: false,
         count: 0,
-        total: 0
+        total: 0,
+        color: "null",
+        carrier: "null",
+        condition: "null"
     },
     {
         id: 2,
-        title: "iPhone 3",
-        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FxkLWrQdg9NI%2Fmaxresdefault.jpg&f=1&nofb=1",
-        price: 5,
-        company: "Apple",
-        info: "Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing, design and blogging tools. Explore the origins, history and meaning of the famous passage, and learn how Lorem Ipsum went from scrambled Latin passage to ubiqitous dummy text.",
-        inCart: false,
-        count: 0,
-        total: 0
-    },
-    {
-        id: 3,
-        title: "iPhone 6",
-        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F9U70AYRa3jk%2Fmaxresdefault.jpg&f=1&nofb=1",
-        price: 10,
-        company: "Apple",
-        info: "Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing, design and blogging tools. Explore the origins, history and meaning of the famous passage, and learn how Lorem Ipsum went from scrambled Latin passage to ubiqitous dummy text.",
-        inCart: false,
-        count: 0,
-        total: 0
-    },
-    {
-        id: 4,
-        title: "iPhone 7 - White",
-        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FoLfYnN7pY54%2Fmaxresdefault.jpg&f=1&nofb=1",
+        title: "iPhone 5",
+        // condition: "Brand New",
+        capacity: "16GB",
+        colorOptions: [
+            { value: 'silver', label: 'Silver', color: '#666666' },
+            { value: 'black', label: 'Black', color: '#000000' },
+        ],
+        conditionOptions: [
+            { value: 'A Stock', label: 'A Stock' },
+            { value: 'B Stock', label: 'B Stock' },
+            { value: 'C Stock', label: 'C Stock' },
+        ],
+        carrierOptions: [
+            { value: 'sprint', label: 'Sprint' },
+            { value: 'T-Mobile', label: 'T-Mobile' },
+            { value: 'at&t', label: 'AT&T' },
+            { value: 'verizon', label: 'Verizon' },
+            { value: 'unlocked', label: 'Unlocked' },
+        ],
+        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
         price: 50,
         company: "Apple",
-        info: "Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing, design and blogging tools. Explore the origins, history and meaning of the famous passage, and learn how Lorem Ipsum went from scrambled Latin passage to ubiqitous dummy text.",
+        info: "Add customized information about each product in this paragraph.",
         inCart: false,
         count: 0,
-        total: 0
-    },
-    {
-        id: 5,
-        title: "iPhone 7",
-        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
-        price: 100,
-        company: "Apple",
-        info: "Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing, design and blogging tools. Explore the origins, history and meaning of the famous passage, and learn how Lorem Ipsum went from scrambled Latin passage to ubiqitous dummy text.",
-        inCart: false,
-        count: 0,
-        total: 0
+        total: 0,
+        color: "null",
+        carrier: "null",
+        condition : "null"
     }
 ]
 
 export const detailProduct = {
     id: 1,
     title: "iPhone 7",
-    img: "https://www.ifixyouri.com/2075-large_default/iphone-x-front-camera-repair.jpg",
+    // condition: "Certified Pre Own",
+    capacity: "16GB",
+    colorOptions: [
+        { value: 'silver', label: 'Silver', color: '#666666' },
+        { value: 'gold', label: 'Gold', color: '#FFD700' },
+        { value: 'black', label: 'Black', color: '#000000' },
+        { value: 'pink', label: 'Pink', color:'#FFC0CB' }
+    ],
+    conditionOptions: [
+        { value: 'A Stock', label: 'A Stock' },
+        { value: 'B Stock', label: 'B Stock' },
+        { value: 'C Stock', label: 'C Stock' },
+    ],
+    carrierOptions: [
+        { value: 'sprint', label: 'Sprint' },
+        { value: 'T-Mobile', label: 'T-Mobile' },
+        { value: 'at&t', label: 'AT&T' },
+        { value: 'verizon', label: 'Verizon' },
+        { value: 'unlocked', label: 'Unlocked' },
+    ],
+    img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
     price: 100,
     company: "Apple",
-    info: "Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing, design and blogging tools. Explore the origins, history and meaning of the famous passage, and learn how Lorem Ipsum went from scrambled Latin passage to ubiqitous dummy text.",
+    info: "Add customized information about each product in this paragraph.",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
+    color: null,
+    carrier: null,
+    condition : null
 }

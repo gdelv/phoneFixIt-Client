@@ -1,33 +1,37 @@
 import React from 'react'
 
 export default function CartItem({item, value}) {
-    const { id, title, img, price, total, count } = item;
+    const { id, title, img, price, total, count, capacity, color, condition, carrier } = item;
     const { increment, decrement, removeItem } =  value;
 
     return (
         <tr>
-            <td>                
-                <figure class="image is-128x128">
-                    <img src={img} />
+            <td className='image-col'>                
+                <figure className="image">
+                    <img src={img} className='is-rounded'/>
                 </figure>
             </td>
-            <td>
-                {title}
+            <td className='title-col'>
+                {title} {color} {condition} {capacity} {carrier}
             </td>
-            <td>
-                {price}
+            <td className='price-col'>
+                $ {price}
             </td>
-            <td>
-                <button className="button" onClick={() => {decrement(id)}}>-</button>
-                <span>{count}</span>
-                <button className="button" onClick={() => {increment(id)}}>+</button>
+            <td className='button-col'>
+                <button className="button is-small is-warning" onClick={() => {decrement(id)}}>
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                </button>
+                    <span> {count} </span>
+                <button className="button is-small is-warning" onClick={() => {increment(id)}}>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
             </td>
-            <td>
+            <td className='remove-col'>
                 <span className="icon" style={{display:"block", margin: "0 auto"}} onClick={() => removeItem(id)}>
                     <i className="fas fa-trash"></i>
                 </span>
             </td>
-            <td>
+            <td className='total-col'>
                 <strong>Item Total : $ </strong>
                 {total}
             </td>

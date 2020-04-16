@@ -23,7 +23,7 @@ class Navbar extends React.Component {
     if (this.state.open) {
       return (
         <>
-          <Backdrop onClick={this.toggleHambuger}/>
+          <Backdrop onClick={this.toggleHamburger}/>
         </>
       )
     }
@@ -32,14 +32,14 @@ class Navbar extends React.Component {
   renderSideDrawer = () => {
     return (
       <>
-        <SideDrawer show={this.state.open} />
+        <SideDrawer show={this.state.open} toggleHamburger={this.toggleHamburger} />
         {this.renderBackdrop()}
       </>
     )
   }
 
 
-  toggleHambuger = () => {
+  toggleHamburger = () => {
     this.setState({
       open: !this.state.open
     })
@@ -59,7 +59,7 @@ class Navbar extends React.Component {
           </a>
 
           <a
-            onClick={this.toggleHambuger}
+            onClick={this.toggleHamburger}
             role="button"
             class="navbar-burger burger"
             aria-label="menu"
