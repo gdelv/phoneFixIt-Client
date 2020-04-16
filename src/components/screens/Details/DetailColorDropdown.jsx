@@ -6,14 +6,12 @@ import Select from 'react-select';
 export default function DetailColorDropdown(props) {
     return (
         <Select
-        label="Single select"
-        options={props.colorOptions}
-        styles={colourStyles}
-        placeholder={"Please select a color"}
-        value={props.colorSelected}
-        onChange={props.handleColor}
-        // value={color}
-    />
+            label="Single select"
+            options={props.colorOptions}
+            styles={colourStyles}
+            placeholder={"Please select a color"}
+            onChange={props.onChange}
+        />
     )
 }
 

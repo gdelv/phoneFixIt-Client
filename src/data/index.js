@@ -103,9 +103,7 @@ export const storeProducts = [
         capacity: "16GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
-            { value: 'gold', label: 'Gold', color: '#FFD700' },
             { value: 'black', label: 'Black', color: '#000000' },
-            { value: 'pink', label: 'Pink', color:'#FFC0CB' }
         ],
         conditionOptions: [
             { value: 'A Stock', label: 'A Stock' },

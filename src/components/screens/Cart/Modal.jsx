@@ -8,7 +8,7 @@ export default class Modal extends Component {
             <ProductConsumer>
                 {(value) => {
                     const { modalOpen, closeModal } = value;
-                    const { img, title, price, condition, capacity } = value.modalProduct;
+                    const { img, title, price, condition, capacity, carrier, color } = value.modalProduct;
                     if(!modalOpen) {
                         return null
                     } else {
@@ -32,7 +32,7 @@ export default class Modal extends Component {
                                             <div className="card-content">
                                                 <div className="media">
                                                     <div className="media-content">
-                                                        <p className="title is-2 has-text-centered modal-title-bottom">{title} {condition} {capacity}</p>
+                                                        <p className="title is-2 has-text-centered modal-title-bottom">{title} ({color}) {condition} {capacity} - {carrier}</p>
                                                         <p className="subtitle is-3 has-text-centered  modal-title-bottom">Price: ${price}</p>
                                                         <div className="modal-button-container">
                                                             <Link to='/store'>

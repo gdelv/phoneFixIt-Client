@@ -9,12 +9,11 @@ import './styles/Details.scss'
 import DetailImageTile from './DetailImageTile';
 import DetailInfoTile from './DetailInfoTile';
 import DetailColorDropdown from './DetailColorDropdown';
+import DetailCarrierDropdown from './DetailCarrierDropdown';
+import DetailConditionDropdown from './DetailConditionDropdown';
 
 export default class Details extends Component {
-    // handleChange = selectedOption => {
-    //     this.setState({ colorSelected: selectedOption.label });
-    //     console.log(`Option selected:`, selectedOption.label);
-    // };
+
     render() {        
         return (
             <>
@@ -27,13 +26,10 @@ export default class Details extends Component {
                             price, 
                             title, 
                             inCart,
-                            // condition,
-                            // color,
-                            // carrier,
                             capacity,
                             colorOptions,
-                            // conditionOptions,
-                            // carrierOptions,
+                            conditionOptions,
+                            carrierOptions,
                         } = value.detailProduct;
                         let detailTitle = company + ' ' + title + ' ' + capacity;   
                         return (
@@ -61,30 +57,17 @@ export default class Details extends Component {
                                                         <p className="subtitle is-4">$ {price}</p>
                                                             <div className="content">
                                                                 {/* ENTER DROPDOWNS HERE */}
-                                                                {/* <Select
-                                                                    options={colorOptions}
-                                                                    styles={colourStyles}
-                                                                    placeholder={"Please select a color"}
-                                                                    onChange={setColor}
-                                                                    value={color}
-                                                                /> */}
-                                                                {/* <Select
-                                                                    label="Single select"
-                                                                    options={conditionOptions}
-                                                                    // styles={colourStyles}
-                                                                    placeholder={"Please select a condition"}
-                                                                    onChange={value.handleCondition}
-                                                                />
-                                                                <Select
-                                                                    label="Single select"
-                                                                    options={carrierOptions}
-                                                                    // styles--------={colourStyles}
-                                                                    placeholder={"Please select a carrier"}
-                                                                    onChange={value.handleCarrier}
-                                                                /> */}
                                                                 <DetailColorDropdown 
                                                                     colorOptions={colorOptions} 
-                                                                    value={value}
+                                                                    onChange={value.handleColor}
+                                                                />
+                                                                <DetailCarrierDropdown
+                                                                    carrierOptions={carrierOptions}
+                                                                    onChange={value.handleCarrier}
+                                                                />
+                                                                <DetailConditionDropdown
+                                                                    conditionOptions={conditionOptions}
+                                                                    onChange={value.handleCondition}
                                                                 />
                                                                 <div className="btn-container">
                                                                     <Link to="/store">
@@ -96,7 +79,6 @@ export default class Details extends Component {
                                                                             onClick={() => {
                                                                                 value.addToCart(id);
                                                                                 value.openModal(id);
-                                                                                value.handleColor(id);
                                                                             }}
                                                                         >
                                                                             {inCart ? "In Cart" : "Add to Cart"}

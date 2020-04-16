@@ -18,10 +18,15 @@ export default class Cart extends Component {
                             <div className="table-container">
                                 <table className='table is-striped is-narrow is-fullwidth is-bordered is-hoverable cart-table' style={{margin: "0 auto"}}>
                                     <CartColumns/>
-                                    <CartList value={value}/>
+                                    <CartList 
+                                        value={value}
+                                    />
                                 </table>
                             </div>
-                                <CartTotals value={value} history={this.props.history}/>
+                                <CartTotals 
+                                    value={value} 
+                                    history={this.props.history}
+                                />
                             </>
                         )
                     } else {

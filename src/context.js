@@ -44,12 +44,16 @@ class ProductProvider extends Component {
             return {detailProduct: product}
         })
     }
+
     addToCart = (id) => {
         let tempProducts = [...this.state.products];
         const index = tempProducts.indexOf(this.getItem(id));
         const product = tempProducts[index];
         product.inCart = true;
         product.count = 1;
+        product.color = this.state.colorSelected
+        product.carrier = this.state.carrierSelected
+        product.condition = this.state.conditionSelected
         const price = product.price;
         product.total = price;
         this.setState(
@@ -75,23 +79,6 @@ class ProductProvider extends Component {
             return { modalOpen: false }
         })
     }
-
-    handleColor = (id, selectedOption) => {
-        // this.setState({ colorSelected: selectedOption.label });
-        // console.log(`Option selected:`, selectedOption.label);
-        let tempProducts = [...this.state.products];
-        const selectedProduct = tempProducts.find(item => item.id === id)
-        const index = tempProducts.indexOf(selectedProduct);
-        const product = tempProducts[index];
-        console.log("this is the product", product);
-        console.log("this is the id", id)
-        console.log("this is the the selected option", selectedOption);
-        // this.setState(
-        //     // () => {return {color: selectedOption}}
-        // )
-        // product.color = selectedOption;
-    };
-
     increment = (id) => {
         let tempCart = [...this.state.cart];
         const selectedProduct = tempCart.find(item => item.id === id)
@@ -170,12 +157,31 @@ class ProductProvider extends Component {
         })
     }
 
+    handleColor = selectedOption => {
+        console.log(`Option selected:`, selectedOption.label);
+        const colorOption = selectedOption.label
+        this.setState( 
+            () => {
+                return { colorSelected: colorOption  }
+
+        })
+    }
 
     handleCondition = selectedOption => {
-        this.setState({ conditionSelected: selectedOption.label })
+        const conditionOption = selectedOption.label
+        this.setState( 
+            () => {
+                return { conditionSelected: conditionOption  }
+
+        })
     }
     handleCarrier = selectedOption => {
-        this.setState({ carrierSelected: selectedOption.label })
+        const carrierOption = selectedOption.label
+        this.setState( 
+            () => {
+                return { carrierSelected: carrierOption  }
+
+        })
     }
     render() {
         return (

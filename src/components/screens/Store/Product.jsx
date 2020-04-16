@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ProductConsumer } from '../../../context'
 export default class Product extends Component {
     render() {
-        const { id, title, img, price, inCart, condition, capacity  } = this.props.product;
+        const { id, title, img, price, inCart, capacity  } = this.props.product;
         return (
             <ProductConsumer>
                 {(value) => (
@@ -19,12 +19,16 @@ export default class Product extends Component {
                 <div className="card-content">
                     <div className="media">
                         <div className="media-content">
-                            <p className="title is-5">{title} {condition} {capacity}</p>
+                            <p className="title is-5">{title} {capacity}</p>
                             <p className="subtitle is-5">${price}</p>
                         </div>
                     </div>
                     <div className="content">
-                        <button 
+                        <Link to='details' onClick={()=> value.handleDetail(id)}>
+                            <button className="button">See more...</button>
+                        </Link>
+                        {/* commented out button because you shouldn't be able to add to cart without choosing color/carrier/condition */}
+                        {/* <button 
                         className="button" 
                         disabled={inCart ? true: false} 
                         onClick={() => {
@@ -40,7 +44,8 @@ export default class Product extends Component {
                             
                             
                             )}
-                        </button>
+                        </button> */}
+
                     </div>
                 </div>
             </div>
