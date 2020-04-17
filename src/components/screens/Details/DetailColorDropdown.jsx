@@ -11,6 +11,7 @@ export default function DetailColorDropdown(props) {
             styles={colourStyles}
             placeholder={"Please select a color"}
             onChange={props.onChange}
+            required="true"
         />
     )
 }

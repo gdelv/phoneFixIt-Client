@@ -2,6 +2,19 @@
     padding: 1em;
     font-size: 1.5rem !important;
 }
+.select-container {
+    margin: 2em auto !important;
+}
+// .detail-image {
+//     display: flex;
+//     justify-content: center;
+//     // margin: 0 auto;
+//     align-items: center;
+// }
+
+.black-text {
+    color: black;
+}
 
 @media only screen and (max-width: 768px) {
     .breadcrumb {
