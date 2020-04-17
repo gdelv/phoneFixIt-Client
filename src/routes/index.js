@@ -21,22 +21,22 @@ export const Routes = props => {
           <Route exact path="/" component={Home} />
 
         {/* Services Route (/services) */}
-          <Route exact path='/services'component={ServiceList} />
+          <Route path='/services'component={ServiceList} />
         
         {/* Single Service Route (/service) */}
-        <Route exact path='/service' component={SingleService} />
+        <Route path='/service' component={SingleService} />
 
         {/* Mail In Repair Route (/mail-in-repair) */}
-          <Route exact path="/mail-in-repair" component={MailInRepair} />
+          <Route path="/mail-in-repair" component={MailInRepair} />
 
         {/* We Come To You Page (/book-online) /> */}
-          <Route exact path='/book-online' component={weCome}/>
+          <Route path='/book-online' component={weCome}/>
 
         {/* About Route (/about) */}
-          <Route exact path='/about'component={About} />
+          <Route path='/about'component={About} />
 
         {/* FAQ Route (/FAQ) */}
-          <Route exact path='/FAQ' component={FAQ}/>
+          <Route path='/FAQ' component={FAQ}/>
 
         {/* Store Route (/store) */}
           <Route path='/store' component={ProductList} />

@@ -13,7 +13,7 @@ export default function CartTotals({value, history}) {
                     </Link>
                 </div>
                     <h2 className="subtitle is-3">Subtotal: <strong>$ {cartSubTotal}</strong></h2>
-                    <h2 className="subtitle is-3">Tax: <strong>$ {cartTax}</strong></h2>
+                    <h2 className="subtitle is-3">Tax (8.865%): <strong>$ {cartTax}</strong></h2>
                     <h2 className="subtitle is-3">Total: <strong>$ {cartTotal}</strong></h2>
                     <PayPalButton 
                         total={cartTotal} 
