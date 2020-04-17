@@ -50,7 +50,7 @@ export default class Details extends Component {
                                             />
                                     </div>
                                             <div className="tile is-parent">
-                                                <article className="tile is-child notification is-dark">
+                                                <article className="tile is-child notification is-info">
                                                     <div className="content">
                                                         <p className="title is-2">{detailTitle}</p>
                                                         <p className="subtitle is-3">$ {price}</p>
@@ -75,12 +75,12 @@ export default class Details extends Component {
                                                                 </div>
                                                                 <div className="btn-container">
                                                                     <Link to="/store">
-                                                                        <button className="button">
+                                                                        <button className="button is-danger">
                                                                             Back to Store
                                                                         </button>
                                                                     </Link>
                                                                         <button 
-                                                                            className="button" 
+                                                                            className="button is-success" 
                                                                             disabled={inCart ? true:false}
                                                                             onClick={() => {
                                                                                 value.addToCart(id);
