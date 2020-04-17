@@ -10,6 +10,10 @@ import ProductList from "../components/screens/Store/ProductList";
 import Cart from '../components/screens/Cart/Cart'
 import Modal from '../components/screens/Cart/Modal'
 import weCome from '../components/screens/WeComeToYou/weCome'
+import ServiceList from "../components/screens/Services/ServiceList";
+import SingleService from "../components/screens/Services/SingleService";
+import ComputerRepair from "../components/screens/Services/ComputerRepair";
+import Contact from "../components/screens/Contact/Contact";
 
 export const Routes = props => {
   return (
@@ -19,19 +23,28 @@ export const Routes = props => {
           <Route exact path="/" component={Home} />
 
         {/* Services Route (/services) */}
-          {/* <Route path to='/services'component={} /> */}
+          <Route path='/services'component={ServiceList} />
+        
+        {/* Single Service Route (/service) */}
+        <Route path='/service' component={SingleService} />
+
+        {/* Computer Repair Router (/computer) */}
+        <Route path='/computer' component={ComputerRepair} />
 
         {/* Mail In Repair Route (/mail-in-repair) */}
-          <Route exact path="/mail-in-repair" component={MailInRepair} />
+          <Route path="/mail-in-repair" component={MailInRepair} />
+
+        {/* Contant Route (/contact) */}
+        <Route path='/contact' component={Contact} />
 
         {/* We Come To You Page (/book-online) /> */}
-          <Route exact path='/book-online' component={weCome}/>
+          <Route path='/book-online' component={weCome}/>
 
         {/* About Route (/about) */}
-          <Route exact path='/about'component={About} />
+          <Route path='/about'component={About} />
 
         {/* FAQ Route (/FAQ) */}
-          <Route exact path='/FAQ' component={FAQ}/>
+          <Route path='/FAQ' component={FAQ}/>
 
         {/* Store Route (/store) */}
           <Route path='/store' component={ProductList} />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { storeProducts, detailProduct } from "./data";
+import { storeProducts, detailProduct, servicesInfo, singleService } from "./data";
 
 const ProductContext = React.createContext();
 //Provider - provides info to whole website
@@ -9,6 +9,8 @@ class ProductProvider extends Component {
     state = {
         products: [],
         detailProduct: detailProduct,
+        services: [],
+        singleService: singleService, 
         colorSelected: null,
         conditionSelected : null,
         carrierSelected: null,
@@ -21,6 +23,7 @@ class ProductProvider extends Component {
     }
     componentDidMount() {
         this.setProducts();
+        this.setServices();
     }
     setProducts = () => {
         let tempProducts = [];
@@ -32,10 +35,32 @@ class ProductProvider extends Component {
             return { products: tempProducts }
         })
     }
+    setServices = () => {
+        let tempServices = [];
+        servicesInfo.forEach(item => {
+            const singleItem = {...item};
+            tempServices = [...tempServices, singleItem]
+        })
+        this.setState(() => {
+            return { services: tempServices }
+        })
+    }
+
+    getService = (id) => {
+        const service = this.state.services.find(service => service.id === id);
+        return service;
+    }
 
     getItem = (id) => {
         const product = this.state.products.find(item => item.id === id);
         return product;
+    }
+    
+    handleService = (id) => {
+        const service = this.getService(id);
+        this.setState(() => {
+            return { singleService: service }
+        })
     }
 
     handleDetail = (id) => {
@@ -145,7 +170,7 @@ class ProductProvider extends Component {
     addTotals = () => {
         let subTotal = 0;
         this.state.cart.map(item => (subTotal += item.total));
-        const tempTax = subTotal * (0.0863);
+        const tempTax = subTotal * (0.08865);
         const tax = parseFloat(tempTax.toFixed(2));
         const total = subTotal + tax
         this.setState(() => {
@@ -158,7 +183,6 @@ class ProductProvider extends Component {
     }
 
     handleColor = selectedOption => {
-        console.log(`Option selected:`, selectedOption.label);
         const colorOption = selectedOption.label
         this.setState( 
             () => {
@@ -198,7 +222,8 @@ class ProductProvider extends Component {
                 clearCart: this.clearCart,
                 handleColor: this.handleColor,
                 handleCondition: this.handleCondition,
-                handleCarrier: this.handleCarrier
+                handleCarrier: this.handleCarrier,
+                handleService: this.handleService
             }}
         >
             {this.props.children}
