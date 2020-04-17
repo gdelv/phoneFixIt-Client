@@ -24,6 +24,11 @@
 .container {
     margin: 2em auto;
 }
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2em;
+}
 
 
 @media only screen and (max-width: 768px) {

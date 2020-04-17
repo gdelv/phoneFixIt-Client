@@ -50,10 +50,10 @@ export default class Details extends Component {
                                             />
                                     </div>
                                             <div className="tile is-parent">
-                                                <article className="tile is-child notification is-success">
+                                                <article className="tile is-child notification is-dark">
                                                     <div className="content">
-                                                        <p className="title is-3">{detailTitle}</p>
-                                                        <p className="subtitle is-4">$ {price}</p>
+                                                        <p className="title is-2">{detailTitle}</p>
+                                                        <p className="subtitle is-3">$ {price}</p>
                                                             <div className="content">
                                                                 <div className="select-container">
                                                                     <DetailColorDropdown 
