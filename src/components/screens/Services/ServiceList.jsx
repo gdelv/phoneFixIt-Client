@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { ProductConsumer } from "../../../context";
 import Service from './Service'
+import ServiceComputer from './ServiceComputer';
 
 export default class ServiceList extends Component {
     render() {
@@ -15,6 +16,10 @@ export default class ServiceList extends Component {
                             })
                         }}
                     </ProductConsumer>
+                    <ServiceComputer
+                        title="Computer Repair"
+                        img="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsmartguy.com%2Fwebservice%2Fstorage%2Fcategory%2Fcomputer-service-repair.jpg&f=1&nofb=1"
+                    />
                 </div>
             </>
         )

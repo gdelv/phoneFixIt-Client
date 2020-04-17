@@ -287,3 +287,39 @@ export const singleService = [
         ]
     }
 ]
+
+export const computerInfo = [
+    {
+        id: 1,
+        title: "Screen repair",
+        subtitle: "Broken Screen? leave it to us to make it look like new.",
+        logo: "fas fa-4x fa-desktop",
+        color: "#D5F4FF",
+        textColor: "black"
+    },
+    {
+        id: 2,
+        title: "Data Recovery",
+        subtitle: "Missing Files? Our experts will go and find them for you.",
+        logo: "fas fa-4x fa-database",
+        color: "#0065A5",
+        textColor: "white"
+    },
+    {
+        id: 3,
+        title: "Virus Removal",
+        subtitle: "Got a Virus? We clean them out and give you the tools to protect your PC.",
+        logo: "fas fa-4x fa-wrench",
+        color: "#D5F4FF",
+        textColor: "black"
+    },
+    {
+        id: 4,
+        title: "PC Upgrades",
+        subtitle: "Runing Slow? Lets Get some RAM, Or Video cards upgrades",
+        logo: "fas fa-4x fa-arrow-up",
+        color: "#0065A5",
+        textColor: "white"
+    }
+
+]

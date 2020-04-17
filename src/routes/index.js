@@ -12,6 +12,7 @@ import Modal from '../components/screens/Cart/Modal'
 import weCome from '../components/screens/WeComeToYou/weCome'
 import ServiceList from "../components/screens/Services/ServiceList";
 import SingleService from "../components/screens/Services/SingleService";
+import ComputerRepair from "../components/screens/Services/ComputerRepair";
 
 export const Routes = props => {
   return (
@@ -25,6 +26,9 @@ export const Routes = props => {
         
         {/* Single Service Route (/service) */}
         <Route path='/service' component={SingleService} />
+
+        {/* Computer Repair Router (/computer) */}
+        <Route path='/computer' component={ComputerRepair} />
 
         {/* Mail In Repair Route (/mail-in-repair) */}
           <Route path="/mail-in-repair" component={MailInRepair} />
