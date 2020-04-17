@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ProductConsumer } from '../../../context'
 export default class Product extends Component {
     render() {
-        const { id, title, img, price, inCart, capacity  } = this.props.product;
+        const { id, title, img, price, capacity  } = this.props.product;
         return (
             <ProductConsumer>
                 {(value) => (
@@ -12,7 +12,7 @@ export default class Product extends Component {
                 <div className="card-image" onClick={()=> value.handleDetail(id)}>
                     <figure className="image is-5by3">
                         <Link to="/details">
-                            <img src={img} alt="Placeholder image"/>
+                            <img src={img} alt="product"/>
                         </Link>
                     </figure>
                 </div>
@@ -27,25 +27,6 @@ export default class Product extends Component {
                         <Link to='/details' onClick={()=> value.handleDetail(id)}>
                             <button className="button">See more...</button>
                         </Link>
-                        {/* commented out button because you shouldn't be able to add to cart without choosing color/carrier/condition */}
-                        {/* <button 
-                        className="button" 
-                        disabled={inCart ? true: false} 
-                        onClick={() => {
-                            value.addToCart(id);
-                            value.openModal(id);
-                        }}
-                        >
-                        {inCart ? (
-                            <p disabled>In Cart</p>
-                            ) : (<div>
-                                <p>Add to Cart <i className='fas fa-cart-plus'/></p>
-                            </div>
-                            
-                            
-                            )}
-                        </button> */}
-
                     </div>
                 </div>
             </div>

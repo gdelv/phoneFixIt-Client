@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { storeProducts, detailProduct } from "./data";
+import { storeProducts, detailProduct, servicesInfo, singleService } from "./data";
 
 const ProductContext = React.createContext();
 //Provider - provides info to whole website
@@ -9,6 +9,8 @@ class ProductProvider extends Component {
     state = {
         products: [],
         detailProduct: detailProduct,
+        services: [],
+        serviceShow: singleService, 
         colorSelected: null,
         conditionSelected : null,
         carrierSelected: null,
@@ -21,6 +23,7 @@ class ProductProvider extends Component {
     }
     componentDidMount() {
         this.setProducts();
+        this.setServices();
     }
     setProducts = () => {
         let tempProducts = [];
@@ -30,6 +33,22 @@ class ProductProvider extends Component {
         })
         this.setState(() => {
             return { products: tempProducts }
+        })
+    }
+    setServices = () => {
+        let tempServices = [];
+        servicesInfo.forEach(item => {
+            const singleItem = {...item};
+            tempServices = [...tempServices, singleItem]
+        })
+        this.setState(() => {
+            return { services: tempServices }
+        })
+    }
+    handleService = (id) => {
+        const service = this.getItem(id);
+        this.setState(() => {
+            return { serviceShow: service }
         })
     }
 
@@ -198,7 +217,8 @@ class ProductProvider extends Component {
                 clearCart: this.clearCart,
                 handleColor: this.handleColor,
                 handleCondition: this.handleCondition,
-                handleCarrier: this.handleCarrier
+                handleCarrier: this.handleCarrier,
+                handleService: this.handleService
             }}
         >
             {this.props.children}

@@ -10,6 +10,8 @@ import ProductList from "../components/screens/Store/ProductList";
 import Cart from '../components/screens/Cart/Cart'
 import Modal from '../components/screens/Cart/Modal'
 import weCome from '../components/screens/WeComeToYou/weCome'
+import ServiceList from "../components/screens/Services/ServiceList";
+import SingleService from "../components/screens/Services/SingleService";
 
 export const Routes = props => {
   return (
@@ -19,7 +21,10 @@ export const Routes = props => {
           <Route exact path="/" component={Home} />
 
         {/* Services Route (/services) */}
-          {/* <Route path to='/services'component={} /> */}
+          <Route exact path ='/services'component={ServiceList} />
+        
+        {/* Single Service Route (/service) */}
+        <Route exact path ='/service' component={SingleService} />
 
         {/* Mail In Repair Route (/mail-in-repair) */}
           <Route exact path="/mail-in-repair" component={MailInRepair} />

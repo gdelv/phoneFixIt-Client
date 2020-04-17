@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import chroma from 'chroma-js';
-// import Select from 'react-select';
 import { ProductConsumer } from "../../../context";
 import { Link } from "react-router-dom";
 import DetailBanner from './DetailBanner';

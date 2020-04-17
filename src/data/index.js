@@ -179,3 +179,99 @@ export const detailProduct = {
     carrier: null,
     condition : null
 }
+
+export const servicesInfo = [
+    {
+        id: 1,
+        title: "Phone Repair",
+        subtitle: "Do you have a broken phone?",
+        info: "Don't worry Phonefixit.com is here to help. Most screen replacements are done in under 20 minutes. Broken screen, bad charging port, water damage, are some of the many issues we can help you get fix!",
+        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
+        devicesAvalable : [
+            {
+                deviceName: "Apple iPhones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "Samsung Phones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "LG Phones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "HTC Phones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "Motorola Phones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "Other Phone Brands",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            
+        ]
+    },
+    {
+        id: 2,
+        title: "Tablet Repair",
+        subtitle: "Do you have a broken tablet?",
+        info: "Don't worry Phonefixit.com is here to help. Broken screen, bad charging port, water damage some of the many issues we can help you get fix! ",
+        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
+        devicesAvalable : [
+            {
+                deviceName: "Apple iPads",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "Samsung Tablets",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "Other Phone Brands",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            
+        ]
+    }
+]
+
+export const singleService = [
+    {
+        id: 1,
+        title: "Phone Repair",
+        subtitle: "Do you have a broken phone?",
+        info: "Don't worry Phonefixit.com is here to help. Most screen replacements are done in under 20 minutes. Broken screen, bad charging port, water damage, are some of the many issues we can help you get fix!",
+        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
+        devicesAvalable: [
+            {
+                deviceName: "Apple iPhones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "Samsung Phones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "LG Phones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "HTC Phones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "Motorola Phones",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                deviceName: "Other Phone Brands",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            
+        ]
+    }
+]
