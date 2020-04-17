@@ -16,7 +16,7 @@ export default function ComputerRepair() {
                             </span>
                             <p className={`title has-text-centered has-text-${info.textColor}`}>{info.title}</p>
                             <p className={`subtitle has-text-centered has-text-${info.textColor}`}>{info.subtitle}</p>
-                            <Link>
+                            <Link to='/contact'>
                                 <button className="button computer-button">Contact Us</button>
                             </Link>
                             
