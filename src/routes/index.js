@@ -21,10 +21,10 @@ export const Routes = props => {
           <Route exact path="/" component={Home} />
 
         {/* Services Route (/services) */}
-          <Route exact path ='/services'component={ServiceList} />
+          <Route exact path='/services'component={ServiceList} />
         
         {/* Single Service Route (/service) */}
-        <Route exact path ='/service' component={SingleService} />
+        <Route exact path='/service' component={SingleService} />
 
         {/* Mail In Repair Route (/mail-in-repair) */}
           <Route exact path="/mail-in-repair" component={MailInRepair} />

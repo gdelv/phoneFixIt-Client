@@ -10,7 +10,7 @@ class ProductProvider extends Component {
         products: [],
         detailProduct: detailProduct,
         services: [],
-        serviceShow: singleService, 
+        singleService: singleService, 
         colorSelected: null,
         conditionSelected : null,
         carrierSelected: null,
@@ -45,16 +45,22 @@ class ProductProvider extends Component {
             return { services: tempServices }
         })
     }
-    handleService = (id) => {
-        const service = this.getItem(id);
-        this.setState(() => {
-            return { serviceShow: service }
-        })
+
+    getService = (id) => {
+        const service = this.state.services.find(service => service.id === id);
+        return service;
     }
 
     getItem = (id) => {
         const product = this.state.products.find(item => item.id === id);
         return product;
+    }
+    
+    handleService = (id) => {
+        const service = this.getService(id);
+        this.setState(() => {
+            return { singleService: service }
+        })
     }
 
     handleDetail = (id) => {
@@ -177,7 +183,6 @@ class ProductProvider extends Component {
     }
 
     handleColor = selectedOption => {
-        console.log(`Option selected:`, selectedOption.label);
         const colorOption = selectedOption.label
         this.setState( 
             () => {

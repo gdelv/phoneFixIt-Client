@@ -9,7 +9,7 @@ export default class SingleService extends Component {
             <>
                 <ProductConsumer>
                     {value => {
-                        const { id,
+                        const { 
                             title,
                             subtitle,
                             info, 
