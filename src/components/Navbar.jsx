@@ -75,10 +75,10 @@ class Navbar extends React.Component {
         <div id="navbarNavigation" class="navbar-menu">
           <div class="navbar-start">
             {/* <a class="navbar-item">Home</a> */}
-            <Link to="/" class="navbar-item is-size-5">
+            <Link to="/" class="navbar-item is-size-4-fullhd is-size-6-desktop">
               Home
           </Link>
-            <Link to="/services" class="navbar-item">
+            <Link to="/services" class="navbar-item is-size-4-fullhd is-size-6-desktop">
               {/* <div class="navbar-item has-dropdown is-hoverable is-size-5"> */}
                 {/* <a class="navbar-link">Services</a> */}
                 Services
@@ -104,29 +104,29 @@ class Navbar extends React.Component {
                 </div>
               </div> */}
             </Link>
-            <Link to="/mail-in-repair" class="navbar-item is-size-5">
+            <Link to="/mail-in-repair" class="navbar-item is-size-4-fullhd is-size-6-desktop">
               Mail-in Repair
           </Link>
-          <Link to="/FAQ" className="navbar-item is-size-5">
+          <Link to="/FAQ" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             FAQ
           </Link>
-          <Link to='/book-online' className='navbar-item is-size-5'>
-          <Link to="/contact" className="navbar-item is-size-5">
+          <Link to='/book-online' className='navbar-item is-size-4-fullhd is-size-6-desktop'>
+          <Link to="/contact" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             Contact
           </Link>
             Book Online
           </Link>
-          <Link to="/about" className="navbar-item is-size-5">
+          <Link to="/about" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             About Us
           </Link>
-          <Link to="/store" className="navbar-item is-size-5">
+          <Link to="/store" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             Store
           </Link>
-          <Link to="/cart" className="navbar-item is-size-5">
+          <Link to="/cart" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             My Cart
           </Link>
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link is-size-5">Social</a>
+              <a class="navbar-link is-size-4-fullhd is-size-6-desktop">Social</a>
               <div class="navbar-dropdown">
                 <a class="navbar-item" href="https://www.facebook.com/phonefixitNY" target="_blank" rel="noopener noreferrer">
                   <img class="socialMedia" src={Facebook} />
