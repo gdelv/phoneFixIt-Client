@@ -9,9 +9,25 @@
     // margin: .25em;
 }
 
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
 .store-title {
     // border: 1px solid red;
     // margin-top: 1em;
     padding-top: 1.5em;
     font-family: 'Permanent Marker', cursive;
+}
+.store-banner {
+    margin: auto;
+}
+.store-image {
+    width: 70%;
+    max-height: 10px !important;
+}
+
+.black-text {
+    color:black;
 }
