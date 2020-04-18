@@ -37,7 +37,19 @@
 @media only screen and (max-width: 1020px) {
   .navbar {
     padding: 1em;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  .navbar {
+    font-size: 2rem;
+  }
+  .sideDrawerColumn {
+    height: 102vh !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+  }
+  .is-flex {
+    justify-content: center;
   }
   .navbar-brand {
     // border: 1px solid red !important;

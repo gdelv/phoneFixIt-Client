@@ -33,7 +33,10 @@ class Navbar extends React.Component {
   renderSideDrawer = () => {
     return (
       <>
-        <SideDrawer show={this.state.open} toggleHamburger={this.toggleHamburger} />
+        <SideDrawer 
+          show={this.state.open} 
+          toggleHamburger={this.toggleHamburger} 
+        />
         {this.renderBackdrop()}
       </>
     )
@@ -57,7 +60,6 @@ class Navbar extends React.Component {
               className='logo'
             />
           </a>
-
           <a
             onClick={this.toggleHamburger}
             role="button"
@@ -71,38 +73,13 @@ class Navbar extends React.Component {
             <span aria-hidden="true"></span>
           </a>
         </div>
-
         <div id="navbarNavigation" class="navbar-menu">
           <div class="navbar-start">
-            {/* <a class="navbar-item">Home</a> */}
             <Link to="/" class="navbar-item is-size-4-fullhd is-size-6-desktop">
               Home
           </Link>
             <Link to="/services" class="navbar-item is-size-4-fullhd is-size-6-desktop">
-              {/* <div class="navbar-item has-dropdown is-hoverable is-size-5"> */}
-                {/* <a class="navbar-link">Services</a> */}
                 Services
-              {/* <div class="navbar-dropdown">
-                  <Link to="/services/phonerepair" class="navbar-item">
-                    Phone Repair
-                </Link>
-                  <Link to="/services/tabletrepair" class="navbar-item">
-                    Tablet Repair
-                </Link>
-                  <Link to="/services/computerrepair" class="navbar-item">
-                    Computer & Laptop Repair
-                </Link>
-                  <Link to="/services/iphonerepair" class="navbar-item">
-                    Apple iPhone Repair
-                </Link>
-                  <Link to="/services/samsungrepair" class="navbar-item">
-                    Samsung Repair
-                </Link>
-                  <Link to="/services/ipadrepair" class="navbar-item">
-                    Apple iPad Repair
-                  </Link>
-                </div>
-              </div> */}
             </Link>
             <Link to="/mail-in-repair" class="navbar-item is-size-4-fullhd is-size-6-desktop">
               Mail-in Repair
@@ -111,10 +88,10 @@ class Navbar extends React.Component {
             FAQ
           </Link>
           <Link to='/book-online' className='navbar-item is-size-4-fullhd is-size-6-desktop'>
+            Book Online
+          </Link>
           <Link to="/contact" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             Contact
-          </Link>
-            Book Online
           </Link>
           <Link to="/about" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             About Us
@@ -135,7 +112,6 @@ class Navbar extends React.Component {
                 <a class="navbar-item" href="https://www.instagram.com/phonefixit/" target="_blank" rel="noopener noreferrer" >
                   <img class="socialMedia" src={Instagram} />
                   <p>Instagram</p>
-
                 </a>
                 <a class="navbar-item" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                   <img class="socialMedia" src={Youtube} />
