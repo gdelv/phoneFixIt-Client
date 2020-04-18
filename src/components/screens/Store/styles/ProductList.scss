@@ -1,12 +1,26 @@
 .store {
-    border: 1px solid green;
+    border: 1px solid gray;
     margin: 3em 1em 0em 1em;
 }
 .product {
     // border: 1px solid red;
     padding: 1em;
     font-family: 'Oswald', sans-serif;
+    border: 1px solid transparent;
+    transition: all .25s linear;
     // margin: .25em;
+}
+
+.product:hover {
+    border: 0.04rem solid rgba(0,0,0,.2);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+
+
+.center-image {
+    display: block;
+    margin: 0 auto;
 }
 
 .store-title {
@@ -14,4 +28,15 @@
     // margin-top: 1em;
     padding-top: 1.5em;
     font-family: 'Permanent Marker', cursive;
+}
+.store-banner {
+    margin: auto;
+}
+.store-image {
+    width: 70%;
+    max-height: 10px !important;
+}
+
+.black-text {
+    color:black;
 }

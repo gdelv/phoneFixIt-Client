@@ -2,6 +2,34 @@
     padding: 1em;
     font-size: 1.5rem !important;
 }
+.select-container {
+    margin: 2em auto !important;
+}
+// .detail-image {
+//     display: flex;
+//     justify-content: center;
+//     // margin: 0 auto;
+//     align-items: center;
+// }
+
+.black-text {
+    color: black;
+}
+.color {
+    list-style-type: disc;
+}
+.color-container {
+    margin: 0 2em 2em;
+}
+.container {
+    margin: 2em auto;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2em;
+}
+
 
 @media only screen and (max-width: 768px) {
     .breadcrumb {
