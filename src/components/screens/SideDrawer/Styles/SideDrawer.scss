@@ -20,15 +20,28 @@
  }
 
  .sideDrawerColumn svg {
-     margin: 0 10px;
+     margin: 0 15px;
  }
 
  .has-margin {
      padding: 10px 0;
-     font-weight: 300;
+     font-weight: 500;
+     align-items: center;
      &:hover {
          opacity: .8;
          background-color: #e6e6e6;
      }   
  }
+
+ @media only screen and (min-width: 768px) {
+     .side-drawer {
+         width: 25%;
+     }
+ }
+
+
+ 
+
+
+
  
