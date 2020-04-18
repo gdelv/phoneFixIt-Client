@@ -33,7 +33,10 @@ class Navbar extends React.Component {
   renderSideDrawer = () => {
     return (
       <>
-        <SideDrawer show={this.state.open} toggleHamburger={this.toggleHamburger} />
+        <SideDrawer 
+          show={this.state.open} 
+          toggleHamburger={this.toggleHamburger} 
+        />
         {this.renderBackdrop()}
       </>
     )
@@ -57,7 +60,6 @@ class Navbar extends React.Component {
               className='logo'
             />
           </a>
-
           <a
             onClick={this.toggleHamburger}
             role="button"
@@ -71,62 +73,37 @@ class Navbar extends React.Component {
             <span aria-hidden="true"></span>
           </a>
         </div>
-
         <div id="navbarNavigation" class="navbar-menu">
           <div class="navbar-start">
-            {/* <a class="navbar-item">Home</a> */}
-            <Link to="/" class="navbar-item is-size-5">
+            <Link to="/" class="navbar-item is-size-4-fullhd is-size-6-desktop">
               Home
           </Link>
-            <Link to="/services" class="navbar-item">
-              {/* <div class="navbar-item has-dropdown is-hoverable is-size-5"> */}
-                {/* <a class="navbar-link">Services</a> */}
+            <Link to="/services" class="navbar-item is-size-4-fullhd is-size-6-desktop">
                 Services
-              {/* <div class="navbar-dropdown">
-                  <Link to="/services/phonerepair" class="navbar-item">
-                    Phone Repair
-                </Link>
-                  <Link to="/services/tabletrepair" class="navbar-item">
-                    Tablet Repair
-                </Link>
-                  <Link to="/services/computerrepair" class="navbar-item">
-                    Computer & Laptop Repair
-                </Link>
-                  <Link to="/services/iphonerepair" class="navbar-item">
-                    Apple iPhone Repair
-                </Link>
-                  <Link to="/services/samsungrepair" class="navbar-item">
-                    Samsung Repair
-                </Link>
-                  <Link to="/services/ipadrepair" class="navbar-item">
-                    Apple iPad Repair
-                  </Link>
-                </div>
-              </div> */}
             </Link>
-            <Link to="/mail-in-repair" class="navbar-item is-size-5">
+            <Link to="/mail-in-repair" class="navbar-item is-size-4-fullhd is-size-6-desktop">
               Mail-in Repair
           </Link>
-          <Link to="/FAQ" className="navbar-item is-size-5">
+          <Link to="/FAQ" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             FAQ
           </Link>
-          <Link to='/book-online' className='navbar-item is-size-5'>
-          <Link to="/contact" className="navbar-item is-size-5">
-            Contact
-          </Link>
+          <Link to='/book-online' className='navbar-item is-size-4-fullhd is-size-6-desktop'>
             Book Online
           </Link>
-          <Link to="/about" className="navbar-item is-size-5">
+          <Link to="/contact" className="navbar-item is-size-4-fullhd is-size-6-desktop">
+            Contact
+          </Link>
+          <Link to="/about" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             About Us
           </Link>
-          <Link to="/store" className="navbar-item is-size-5">
+          <Link to="/store" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             Store
           </Link>
-          <Link to="/cart" className="navbar-item is-size-5">
+          <Link to="/cart" className="navbar-item is-size-4-fullhd is-size-6-desktop">
             My Cart
           </Link>
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link is-size-5">Social</a>
+              <a class="navbar-link is-size-4-fullhd is-size-6-desktop">Social</a>
               <div class="navbar-dropdown">
                 <a class="navbar-item" href="https://www.facebook.com/phonefixitNY" target="_blank" rel="noopener noreferrer">
                   <img class="socialMedia" src={Facebook} />
@@ -135,7 +112,6 @@ class Navbar extends React.Component {
                 <a class="navbar-item" href="https://www.instagram.com/phonefixit/" target="_blank" rel="noopener noreferrer" >
                   <img class="socialMedia" src={Instagram} />
                   <p>Instagram</p>
-
                 </a>
                 <a class="navbar-item" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                   <img class="socialMedia" src={Youtube} />
