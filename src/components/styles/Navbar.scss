@@ -11,6 +11,20 @@
 .socialMedia {
   margin-right: 5px;
 }
+
+.navbar-brand {
+  align-items: center !important;
+}
+
+.logo {
+  max-width: 125px !important;
+  max-height: 80px !important;
+}
+
+.navbar-burger span {
+    width: 25px !important;
+    height: 2px !important;
+}
 // Import only what you need from Bulma
 @import "../../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../../node_modules/bulma/sass/base/_all.sass";

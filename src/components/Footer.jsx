@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles/Footer.scss'
+import logo from './images/logo.jpg'
 
 
 export const Footer = () => {
@@ -9,7 +10,7 @@ export const Footer = () => {
 
                 <div class="column is-one-quarter">
                     <img
-                        src="https://bulma.io/images/bulma-logo.png"
+                        src={logo}
                         width="112"
                         height="28"
                     />
