@@ -79,10 +79,10 @@ class Navbar extends React.Component {
               Home
           </Link>
             <Link to="/services" class="navbar-item">
-              <div class="navbar-item has-dropdown is-hoverable is-size-5">
+              {/* <div class="navbar-item has-dropdown is-hoverable is-size-5"> */}
                 {/* <a class="navbar-link">Services</a> */}
                 Services
-              <div class="navbar-dropdown">
+              {/* <div class="navbar-dropdown">
                   <Link to="/services/phonerepair" class="navbar-item">
                     Phone Repair
                 </Link>
@@ -102,7 +102,7 @@ class Navbar extends React.Component {
                     Apple iPad Repair
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </Link>
             <Link to="/mail-in-repair" class="navbar-item is-size-5">
               Mail-in Repair
@@ -111,6 +111,9 @@ class Navbar extends React.Component {
             FAQ
           </Link>
           <Link to='/book-online' className='navbar-item is-size-5'>
+          <Link to="/contact" className="navbar-item is-size-5">
+            Contact
+          </Link>
             Book Online
           </Link>
           <Link to="/about" className="navbar-item is-size-5">

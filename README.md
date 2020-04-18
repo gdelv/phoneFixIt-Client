@@ -69,3 +69,7 @@ const detailProduct = {
         --Footer (Stateless Functional Component)
     </footer>
 ```
+
+## Bugs To Fix
+
+-Making color/condition/carrier required to be selected in order to be added into the cart
