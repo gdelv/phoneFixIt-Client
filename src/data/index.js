@@ -237,8 +237,7 @@ export const storeProducts = [
         total: 0,
         color: "null",
         carrier: "null",
-        condition: "null",
-        dateReleased: 
+        condition: "null"
     },
     {
         id: 6,
