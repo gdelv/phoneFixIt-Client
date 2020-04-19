@@ -79,14 +79,11 @@ export const storeInfo = [
 export const storeProducts = [
     {
         id: 1,
-        title: "iPhone 7",
-        // condition: "Certified Pre Own",
-        capacity: "16GB",
+        title: "iPad (1st Gen)",
+        capacity: "64GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
-            { value: 'gold', label: 'Gold', color: '#FFD700' },
-            { value: 'black', label: 'Black', color: '#000000' },
-            { value: 'pink', label: 'Pink', color:'#FFC0CB' }
+            { value: 'black', label: 'Black', color: '#000000' }
         ],
         conditionOptions: [
             { value: 'A Stock', label: 'A Stock' },
@@ -100,10 +97,10 @@ export const storeProducts = [
             { value: 'verizon', label: 'Verizon' },
             { value: 'unlocked', label: 'Unlocked' },
         ],
-        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
-        price: 100,
+        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2FN9cAAOSw5xhcUxTX%2Fs-l640.png&f=1&nofb=1",
+        price: 50,
         company: "Apple",
-        info: "Add customized information about each product in this paragraph.",
+        info: "The first-generation iPad is a tablet computer designed and marketed by Apple Inc. as the first in the iPad lineup. The device features an Apple A4 SoC, a 9.7' touchscreen display, and, on certain variants, the capability of accessing cellular networks. Using the iOS operating system, the iPad can play music, send and receive email and browse the web. Other functions, which include the ability to play games and access references, GPS navigation software and social network services can be enabled by downloading apps.",
         inCart: false,
         count: 0,
         total: 0,
@@ -113,12 +110,12 @@ export const storeProducts = [
     },
     {
         id: 2,
-        title: "iPhone 5",
-        // condition: "Brand New",
-        capacity: "16GB",
+        title: "iPhone 4",
+        capacity: "32GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
             { value: 'black', label: 'Black', color: '#000000' },
+            { value: 'white', label: 'White', color: '#ffffff' }
         ],
         conditionOptions: [
             { value: 'A Stock', label: 'A Stock' },
@@ -132,10 +129,10 @@ export const storeProducts = [
             { value: 'verizon', label: 'Verizon' },
             { value: 'unlocked', label: 'Unlocked' },
         ],
-        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
+        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2um6umu4gwssp.cloudfront.net%2Fapple%2Fwp-content%2Fuploads%2F2016%2F06%2Fiphone-1.jpg&f=1&nofb=1",
         price: 50,
         company: "Apple",
-        info: "Add customized information about each product in this paragraph.",
+        info: "The iPhone 4 is a smartphone that was designed and marketed by Apple Inc. It is the fourth generation iPhone, succeeding the 3GS and preceding the 4S. Following a number of notable leaks, the iPhone 4 was first unveiled on June 7, 2010, at Apple's Worldwide Developers Conference in San Francisco,[8] and was released on June 24, 2010, in the United States, United Kingdom, France, Germany, and Japan. The iPhone 4 introduced a new hardware design to the iPhone family, which Apple's CEO Steve Jobs touted as the thinnest smartphone in the world at the time; it consisted of a stainless steel frame which doubles as an antenna, with internal components situated between aluminosilicate glass.",
         inCart: false,
         count: 0,
         total: 0,
@@ -145,8 +142,7 @@ export const storeProducts = [
     },
     {
         id: 3,
-        title: "iPhone 7",
-        // condition: "Certified Pre Own",
+        title: "iPad 2",
         capacity: "16GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
@@ -166,10 +162,10 @@ export const storeProducts = [
             { value: 'verizon', label: 'Verizon' },
             { value: 'unlocked', label: 'Unlocked' },
         ],
-        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
+        img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwondrouspics.com%2Fwp-content%2Fuploads%2F2011%2F07%2Fipad_2.jpg&f=1&nofb=1",
         price: 100,
         company: "Apple",
-        info: "Add customized information about each product in this paragraph.",
+        info: "The iPad 2 is a tablet designed, developed and marketed by Apple Inc. Compared to the first iPad, as the second model in the iPad line, it gained a faster dual core A5 processor, a lighter build structure, and was the first iPad to feature VGA front-facing and 720p rear-facing cameras designed for FaceTime video calling.",
         inCart: false,
         count: 0,
         total: 0,
@@ -179,8 +175,7 @@ export const storeProducts = [
     },
     {
         id: 4,
-        title: "iPhone 7",
-        // condition: "Certified Pre Own",
+        title: "iPhone 4S",
         capacity: "16GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
@@ -200,10 +195,10 @@ export const storeProducts = [
             { value: 'verizon', label: 'Verizon' },
             { value: 'unlocked', label: 'Unlocked' },
         ],
-        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
+        img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-15Zqijz3gus%2FT9_sVY_m-TI%2FAAAAAAAAEzY%2FnNZZ33CQnGI%2Fs1600%2FApple_iPhone_4.jpg&f=1&nofb=1",
         price: 100,
         company: "Apple",
-        info: "Add customized information about each product in this paragraph.",
+        info: "The iPhone 4S (retroactively stylized with a lowercase 's' as iPhone 4s as of September 2013) is a smartphone that was designed and marketed by Apple Inc. It is the fifth generation of the iPhone,[10] succeeding the iPhone 4 and preceding the iPhone 5. It was announced on October 4, 2011 at Apple's Cupertino campus, and was the final Apple product announced in the lifetime of former Apple CEO and co-founder Steve Jobs, who died the following day.",
         inCart: false,
         count: 0,
         total: 0,
@@ -213,9 +208,8 @@ export const storeProducts = [
     },
     {
         id: 5,
-        title: "iPhone 7",
-        // condition: "Certified Pre Own",
-        capacity: "16GB",
+        title: "iPhone 5",
+        capacity: "32GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
             { value: 'gold', label: 'Gold', color: '#FFD700' },
@@ -234,21 +228,21 @@ export const storeProducts = [
             { value: 'verizon', label: 'Verizon' },
             { value: 'unlocked', label: 'Unlocked' },
         ],
-        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
+        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd3nevzfk7ii3be.cloudfront.net%2Figi%2FMAScaCSihja252wZ&f=1&nofb=1",
         price: 100,
         company: "Apple",
-        info: "Add customized information about each product in this paragraph.",
+        info: "The iPhone 4S (retroactively stylized with a lowercase 's' as iPhone 4s as of September 2013) is a smartphone that was designed and marketed by Apple Inc. It is the fifth generation of the iPhone,[10] succeeding the iPhone 4 and preceding the iPhone 5. It was announced on October 4, 2011 at Apple's Cupertino campus, and was the final Apple product announced in the lifetime of former Apple CEO and co-founder Steve Jobs, who died the following day.",
         inCart: false,
         count: 0,
         total: 0,
         color: "null",
         carrier: "null",
-        condition: "null"
+        condition: "null",
+        dateReleased: 
     },
     {
         id: 6,
         title: "iPhone 7",
-        // condition: "Certified Pre Own",
         capacity: "16GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
@@ -282,7 +276,6 @@ export const storeProducts = [
     {
         id: 7,
         title: "iPhone 7",
-        // condition: "Certified Pre Own",
         capacity: "16GB",
         colorOptions: [
             { value: 'silver', label: 'Silver', color: '#666666' },
