@@ -1,4 +1,6 @@
 import React from 'react'
+import './Styles/ContactForm.scss'
+
 
 const encode = (data) => {
     return Object.keys(data)
@@ -54,9 +56,9 @@ class ContactForm extends React.Component {
                             </label>
                         </p>
                         <p>
-                        <textarea name="message" value={message} onChange={this.handleChange} />
+                        <textarea className="input is-info messageContainer" name="message" value={message} onChange={this.handleChange} />
                             <label id='text-label'>
-                                Message: 
+                                Your Message: 
                             </label>
                         </p>
                         <p>
