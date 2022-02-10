@@ -5,7 +5,7 @@ import Instagram from '../../images/instagram.png'
 import Youtube from '../../images/youtube.png'
 import Facebook from '../../images/facebook.png'
 import HomeIcon from '@material-ui/icons/Home'
-import PersonIcon from '@material-ui/icons/Person'
+// import PersonIcon from '@material-ui/icons/Person'
 // import RoomServiceIcon from '@material-ui/icons/RoomService'
 // import BuildIcon from '@material-ui/icons/Build'
 // import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer'
@@ -104,12 +104,12 @@ class SideDrawer extends React.Component {
                             <p>My Cart</p>
                         </div>
                         </Link> */}
-                        <a>
+                        {/* <a>
                         <div class='is-flex has-margin' onClick={this.toggleSocial}>
                             <PersonIcon/>
                             <p>Social</p>
                         </div>
-                        </a>
+                        </a> */}
                         {this.renderSocial()}
                     </div>
                 </div>

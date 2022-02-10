@@ -61,7 +61,7 @@ class Navbar extends React.Component {
               alt="logo"
             />
           </a>
-          <a
+          {/* <a
             onClick={this.toggleHamburger}
             role="button"
             class="navbar-burger burger"
@@ -72,7 +72,7 @@ class Navbar extends React.Component {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </a> */}
         </div>
         <div id="navbarNavigation" class="navbar-menu">
           <div class="navbar-start">
@@ -104,7 +104,7 @@ class Navbar extends React.Component {
             My Cart
           </Link> */}
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link is-size-4-fullhd is-size-6-desktop">Social</a>
+              {/* <a class="navbar-link is-size-4-fullhd is-size-6-desktop">Social</a> */}
               <div class="navbar-dropdown">
                 <a class="navbar-item" href="https://www.facebook.com/phonefixitNY" target="_blank" rel="noopener noreferrer">
                   <img alt="facebook" class="socialMedia" src={Facebook} />
