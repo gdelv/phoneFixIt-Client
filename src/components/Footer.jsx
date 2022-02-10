@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/Footer.scss'
-import logo from './images/logo.jpg'
+import logo from './images/hvacLogo.jpg'
 
 
 export const Footer = () => {
@@ -15,7 +15,7 @@ export const Footer = () => {
                         width="112"
                         height="28"
                     />
-                    <h6 class="subtitle is-6 is-size-7-mobile">© 2019 Phonefixit.com, Inc. All Rights Reserved</h6>
+                    <h6 class="subtitle is-6 is-size-7-mobile">© 2022 1stCallHVACSolutions.com, Inc. All Rights Reserved</h6>
                 </div>
                 <div class="column is-half">
                     <h4 class="title is-4 is-size-5-mobile">Address</h4>

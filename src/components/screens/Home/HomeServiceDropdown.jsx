@@ -8,7 +8,7 @@ export default class HomeServiceDropdown extends Component {
             <div className="dropdown is-hoverable">
                 <div className="dropdown-trigger">
                     <button className="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                    <span>Phone</span>
+                    <span>Heater</span>
                     <span className="icon is-small">
                         <i className="fas fa-angle-down" aria-hidden="true"></i>
                     </span>
@@ -17,13 +17,13 @@ export default class HomeServiceDropdown extends Component {
                 <div className="dropdown-menu" id="dropdown-menu" role="menu">
                     <div className="dropdown-content">
                         <a href="/" className="dropdown-item">
-                            Tablet
+                            A/C
                         </a>
                         <a  href="/" className="dropdown-item">
-                            Computer
+                            Ventilation
                         </a>
                         <a href="/" className="dropdown-item">
-                            Game Console
+                            Boiler
                         </a>
                     </div>
                 </div>
