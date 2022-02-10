@@ -5,14 +5,14 @@ import Instagram from '../../images/instagram.png'
 import Youtube from '../../images/youtube.png'
 import Facebook from '../../images/facebook.png'
 import HomeIcon from '@material-ui/icons/Home'
-import RoomServiceIcon from '@material-ui/icons/RoomService'
-import BuildIcon from '@material-ui/icons/Build'
-import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer'
-import InfoIcon from '@material-ui/icons/Info'
-import StoreIcon from '@material-ui/icons/Store'
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import PersonIcon from '@material-ui/icons/Person'
-import EventIcon from '@material-ui/icons/Event'
+// import RoomServiceIcon from '@material-ui/icons/RoomService'
+// import BuildIcon from '@material-ui/icons/Build'
+// import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer'
+// import InfoIcon from '@material-ui/icons/Info'
+// import StoreIcon from '@material-ui/icons/Store'
+// import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
+// import EventIcon from '@material-ui/icons/Event'
 
 
 
@@ -38,9 +38,9 @@ class SideDrawer extends React.Component {
         if (this.state.socialOpen) {
             return (
                 <div class="container is-flex is-column">
-                    <a href="https://www.instagram.com/phonefixit/"><img src={Instagram} /></a>
-                    <a href="href=https://www.youtube.com"><img src={Youtube} href="https://www.youtube.com" /></a>
-                    <a href='https://www.facebook.com/phonefixitNY'><img src={Facebook} /></a>
+                    <a href="https://www.instagram.com/phonefixit/"><img alt='instagram' src={Instagram} /></a>
+                    <a href="href=https://www.youtube.com"><img alt='youtube' src={Youtube} href="https://www.youtube.com" /></a>
+                    <a href='https://www.facebook.com/phonefixitNY'><img alt='facebook' src={Facebook} /></a>
                 </div>
             )
         }
@@ -60,7 +60,7 @@ class SideDrawer extends React.Component {
                             <p>Home</p>
                         </div>
                         </Link>
-                        <Link exact to='/services' onClick={this.props.toggleHamburger}>
+                        {/* <Link exact to='/services' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <RoomServiceIcon/>
                             <p>Services</p>
@@ -103,7 +103,7 @@ class SideDrawer extends React.Component {
                             <ShoppingCartIcon/>
                             <p>My Cart</p>
                         </div>
-                        </Link>
+                        </Link> */}
                         <a>
                         <div class='is-flex has-margin' onClick={this.toggleSocial}>
                             <PersonIcon/>

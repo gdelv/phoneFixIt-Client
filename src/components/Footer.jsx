@@ -10,6 +10,7 @@ export const Footer = () => {
 
                 <div class="column is-one-quarter">
                     <img
+                        alt='logo'
                         src={logo}
                         width="112"
                         height="28"
