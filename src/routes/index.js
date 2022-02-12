@@ -10,8 +10,8 @@ import Modal from '../components/screens/Cart/Modal'
 // import ProductList from "../components/screens/Store/ProductList";
 // import Cart from '../components/screens/Cart/Cart'
 // import weCome from '../components/screens/WeComeToYou/weCome'
-// import ServiceList from "../components/screens/Services/ServiceList";
-// import SingleService from "../components/screens/Services/SingleService";
+import ServiceList from "../components/screens/Services/ServiceList";
+import SingleService from "../components/screens/Services/SingleService";
 // import ComputerRepair from "../components/screens/Services/ComputerRepair";
 import Contact from "../components/screens/Contact/Contact";
 
@@ -23,10 +23,10 @@ export const Routes = props => {
           <Route exact path="/" component={Home} />
 
         {/* Services Route (/services) */}
-          {/* <Route path='/services'component={ServiceList} /> */}
+          <Route path='/services'component={ServiceList} />
         
         {/* Single Service Route (/service) */}
-        {/* <Route path='/service' component={SingleService} /> */}
+        <Route path='/service' component={SingleService} />
 
         {/* Computer Repair Router (/computer) */}
         {/* <Route path='/computer' component={ComputerRepair} /> */}

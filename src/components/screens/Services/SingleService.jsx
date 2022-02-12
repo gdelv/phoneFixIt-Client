@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 // import { Link } from 'react-router-dom'
 import { ProductConsumer } from '../../../context'
 import SingleServiceTop from './SingleServiceTop';
-import SingleServiceBottom from './SingleServiceBottom';
+// import SingleServiceBottom from './SingleServiceBottom';
 
 
 export default class SingleService extends Component {
@@ -16,7 +16,7 @@ export default class SingleService extends Component {
                             subtitle,
                             info, 
                             img,
-                            devicesAvailable
+                            // devicesAvailable
                         } =  value.singleService;
                         return (
                             <>
@@ -26,9 +26,9 @@ export default class SingleService extends Component {
                                     info={info}
                                     img={img}
                                 />
-                                <SingleServiceBottom
+                                {/* <SingleServiceBottom
                                     devicesAvailable={devicesAvailable}
-                                />
+                                /> */}
                             </>
                         )
                     }}
