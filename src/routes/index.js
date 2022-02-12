@@ -13,7 +13,7 @@ import Modal from '../components/screens/Cart/Modal'
 // import ServiceList from "../components/screens/Services/ServiceList";
 // import SingleService from "../components/screens/Services/SingleService";
 // import ComputerRepair from "../components/screens/Services/ComputerRepair";
-// import Contact from "../components/screens/Contact/Contact";
+import Contact from "../components/screens/Contact/Contact";
 
 export const Routes = props => {
   return (
@@ -35,7 +35,7 @@ export const Routes = props => {
           {/* <Route path="/mail-in-repair" component={MailInRepair} /> */}
 
         {/* Contant Route (/contact) */}
-        {/* <Route path='/contact' component={Contact} /> */}
+        <Route path='/contact' component={Contact} />
 
         {/* We Come To You Page (/book-online) /> */}
           {/* <Route path='/book-online' component={weCome}/> */}

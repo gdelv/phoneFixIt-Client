@@ -37,7 +37,7 @@ class SideDrawer extends React.Component {
     renderSocial = () => {
         if (this.state.socialOpen) {
             return (
-                <div class="container is-flex is-column">
+                <div className="container is-flex is-column">
                     <a href="https://www.instagram.com/phonefixit/"><img alt='instagram' src={Instagram} /></a>
                     <a href="href=https://www.youtube.com"><img alt='youtube' src={Youtube} href="https://www.youtube.com" /></a>
                     <a href='https://www.facebook.com/phonefixitNY'><img alt='facebook' src={Facebook} /></a>
@@ -52,10 +52,10 @@ class SideDrawer extends React.Component {
         }
         return (
             <div className={drawerClasses}>
-                <div class='columns'>
-                    <div class='sideDrawerColumn column'>
-                        <Link exact to='/' onClick={this.props.toggleHamburger}>
-                        <div class='is-flex has-margin'>
+                <div className='columns'>
+                    <div className='sideDrawerColumn column'>
+                        <Link exact="true" to='/' onClick={this.props.toggleHamburger}>
+                        <div className='is-flex has-margin'>
                             <HomeIcon />
                             <p>Home</p>
                         </div>
