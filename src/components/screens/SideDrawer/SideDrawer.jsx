@@ -6,8 +6,8 @@ import Youtube from '../../images/youtube.png'
 import Facebook from '../../images/facebook.png'
 import HomeIcon from '@material-ui/icons/Home'
 // import PersonIcon from '@material-ui/icons/Person'
-// import RoomServiceIcon from '@material-ui/icons/RoomService'
-// import BuildIcon from '@material-ui/icons/Build'
+import RoomServiceIcon from '@material-ui/icons/RoomService'
+import BuildIcon from '@material-ui/icons/Build'
 // import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer'
 // import InfoIcon from '@material-ui/icons/Info'
 // import StoreIcon from '@material-ui/icons/Store'
@@ -60,13 +60,19 @@ class SideDrawer extends React.Component {
                             <p>Home</p>
                         </div>
                         </Link>
-                        {/* <Link exact to='/services' onClick={this.props.toggleHamburger}>
+                        <Link exact to='/services' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <RoomServiceIcon/>
                             <p>Services</p>
                         </div>
                         </Link>
-                        <Link exact to='/mail-in-repair' onClick={this.props.toggleHamburger}>
+                        <Link exact to='/contact' onClick={this.props.toggleHamburger}>
+                        <div class='is-flex has-margin'>
+                            <BuildIcon/>
+                            <p>Contact</p>
+                        </div>
+                        </Link>
+                        {/* <Link exact to='/mail-in-repair' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>
                             <BuildIcon/>
                             <p>Mail-In Repair</p>
@@ -103,8 +109,8 @@ class SideDrawer extends React.Component {
                             <ShoppingCartIcon/>
                             <p>My Cart</p>
                         </div>
-                        </Link> */}
-                        {/* <a>
+                        </Link>
+                        <a>
                         <div class='is-flex has-margin' onClick={this.toggleSocial}>
                             <PersonIcon/>
                             <p>Social</p>

@@ -61,7 +61,7 @@ class Navbar extends React.Component {
               alt="logo"
             />
           </a>
-          {/* <a
+          <a
             onClick={this.toggleHamburger}
             role="button"
             class="navbar-burger burger"
@@ -72,7 +72,7 @@ class Navbar extends React.Component {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a> */}
+          </a>
         </div>
         <div id="navbarNavigation" className="navbar-menu">
           <div className="navbar-start">

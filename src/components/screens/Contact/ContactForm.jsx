@@ -40,8 +40,48 @@
 //     }
 // }
 
+//name (req)
+//tel (req)
+//email (opt)
+//select service dropdown (req)
+//msg (optional)
 
-import React from "react";
+
+// import React from 'react';
+// import { useForm } from 'react-hook-form';
+
+// export default function ContactForm() {
+//   const { register, handleSubmit, formState: { errors } } = useForm();
+//   const onSubmit = data => console.log(data);
+//   console.log(errors);
+  
+//   return (
+//     <form onSubmit={handleSubmit(onSubmit)}>
+//       <input type="text" placeholder="First name" {...register("First name", {required: true, maxLength: 20})} />
+//       <input type="text" placeholder="Last name" {...register("Last name", {required: true, maxLength: 100})} />
+//       <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
+//       <input type="tel" placeholder="Mobile number" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} />
+//       <select {...register("Title", { required: true })}>
+//         <option value="Mr">Mr</option>
+//         <option value="Mrs">Mrs</option>
+//         <option value="Miss">Miss</option>
+//         <option value="Dr">Dr</option>
+//       </select>
+
+//       <input {...register} type="radio" value="Yes" />
+//       <input {...register} type="radio" value="No" />
+//       <textarea {...register("Message", { maxLength: 200})} />
+//       <input type="checkbox" placeholder="Emergency" {...register("Emergency", {})} />
+
+//       <input type="submit" />
+//     </form>
+//   );
+// }
+
+
+
+import React, { useState } from "react";
+import emailjs from 'emailjs-com'
 
 import "./styles.css";
 
@@ -80,6 +120,10 @@ const InputField = React.forwardRef((props, ref) => {
 });
 
 function ContactForm() {
+  const [message, setMessage] = useState('second')
+  const handleChange = (e) => {
+      setMessage(e.target.value)
+  }
   const defaultValues = React.useMemo(
     () => ({
       name: "tanner",
@@ -91,9 +135,9 @@ function ContactForm() {
   );
   const {
     Form,
-    values,
-    pushFieldValue,
-    removeFieldValue,
+    // values,
+    // pushFieldValue,
+    // removeFieldValue,
     meta: { isSubmitting, isSubmitted, canSubmit, error }
   } = useForm({
     defaultValues,
@@ -106,8 +150,21 @@ function ContactForm() {
     onSubmit: async (values, instance) => {
       await new Promise(resolve => setTimeout(resolve, 1000));
       console.log(values);
+      console.log(message);
+      var templateParams = {
+            name: values.name,
+            email: values.email,
+            message
+        };
+        
+        emailjs.send(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_US_ID)
+            .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            }, function(err) {
+            console.log('FAILED...', err);
+            });
     },
-    debugForm: true
+    debugForm: false
     // false to hide JSON
   });
 
@@ -122,7 +179,7 @@ function ContactForm() {
           />
         </label>
       </div>
-      <div>
+      {/* <div>
         <label>
           Age:{" "}
           <InputField
@@ -134,7 +191,7 @@ function ContactForm() {
             min="1"
           />
         </label>
-      </div>
+      </div> */}
       <div>
         <label>
           Email:{" "}
@@ -161,7 +218,7 @@ function ContactForm() {
           />
         </label>
       </div>
-      <div>
+      {/* <div>
         <label>
           Username:{" "}
           <InputField
@@ -185,14 +242,19 @@ function ContactForm() {
             }}
           />
         </label>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <label>
           Notes:{" "}
           <InputField field="other.notes" defaultValue="This is a note." />
         </label>
-      </div>
-      <div>
+      </div> */}
+      <label for="message">Message: </label>
+
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter a message here" onChange={handleChange}>
+    {/* {message} */}
+    </textarea>
+      {/* <div>
         Friends
         <div
           style={{
@@ -217,7 +279,7 @@ function ContactForm() {
             Add Friend
           </button>
         </div>
-      </div>
+      </div> */}
 
       {isSubmitted ? <em>Thanks for submitting!</em> : null}
 
@@ -227,7 +289,7 @@ function ContactForm() {
         "Submitting..."
       ) : (
         <div>
-          <button type="submit" disable={!canSubmit}>
+          <button type="submit" disable={!canSubmit.toString()}>
             Submit
           </button>
         </div>
