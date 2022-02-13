@@ -9,8 +9,8 @@ export const Home = (props) => {
     return (
         <div>
             <HomeHeroContainer
-            title='WELCOME TO 1stCallHVACSolutions.COM'
-            description='We fix your devices at our stores, your place or by mail'
+            title='Same Day Heating and AC Services'
+            description="What service can we provide?"
             />
             <HomeRepairServices/>
             <HomeBanner/>

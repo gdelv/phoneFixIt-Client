@@ -9,7 +9,7 @@ export default function SingleServiceTop(props) {
                     <p className="subtitle has-text-centered">{props.subtitle}</p>
                     <p className="subtitle">{props.info}</p>
                 <button>
-                    <a href="/contact">Contact Us</a>
+                    <a href="/contact">Get a Quote</a>
                 </button>
                 </article>
             </div>

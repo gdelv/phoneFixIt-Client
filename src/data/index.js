@@ -1,17 +1,33 @@
+const acLogo = require('../components/images/lorenzoHVAC/services/acLogo.JPG')
+const serviceLogo = require('../components/images/lorenzoHVAC/services/serviceLogo.JPG')
+const douglasLogo = require('../components/images/lorenzoHVAC/services/douglasLogo.JPG')
+const furnaceLogo = require('../components/images/lorenzoHVAC/services/furnaceLogo.JPG')
+const heatPumpLogo = require('../components/images/lorenzoHVAC/services/heatPumpLogo.JPG')
+const heatLogo = require('../components/images/lorenzoHVAC/services/heatLogo.JPG')
+const thermostatLogo = require('../components/images/lorenzoHVAC/services/thermostatLogo.JPG')
+const centralAirLogo = require('../components/images/lorenzoHVAC/services/centralAirLogo.JPG')
+
+
 export const linksInfo = [
     {
-        title: "Phone Repair",
-        description: "Phonefixit is committed to your happiness, which is why our expert repair technicians are fully trained in Apple iPhone Repair, Samsung Galaxy Repair and all other models. With our Repair Services, you’ll be thrilled you came to us for your repair. Bring us whatever you need us to fix, and experience the Phonefixit difference. Get your iPhone screen replaces by us in under 20 minutes.",
-        img: "https://i.imgur.com/7DTNqsI.jpg"
+        title: "Central Air",
+        description: "",
+        img: centralAirLogo
     },
     {
-        title: "Tablet Repair",
-        description: "Our technicians aren't limited to just phones, Technicians are also trained to repair all current and past Apple iPad & Samsung tablets models. Our team members are more than happy to answer any of your questions before, during, and after the repair process. Not satisfied? We’ll be sure to do everything in our power to get the job done right. Get in touch with us today to find out more about this service.",
-        img: "https://i.imgur.com/7EZXpnc.jpg"
-    },{
-        title: "Computer Repair",
-        description: "Since 2014, we’ve provided customers with convenient and comprehensive services for all their repair needs. phonefixit.com is committed to helping make your life easier. Computer Repairs are also available to all of our clients. Combined with phone and tablet services we'll be your one stop shop for all repair services. Contact us today for more information.",
-        img:"https://i.imgur.com/KOlc4Nr.jpg"
+        title: "Ductless Heating & Cooling",
+        description: "",
+        img: douglasLogo
+    },
+    {
+        title: "Service & Repair",
+        description: "",
+        img: serviceLogo
+    },
+    {
+        title: "Smart Thermostats",
+        description: "",
+        img: thermostatLogo
     }
 
 ]
@@ -345,10 +361,10 @@ export const detailProduct = {
 export const servicesInfo = [
     {
         id: 1,
-        title: "Phone Repair",
-        subtitle: "Do you have a broken phone?",
-        info: "Don't worry Phonefixit.com is here to help. Most screen replacements are done in under 20 minutes. Broken screen, bad charging port, water damage, are some of the many issues we can help you get fix!",
-        img: "https://cdn.vox-cdn.com/thumbor/2bzgf1UMghKL5-wSMaNlvQDBA9g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/55986267/akrales_160725_1155_A_0019.0.jpg",
+        title: "Heat",
+        subtitle: "Make the right choice and contact us today to get a quote on central heating system installation!",
+        info: "Just like ACs, other than purchasing the correct heating system, the most important choice when it comes to heating installation is who installs it. No matter how good of a brand you choose for your heating system, if it’s installed improperly, you may as well have chosen the cheapest brand on the market, or none at all. Make the right choice and choose SoCal HVAC Specialist Heating & Air Conditioning to install your heating system today. We will make sure that your heating system is working at the highest level of efficiency possible, so you can have even temperature zones, lower electric bills, and a long-lasting heating system!",
+        img: heatLogo,
         devicesAvailable: [
             {   
                 id: 1,
@@ -384,10 +400,106 @@ export const servicesInfo = [
     },
     {
         id: 2,
-        title: "Tablet Repair",
-        subtitle: "Do you have a broken tablet?",
-        info: "Don't worry Phonefixit.com is here to help. Broken screen, bad charging port, water damage some of the many issues we can help you get fix! ",
-        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2.bp.blogspot.com%2F-VwlwklDlL0I%2FUe1UeVEe3zI%2FAAAAAAAARGk%2Fszc18RWij6o%2Fs1600%2Fipad%2B3%2B-%2Btechnews24h.jpg&f=1&nofb=1",
+        title: "Air Conditioner",
+        subtitle: "Make the right choice and contact us today to get a quote on AC installation!",
+        info: "Other than purchasing the correct air conditioning system, the most important choice when it comes to AC installation is who installs it. Many homeowners are under the impression that the brand of the AC is what makes the difference, but that’s only half of the equation. Choosing the right company for your install ensures that your cooling system is working at the highest level of efficiency possible, so you can have even temperature zones, lower electric bills, and a long-lasting cooling system!",
+        img: acLogo,
+        devicesAvailable: [
+            {
+                id: 1,
+                deviceName: "Apple iPads",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                id: 2,
+                deviceName: "Samsung Tablets",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                id: 3,
+                deviceName: "Other Phone Brands",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            }
+        ]
+    },
+    {
+        id: 3,
+        title: "Gas Furnace",
+        subtitle: "Do you need to upgrade your furnace?",
+        info: "A gas furnace is a home heating appliance that runs off of natural gas. The natural gas is ignited in the furnace, warming up the air, which is then delivered throughout the home. A fully functioning gas furnace requires all of its components to be working in sync.",
+        img: furnaceLogo,
+        devicesAvailable: [
+            {
+                id: 1,
+                deviceName: "Apple iPads",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                id: 2,
+                deviceName: "Samsung Tablets",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                id: 3,
+                deviceName: "Other Phone Brands",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            }
+        ]
+    },
+    {
+        id: 4,
+        title: "Heat Pumps",
+        subtitle: "When considering which type of system is best for your home, several important factors should be considered, including the size of the home and the local climate.",
+        info: "One very important point to understand when answering the question “how do heat pumps work?” is that heat pumps do not generate heat – they move heat from one place to another. A furnace creates heat that is distributed throughout a home, but a heat pump absorbs heat energy from the outside air (even in cold temperatures) and transfers it to the indoor air. When in cooling mode a heat pump and an air conditioner are functionally identical, absorbing heat from the indoor air and releasing it through the outdoor unit. Click here for more information about heat pumps vs air conditioners.",
+        img: heatPumpLogo,
+        devicesAvailable: [
+            {
+                id: 1,
+                deviceName: "Apple iPads",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                id: 2,
+                deviceName: "Samsung Tablets",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                id: 3,
+                deviceName: "Other Phone Brands",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: "Ductless Heating & Cooling",
+        subtitle: "What Is a Ductless Mini-Split? ",
+        info: "A ductless mini-split system does not need air ducts to operate. A traditional air conditioner will distribute air throughout the home from a single unit. A mini-split indoor unit will service a single room or area, with each unit using a separate fan and evaporator coil.",
+        img: douglasLogo,
+        devicesAvailable: [
+            {
+                id: 1,
+                deviceName: "Apple iPads",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                id: 2,
+                deviceName: "Samsung Tablets",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            },
+            {
+                id: 3,
+                deviceName: "Other Phone Brands",
+                logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HKoDLEf2PVCQK500SS4TAwHaHa%26pid%3DApi&f=1" 
+            }
+        ]
+    },
+    {
+        id: 6,
+        title: "Service & Repair",
+        subtitle: "Need a hand?",
+        info: "HVAC maintenance is the process of maintaining the heater or air conditioner by inspecting, cleaning, testing, or even repairing and replacing components in the system. By investing in maintenance for your HVAC system, you can fix issues before they become bigger problems.",
+        img: serviceLogo,
         devicesAvailable: [
             {
                 id: 1,

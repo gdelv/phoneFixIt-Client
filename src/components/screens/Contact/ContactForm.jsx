@@ -120,9 +120,17 @@ const InputField = React.forwardRef((props, ref) => {
 });
 
 function ContactForm() {
-  const [message, setMessage] = useState('second')
+  const [message, setMessage] = useState('')
+  const [telephone, setTelephone] = useState('')
+  const [select, setSelect] = useState('')
   const handleChange = (e) => {
-      setMessage(e.target.value)
+      setMessage(e.target.value);
+  }
+  const handlePhoneChange = (e) => {
+      setTelephone(e.target.value);
+  }
+  const handleSelect = (e) => {
+      setSelect(e.target.value);
   }
   const defaultValues = React.useMemo(
     () => ({
@@ -156,7 +164,6 @@ function ContactForm() {
             email: values.email,
             message
         };
-        
         emailjs.send(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_US_ID)
             .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
@@ -170,6 +177,12 @@ function ContactForm() {
 
   return (
     <Form>
+    {/* telephone */}
+    {/* //name (req)
+//tel (req)
+//email (opt)
+//select service dropdown (req)
+//msg (optional) */}
       <div>
         <label>
           Name:{" "}
@@ -249,6 +262,23 @@ function ContactForm() {
           <InputField field="other.notes" defaultValue="This is a note." />
         </label>
       </div> */}
+
+<label for="phone">Enter your phone number:</label>
+
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required
+       onChange={handlePhoneChange}/>
+
+<small>Format: 123-456-7890</small>
+      <label for="cars">Choose a service:</label>
+
+<select id="cars" onChange={handleSelect} value={select}>
+  <option value="new_installation">New installation</option>
+  <option value="service_and_repair">Service and Repair</option>
+  <option value="free_estimate">Get a free estimate</option>
+  <option value="audi" selected>Audi</option>
+</select>
       <label for="message">Message: </label>
 
     <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter a message here" onChange={handleChange}>
