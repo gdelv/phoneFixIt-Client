@@ -71,6 +71,10 @@ class SideDrawer extends React.Component {
                             <BuildIcon/>
                             <p>Contact</p>
                         </div>
+                        <div style={{display: 'flex', width:'100%', alignItems:'center', flexDirection:'column'}}>
+            <h6 className="subtitle is-6 is-size-6-mobile is-spaced"><a href="tel:+18578883999">857-888-3999</a></h6>
+            <h6 className="subtitle is-6 is-size-6-mobile is-spaced"><a href="tel:+18572587608">857-258-7608</a></h6>
+          </div>
                         </Link>
                         {/* <Link exact to='/mail-in-repair' onClick={this.props.toggleHamburger}>
                         <div class='is-flex has-margin'>

@@ -14,7 +14,7 @@ export default function SingleServiceTop(props) {
                 </button> */}
                 <div style={{display: 'flex', width: '100%', justifyContent: "center"}}>
                     <button className="button is-danger is-rounded">
-                        <Link to='/contact'>Get a Quote</Link>
+                        <Link style={{color: 'white'}} to='/contact'>Get a Quote</Link>
                     </button>
                 </div>
                 </article>

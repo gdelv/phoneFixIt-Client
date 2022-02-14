@@ -1,85 +1,3 @@
-// import React from 'react'
-// import emailjs from 'emailjs-com'
-// class ContactForm extends React.Component {
-//     constructor() {
-//         super();
-//         this.state = {
-//             name: "",
-//             email: "",
-//             message: ""
-//         };
-//         this.handleSubmit = this.handleSubmit.bind(this);
-//     }
-    
-   
-
-//     handleSubmit() {
-//         console.log('btn clicked');
-//         var templateParams = {
-//             name: 'James',
-//             notes: 'Check this out!'
-//         };
-        
-//         emailjs.send('service_r3zpirv','template_giusseppe_test', templateParams, 'user_BwvcdIZEnbCvCqLeiP433')
-//             .then(function(response) {
-//             console.log('SUCCESS!', response.status, response.text);
-//             }, function(err) {
-//             console.log('FAILED...', err);
-//             });
-//     }
-//     render() {
-//         // const { name, email, message } = this.state;
-//         return (
-//             <>
-//                 <h1 className="title is-uppercase">Contact us</h1>
-//                 <p className="subtitle">Located in Verma Plaza our location has ample parking</p>
-//                 <div className='form-container'>
-//                 </div>  
-//             </>
-//         )
-//     }
-// }
-
-//name (req)
-//tel (req)
-//email (opt)
-//select service dropdown (req)
-//msg (optional)
-
-
-// import React from 'react';
-// import { useForm } from 'react-hook-form';
-
-// export default function ContactForm() {
-//   const { register, handleSubmit, formState: { errors } } = useForm();
-//   const onSubmit = data => console.log(data);
-//   console.log(errors);
-  
-//   return (
-//     <form onSubmit={handleSubmit(onSubmit)}>
-//       <input type="text" placeholder="First name" {...register("First name", {required: true, maxLength: 20})} />
-//       <input type="text" placeholder="Last name" {...register("Last name", {required: true, maxLength: 100})} />
-//       <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
-//       <input type="tel" placeholder="Mobile number" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} />
-//       <select {...register("Title", { required: true })}>
-//         <option value="Mr">Mr</option>
-//         <option value="Mrs">Mrs</option>
-//         <option value="Miss">Miss</option>
-//         <option value="Dr">Dr</option>
-//       </select>
-
-//       <input {...register} type="radio" value="Yes" />
-//       <input {...register} type="radio" value="No" />
-//       <textarea {...register("Message", { maxLength: 200})} />
-//       <input type="checkbox" placeholder="Emergency" {...register("Emergency", {})} />
-
-//       <input type="submit" />
-//     </form>
-//   );
-// }
-
-
-
 import React, { useState } from "react";
 import emailjs from 'emailjs-com'
 
@@ -132,15 +50,15 @@ function ContactForm() {
   const handleSelect = (e) => {
       setSelect(e.target.value);
   }
-  const defaultValues = React.useMemo(
-    () => ({
-      name: "tanner",
-      age: "29",
-      email: "tanner@gmail.com",
-      friends: ["jaylen"]
-    }),
-    []
-  );
+  // const defaultValues = React.useMemo(
+  //   () => ({
+  //     name: "tanner",
+  //     age: "29",
+  //     email: "tanner@gmail.com",
+  //     friends: ["jaylen"]
+  //   }),
+  //   []
+  // );
   const {
     Form,
     // values,
@@ -148,10 +66,10 @@ function ContactForm() {
     // removeFieldValue,
     meta: { isSubmitting, isSubmitted, canSubmit, error }
   } = useForm({
-    defaultValues,
+    // defaultValues,
     validate: values => {
-      if (values.name === "tanner" && values.age !== "29") {
-        return "This is not tanner's correct age";
+      if (values.name === "") {
+        return "Please enter a name";
       }
       return false;
     },
@@ -162,7 +80,9 @@ function ContactForm() {
       var templateParams = {
             name: values.name,
             email: values.email,
-            message
+            message,
+            telephone,
+            service: select
         };
         emailjs.send(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_US_ID)
             .then(function(response) {
@@ -224,7 +144,7 @@ function ContactForm() {
               // We're going to mock that for now
               await new Promise(resolve => setTimeout(resolve, 2000));
 
-              return value === "tanner@gmail.com"
+              return value === "1stcallhvacsolutions@gmail.com"
                 ? "Email is already being used"
                 : false;
             }}
@@ -262,28 +182,33 @@ function ContactForm() {
           <InputField field="other.notes" defaultValue="This is a note." />
         </label>
       </div> */}
-
-<label for="phone">Enter your phone number:</label>
-
-<input type="tel" id="phone" name="phone"
-       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-       required
-       onChange={handlePhoneChange}/>
-
-<small>Format: 123-456-7890</small>
-      <label for="cars">Choose a service:</label>
-
-<select id="cars" onChange={handleSelect} value={select}>
-  <option value="new_installation">New installation</option>
-  <option value="service_and_repair">Service and Repair</option>
-  <option value="free_estimate">Get a free estimate</option>
-  <option value="audi" selected>Audi</option>
-</select>
-      <label for="message">Message: </label>
-
+<div>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+        onChange={handlePhoneChange}/>
+</div>
+<div>
+  <small>Format: <b>123-456-7890</b></small>
+</div>
+<div>
+    <label for="cars">Choose a service:</label>
+    <select id="cars" onChange={handleSelect} value={select}>
+      <option value="New_Installation">New installation</option>
+      <option value="Service_and_Repair">Service and Repair</option>
+      <option value="Free_Estimate">Get a free estimate</option>
+      {/* <option value="audi" selected>Audi</option> */}
+    </select>
+</div>
+<div>
+    <label for="message">Message: </label>
+</div>
+<div>
     <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter a message here" onChange={handleChange}>
     {/* {message} */}
     </textarea>
+</div>
       {/* <div>
         Friends
         <div
@@ -311,7 +236,7 @@ function ContactForm() {
         </div>
       </div> */}
 
-      {isSubmitted ? <em>Thanks for submitting!</em> : null}
+      {isSubmitted ? <em>We received your email and will contact you ASAP</em> : null}
 
       {error ? <strong>{error}</strong> : null}
 

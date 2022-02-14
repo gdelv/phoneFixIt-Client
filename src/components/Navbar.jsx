@@ -61,6 +61,10 @@ class Navbar extends React.Component {
               alt="logo"
             />
           </a>
+          {/* <div style={{display: 'flex', width:'100%', border:'1px solid red', flexDirection:'column'}}>
+            <h6 className="subtitle is-6 is-size-6-mobile is-spaced"><a href="tel:+18578883999">857-888-3999</a></h6>
+            <h6 className="subtitle is-6 is-size-6-mobile is-spaced"><a href="tel:+18572587608">857-258-7608</a></h6>
+          </div> */}
           <a
             onClick={this.toggleHamburger}
             role="button"
@@ -75,6 +79,10 @@ class Navbar extends React.Component {
           </a>
         </div>
         <div id="navbarNavigation" className="navbar-menu">
+        <div style={{display: 'flex', width:'100%', flexDirection:'column', paddingRight: '1em'}}>
+            <h6 className="subtitle is-6 is-size-6-mobile is-spaced"><a href="tel:+18578883999">857-888-3999</a></h6>
+            <h6 className="subtitle is-6 is-size-6-mobile is-spaced"><a href="tel:+18572587608">857-258-7608</a></h6>
+          </div>
           <div className="navbar-start">
             <Link to="/" className="navbar-item is-size-4-fullhd is-size-6-desktop">
               Home

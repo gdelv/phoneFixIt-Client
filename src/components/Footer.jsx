@@ -8,14 +8,14 @@ export const Footer = () => {
         <footer className="footer is-flex">
             <div className="columns">
 
-                <div className="column is-one-quarter">
+                <div className="column is-half">
                     <img
                         alt='logo'
                         src={logo}
                         width="112"
                         height="28"
                     />
-                    <h6 className="subtitle is-6 is-size-7-mobile">© 2022 1stCallHVACSolutions.com, Inc. All Rights Reserved</h6>
+                    <h6 className="subtitle is-6 is-size-7-mobile">© 2022 1stCallHVACSolutions.com Inc. All Rights Reserved</h6>
                 </div>
                 <div className="column is-half">
                     {/* <h4 className="title is-4 is-size-5-mobile">Address</h4>

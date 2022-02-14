@@ -12,6 +12,11 @@
   // top: 0;
   // pointer-events: none;
 }
+.navbar-item:hover {
+  background-color: #3199db !important;
+  color: white !important;
+  border-radius: 10px;
+}
 
 // Centers the navbar disable to have the position be start
 .navbar-menu {
