@@ -1,7 +1,14 @@
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 450px;
+  z-index: 100;
+  padding-right: 2em;
+  // position: sticky;
+  // top: 0;
+  // pointer-events: none;
 }
 
 // Centers the navbar disable to have the position be start
@@ -15,11 +22,12 @@
 
 .navbar-brand {
   align-items: center !important;
+  margin: 0;
 }
 
 .logo {
-  max-width: 125px !important;
-  max-height: 80px !important;
+  max-width: 400px !important;
+  max-height: 400px !important;
 }
 
 .navbar-burger span {

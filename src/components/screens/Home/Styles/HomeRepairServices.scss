@@ -1,3 +1,22 @@
 .repair-card {
     margin: 2em 1em;
 }
+.card {
+    min-width: 350px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.card-image img {
+    height: 250px;
+    width: 100%;
+}
+.card-content {
+    margin: 0;
+    padding-bottom: .5em;
+}
+.card-image {
+    margin: 0;
+}
+.media {
+    margin: 0;
+}

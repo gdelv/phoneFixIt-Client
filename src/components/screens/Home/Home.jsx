@@ -2,8 +2,8 @@ import React from 'react'
 import HomeHeroContainer from './HomeHeroContainer' //complete
 import HomeRepairServices from './HomeRepairServices'
 import HomeBanner from './HomeBanner'
-import HomeFeatures from './HomeFeatures'
-import HomeSubscribe from './HomeSubscribe'
+// import HomeFeatures from './HomeFeatures'
+// import HomeSubscribe from './HomeSubscribe'
 
 export const Home = (props) => {
     return (
@@ -14,8 +14,8 @@ export const Home = (props) => {
             />
             <HomeRepairServices/>
             <HomeBanner/>
-            <HomeFeatures/>
-            <HomeSubscribe/>
+            {/* <HomeFeatures/>
+            <HomeSubscribe/> */}
         </div>
 
     )
