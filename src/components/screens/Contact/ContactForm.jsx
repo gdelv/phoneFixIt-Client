@@ -40,7 +40,7 @@ const InputField = React.forwardRef((props, ref) => {
 function ContactForm() {
   const [message, setMessage] = useState('')
   const [telephone, setTelephone] = useState('')
-  const [select, setSelect] = useState('')
+  const [select, setSelect] = useState('New_Installation')
   const handleChange = (e) => {
       setMessage(e.target.value);
   }
@@ -195,7 +195,7 @@ function ContactForm() {
 <div>
     <label for="cars">Choose a service:</label>
     <select id="cars" onChange={handleSelect} value={select}>
-      <option value="New_Installation">New installation</option>
+      <option value="New_Installation" selected>New installation</option>
       <option value="Service_and_Repair">Service and Repair</option>
       <option value="Free_Estimate">Get a free estimate</option>
       {/* <option value="audi" selected>Audi</option> */}
