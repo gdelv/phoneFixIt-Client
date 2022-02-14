@@ -54,7 +54,7 @@ class Navbar extends React.Component {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           {/* Insert phoneFixIt logo here */}
-          <a className="navbar-item" href="/">
+          {/* <a className="navbar-item" href="/"> */}
           <Link to="/" className="navbar-item">
             <img
               src={logo}
@@ -62,7 +62,7 @@ class Navbar extends React.Component {
               alt="logo"
             />
           </Link>
-          </a>
+          {/* </a> */}
           {/* <div style={{display: 'flex', width:'100%', border:'1px solid red', flexDirection:'column'}}>
             <h6 className="subtitle is-6 is-size-6-mobile is-spaced"><a href="tel:+18578883999">857-888-3999</a></h6>
             <h6 className="subtitle is-6 is-size-6-mobile is-spaced"><a href="tel:+18572587608">857-258-7608</a></h6>
