@@ -11,7 +11,7 @@ export default class Contact extends Component {
                 <div className="column is-half">
                     <figure className="image is-5by4">
                         <img 
-                            src="https://www.clearswift.com/sites/default/files/2021-09/hs-contact-us-figure.png" 
+                            src="https://static.vecteezy.com/system/resources/previews/001/263/872/large_2x/contact-us-customer-support-concept-vector.jpg" 
                             alt="contact"
                         />
                     </figure>
