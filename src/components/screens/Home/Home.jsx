@@ -9,7 +9,7 @@ export const Home = (props) => {
     return (
         <div>
             <HomeHeroContainer
-            title='Same Day Heating and AC Services'
+            title='Same Day Heating and A/C Services'
             description="What service can we provide?"
             />
             <HomeRepairServices/>
