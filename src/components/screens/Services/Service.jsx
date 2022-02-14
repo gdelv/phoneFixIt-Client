@@ -9,8 +9,8 @@ export default class Service extends Component {
         return (
             <ProductConsumer>
                 {value => (
-                    <div className="column is-one-quarter">
-                        <div className="card">
+                    <div className="" style={{margin: '1em'}}>
+                        <div className="card" style={{height: '550px'}}>
                             <div className="card-image" onClick={() => value.handleService(id)}>
                                 <figure className="image is-5by3">
                                     <Link to='/service'>
@@ -19,14 +19,19 @@ export default class Service extends Component {
                                 </figure>
                             </div>
                             <div className="card-content">
-                                <div className="media">
+                                {/* <div className="media"> */}
                                     <div className="media-content">
-                                        <p className="title is-2 has-text-centered">{title}</p>
-                                        <Link to="/service" onClick={() => value.handleService(id)}>
+                                        <p className="subtitle is-2 has-text-centered">{title}</p>
+                                        {/* <Link to="/service" onClick={() => value.handleService(id)}>
                                             <button className="button">Learn more</button>
-                                        </Link>
+                                        </Link> */}
+                                        <div style={{display: 'flex', width: '100%', justifyContent: "center"}}>
+                                        <button className="button is-info is-outlined is-rounded">
+                                            <Link to='/service' onClick={() => value.handleService(id)}>Learn more</Link>
+                                        </button>
+                                        </div>
                                     </div>
-                                </div>
+                                {/* </div> */}
                             </div>
                         </div>
                     </div>
