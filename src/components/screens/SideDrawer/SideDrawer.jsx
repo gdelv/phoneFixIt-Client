@@ -9,7 +9,7 @@ import HomeIcon from '@material-ui/icons/Home'
 import RoomServiceIcon from '@material-ui/icons/RoomService'
 import BuildIcon from '@material-ui/icons/Build'
 // import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer'
-// import InfoIcon from '@material-ui/icons/Info'
+import CollectionsIcon from '@mui/icons-material/Collections';
 // import StoreIcon from '@material-ui/icons/Store'
 // import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 // import EventIcon from '@material-ui/icons/Event'
@@ -60,14 +60,14 @@ class SideDrawer extends React.Component {
                             <p>Home</p>
                         </div>
                         </Link>
-                        <Link exact to='/services' onClick={this.props.toggleHamburger}>
-                        <div class='is-flex has-margin'>
+                        <Link exact="true" to='/services' onClick={this.props.toggleHamburger}>
+                        <div className='is-flex has-margin'>
                             <RoomServiceIcon/>
                             <p>Services</p>
                         </div>
                         </Link>
-                        <Link exact to='/contact' onClick={this.props.toggleHamburger}>
-                        <div class='is-flex has-margin'>
+                        <Link exact="true" to='/contact' onClick={this.props.toggleHamburger}>
+                        <div className='is-flex has-margin'>
                             <BuildIcon/>
                             <p>Contact</p>
                         </div>
@@ -77,45 +77,45 @@ class SideDrawer extends React.Component {
           </div>
                         </Link>
                         {/* <Link exact to='/mail-in-repair' onClick={this.props.toggleHamburger}>
-                        <div class='is-flex has-margin'>
+                        <div className='is-flex has-margin'>
                             <BuildIcon/>
                             <p>Mail-In Repair</p>
                         </div>
                         </Link>
                         <Link exact to='/FAQ' onClick={this.props.toggleHamburger}>
-                        <div class='is-flex has-margin'>
+                        <div className='is-flex has-margin'>
                             <QuestionAnswerIcon/>
                             <p>FAQ</p>
                         </div>
                         </Link>
 
                         <Link exact to='/book-online' onClick={this.props.toggleHamburger}>
-                            <div class='is-flex has-margin'>
+                            <div className='is-flex has-margin'>
                                 <EventIcon/>
                                 <p>Book Online</p>
                             </div>
-                        </Link>
+                        </Link> */}
 
-                        <Link exact to='/about' onClick={this.props.toggleHamburger}>
-                        <div class='is-flex has-margin'>
-                            <InfoIcon/>
-                            <p>About Us</p>
+                        <Link exact to='/gallery' onClick={this.props.toggleHamburger}>
+                        <div className='is-flex has-margin'>
+                            <CollectionsIcon/>
+                            <p>Gallery</p>
                         </div>
                         </Link>
-                        <Link exact to='/store' onClick={this.props.toggleHamburger}>
-                        <div class='is-flex has-margin'>
+                        {/* <Link exact to='/store' onClick={this.props.toggleHamburger}>
+                        <div className='is-flex has-margin'>
                             <StoreIcon/>
                             <p>Store</p>
                         </div>
                         </Link>
                         <Link exact to='/cart' onClick={this.props.toggleHamburger}>
-                        <div class='is-flex has-margin'>
+                        <div className='is-flex has-margin'>
                             <ShoppingCartIcon/>
                             <p>My Cart</p>
                         </div>
                         </Link>
                         <a>
-                        <div class='is-flex has-margin' onClick={this.toggleSocial}>
+                        <div className='is-flex has-margin' onClick={this.toggleSocial}>
                             <PersonIcon/>
                             <p>Social</p>
                         </div>

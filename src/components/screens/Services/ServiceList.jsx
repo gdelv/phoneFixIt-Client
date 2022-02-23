@@ -4,6 +4,9 @@ import Service from './Service'
 // import ServiceComputer from './ServiceComputer';
 
 export default class ServiceList extends Component {
+    componentDidMount() {
+        window.scroll(0,0);
+    }
     render() {
         return (
             <>

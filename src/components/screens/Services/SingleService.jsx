@@ -2,10 +2,16 @@ import React, { Component } from 'react'
 // import { Link } from 'react-router-dom'
 import { ProductConsumer } from '../../../context'
 import SingleServiceTop from './SingleServiceTop';
+
+
+
 // import SingleServiceBottom from './SingleServiceBottom';
 
 
 export default class SingleService extends Component {
+    componentDidMount() {
+        window.scroll(0,0);
+    }
     render() {
         return (
             <>

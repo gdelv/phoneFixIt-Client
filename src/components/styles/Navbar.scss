@@ -50,12 +50,18 @@
 
 
 @media only screen and (max-width: 1020px) {
+  .logo {
+    max-width: 200px !important;
+    max-height: 200px !important;
+  }
   .navbar {
     padding: 1em;
     justify-content: flex-start;
   }
   .navbar {
     font-size: 1.5rem;
+    height: 200px;
+
   }
   .sideDrawerColumn {
     height: 90vh !important;

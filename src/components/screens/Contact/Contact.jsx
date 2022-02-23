@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import ContactForm from './ContactForm'
 
 export default class Contact extends Component {
+    componentDidMount() {
+        window.scroll(0,0);
+    }
     render() {
         return (
             <div className='columns' style={{justifyContent: 'center', margin: '0 auto'}}>

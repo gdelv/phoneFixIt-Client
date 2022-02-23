@@ -5,7 +5,7 @@ import Default from "../components/screens/Default";
 import Modal from '../components/screens/Cart/Modal'
 // import { MailInRepair } from "../components/screens/MailInRepair/MailInRepair";
 // import { FAQ } from '../components/screens/FAQ/FAQ'
-// import { About }   from '../components/screens/About/About';
+import { About }   from '../components/screens/About/About';
 // import Details from '../components/screens/Details/Details'
 // import ProductList from "../components/screens/Store/ProductList";
 // import Cart from '../components/screens/Cart/Cart'
@@ -41,7 +41,7 @@ export const Routes = props => {
           {/* <Route path='/book-online' component={weCome}/> */}
 
         {/* About Route (/about) */}
-          {/* <Route path='/about'component={About} /> */}
+          <Route path='/gallery'component={About} />
 
         {/* FAQ Route (/FAQ) */}
           {/* <Route path='/FAQ' component={FAQ}/> */}
