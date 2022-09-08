@@ -1,6 +1,19 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import jobImage1 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob1.jpg'
+import jobImage2 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob2.jpg'
+import jobImage3 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob3.jpg'
+import jobImage4 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob4.jpg'
+import jobImage5 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob5.jpg'
+import jobImage6 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob6.jpg'
+import jobImage7 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob7.jpg'
+import jobImage8 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob8.jpg'
+import jobImage9 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob9.jpg'
+import jobImage10 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob10.jpg'
+import jobImage11 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob11.jpg'
+import jobImage12 from '../../images/lorenzoHVAC/pastJobs/lorenzoJob12.jpg'
+
 // import AboutLocations from './AboutLocations'
 // import AboutHours from './AboutHours'
 // import AboutStatement from './AboutStatement'
@@ -8,27 +21,56 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 export const About = (props) => {
     return (
         <div>
-            <Carousel autoPlay infiniteLoop showArrows={true}>
+            <Carousel autoPlay infiniteLoop showArrows dynamicHeight>
                                     <div>
-                                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" />
+                                        <img src={jobImage1} alt="hvac job1"/>
                                         <p className="legend">Legend 1</p>
                                     </div>
                                     <div>
-                                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" />
-                                        <p className="legend">Legend 2</p>
+                                        <img src={jobImage2} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
                                     </div>
                                     <div>
-                                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" />
-                                        <p className="legend">Legend 3</p>
+                                        <img src={jobImage3} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
                                     </div>
                                     <div>
-                                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" />
-                                        <p className="legend">Legend 4</p>
+                                        <img src={jobImage4} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
                                     </div>
                                     <div>
-                                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" />
-                                        <p className="legend">Legend 5</p>
+                                        <img src={jobImage5} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
                                     </div>
+                                    <div>
+                                        <img src={jobImage6} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
+                                    </div>
+                                    <div>
+                                        <img src={jobImage7} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
+                                    </div>
+                                    <div>
+                                        <img src={jobImage8} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
+                                    </div>
+                                    <div>
+                                        <img src={jobImage9} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
+                                    </div>
+                                    <div>
+                                        <img src={jobImage10} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
+                                    </div>
+                                    <div>
+                                        <img src={jobImage11} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
+                                    </div>
+                                    <div>
+                                        <img src={jobImage12} alt="hvac job1"/>
+                                        <p className="legend">Legend 1</p>
+                                    </div>
+                
                                 </Carousel>
             {/* <AboutStatement
                 title='Learn more about our repairs'

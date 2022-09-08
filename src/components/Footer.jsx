@@ -17,13 +17,13 @@ export const Footer = () => {
                     />
                     <h6 className="subtitle is-6 is-size-7-mobile">© 2022 1stCallHVACSolutions.com Inc. All Rights Reserved</h6>
                 </div>
-                <div className="column is-half">
+                {/* <div className="column is-half"> */}
                     {/* <h4 className="title is-4 is-size-5-mobile">Address</h4>
 
                     <h6 className="subtitle is-6 is-size-6-mobile is-spaced">94 South Broadway Hicksville NY, 11801 USA</h6>
 
                     <h6 className="subtitle is-6 is-size-6-mobile is-spaced ">208 Glen St. Glen Cove, NY, 11542 USA</h6> */}
-                </div>
+                {/* </div> */}
                 <div className="column is-half">
                     <h4 className="title is-4 is-size-5-mobile" style={{paddingBottom: '1em'}}>Contact</h4>
                     <h6 className="subtitle is-6 is-size-6-mobile is-spaced"><a href="tel:+18578883999">857-888-3999</a></h6>
