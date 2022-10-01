@@ -1,12 +1,17 @@
-const acLogo = require('../components/images/lorenzoHVAC/services/acLogo.JPG')
+// const acLogo = require('../components/images/lorenzoHVAC/services/acLogo.JPG')
 const serviceLogo = require('../components/images/lorenzoHVAC/services/serviceLogo.JPG')
 const douglasLogo = require('../components/images/lorenzoHVAC/services/douglasLogo.JPG')
-const furnaceLogo = require('../components/images/lorenzoHVAC/services/furnaceLogo.JPG')
-const heatPumpLogo = require('../components/images/lorenzoHVAC/services/heatPumpLogo.JPG')
-const heatLogo = require('../components/images/lorenzoHVAC/services/heatLogo.JPG')
+// const furnaceLogo = require('../components/images/lorenzoHVAC/services/furnaceLogo.JPG')
+// const heatPumpLogo = require('../components/images/lorenzoHVAC/services/heatPumpLogo.JPG')
+// const heatLogo = require('../components/images/lorenzoHVAC/services/heatLogo.JPG')
 const thermostatLogo = require('../components/images/lorenzoHVAC/services/thermostatLogo.JPG')
 const centralAirLogo = require('../components/images/lorenzoHVAC/services/centralAirLogo.JPG')
-
+const acIcon = require('../components/images/lorenzoHVAC/icons/ac.png')
+const heatIcon = require('../components/images/lorenzoHVAC/icons/heat.png')
+const ductlessIcon = require('../components/images/lorenzoHVAC/icons/ductless.png')
+const furnaceIcon = require('../components/images/lorenzoHVAC/icons/furnace.png')
+const pumpIcon = require('../components/images/lorenzoHVAC/icons/pump.png')
+const repairIcon = require('../components/images/lorenzoHVAC/icons/repair.png')
 
 export const linksInfo = [
     {
@@ -364,7 +369,7 @@ export const servicesInfo = [
         title: "Heat",
         subtitle: "Make the right choice and contact us today to get a quote on central heating system installation!",
         info: "Just like ACs, other than purchasing the correct heating system, the most important choice when it comes to heating installation is who installs it. No matter how good of a brand you choose for your heating system, if it’s installed improperly, you may as well have chosen the cheapest brand on the market, or none at all. Make the right choice and choose SoCal HVAC Specialist Heating & Air Conditioning to install your heating system today. We will make sure that your heating system is working at the highest level of efficiency possible, so you can have even temperature zones, lower electric bills, and a long-lasting heating system!",
-        img: heatLogo,
+        img: heatIcon,
         devicesAvailable: [
             {   
                 id: 1,
@@ -403,7 +408,7 @@ export const servicesInfo = [
         title: "Air Conditioner",
         subtitle: "Make the right choice and contact us today to get a quote on AC installation!",
         info: "Other than purchasing the correct air conditioning system, the most important choice when it comes to AC installation is who installs it. Many homeowners are under the impression that the brand of the AC is what makes the difference, but that’s only half of the equation. Choosing the right company for your install ensures that your cooling system is working at the highest level of efficiency possible, so you can have even temperature zones, lower electric bills, and a long-lasting cooling system!",
-        img: acLogo,
+        img: acIcon,
         devicesAvailable: [
             {
                 id: 1,
@@ -427,7 +432,7 @@ export const servicesInfo = [
         title: "Gas Furnace",
         subtitle: "Do you need to upgrade your furnace?",
         info: "A gas furnace is a home heating appliance that runs off of natural gas. The natural gas is ignited in the furnace, warming up the air, which is then delivered throughout the home. A fully functioning gas furnace requires all of its components to be working in sync.",
-        img: furnaceLogo,
+        img: furnaceIcon,
         devicesAvailable: [
             {
                 id: 1,
@@ -451,7 +456,7 @@ export const servicesInfo = [
         title: "Heat Pumps",
         subtitle: "When considering which type of system is best for your home, several important factors should be considered, including the size of the home and the local climate.",
         info: "One very important point to understand when answering the question “how do heat pumps work?” is that heat pumps do not generate heat – they move heat from one place to another. A furnace creates heat that is distributed throughout a home, but a heat pump absorbs heat energy from the outside air (even in cold temperatures) and transfers it to the indoor air. When in cooling mode a heat pump and an air conditioner are functionally identical, absorbing heat from the indoor air and releasing it through the outdoor unit. Click here for more information about heat pumps vs air conditioners.",
-        img: heatPumpLogo,
+        img: pumpIcon,
         devicesAvailable: [
             {
                 id: 1,
@@ -475,7 +480,7 @@ export const servicesInfo = [
         title: "Ductless Heating & Cooling",
         subtitle: "What Is a Ductless Mini-Split? ",
         info: "A ductless mini-split system does not need air ducts to operate. A traditional air conditioner will distribute air throughout the home from a single unit. A mini-split indoor unit will service a single room or area, with each unit using a separate fan and evaporator coil.",
-        img: douglasLogo,
+        img: ductlessIcon,
         devicesAvailable: [
             {
                 id: 1,
@@ -499,7 +504,7 @@ export const servicesInfo = [
         title: "Service & Repair",
         subtitle: "Need a hand?",
         info: "HVAC maintenance is the process of maintaining the heater or air conditioner by inspecting, cleaning, testing, or even repairing and replacing components in the system. By investing in maintenance for your HVAC system, you can fix issues before they become bigger problems.",
-        img: serviceLogo,
+        img: repairIcon,
         devicesAvailable: [
             {
                 id: 1,
