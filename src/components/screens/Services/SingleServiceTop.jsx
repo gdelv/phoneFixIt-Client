@@ -22,7 +22,7 @@ export default function SingleServiceTop(props) {
             <div className="tile is-parent">
                 <article className="tile is-child">
                     <figure className="image is-4by3">
-                        <img src={props.img} alt='service' />
+                        <img src={props.img} alt='service' style={{padding: "5em"}}/>
                     </figure>
                 </article>
             </div>

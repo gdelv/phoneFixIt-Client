@@ -2,13 +2,19 @@
     margin: 2em 1em;
 }
 .card {
-    min-width: 350px;
-    max-width: 350px;
+    width: 250px;
     margin: 0 auto;
+    padding: 1em;
+}
+.card:hover {
+    scale: 1.15;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    // cursor: pointer;
 }
 .card-image img {
     height: 250px;
     width: 100%;
+    padding: 1em;
 }
 .card-content {
     margin: 0;
